@@ -68,10 +68,25 @@
     </div>
 		
     <br><br><br><br><br><br><br>"報社"、"月份"、"類型"為下拉式選單<br><svg height="500" width="500">
- <polygon points="30,98 60,218 120,30 180,218 210,98"
-  style="fill:lime;stroke:grey;stroke-width:5;fill-rule:nonzero;" />
- <circle cx="181" cy="247" r="20" stroke="orange" stroke-width="3" fill="yellow" />
- <circle cx="61" cy="247" r="20" stroke="orange" stroke-width="3" fill="yellow" />
+
+	<polygon points="30,98 60,218 120,30 180,218 210,98" style="fill:lime;stroke:grey;stroke-width:5;fill-rule:nonzero;" />
+	<circle cx="181" cy="247" r="20" stroke="orange" stroke-width="3" fill="yellow" />
+	<circle cx="61" cy="247" r="20" stroke="orange" stroke-width="3" fill="yellow" />
+    
+
+    <script type="text/javascript">
+    polyPosition = [30,98 60,218 120,30 180,218 210,98];
+    function hid3(){
+    	var svgContainer = d3.select(".display").append("svg").attr("width", 600).attr("height", 100);
+    	var polygons = svgContainer.selectAll("polygon").data(polyPosition).enter().append("polygon");
+    	var polygonAttr = polygons.attr("cx", 50).attr("cy", 50).style("fill", yellow);
+
+
+    }
+
+
+    </script>
+
       <div class="w3-display-bottomright" id="chart">圖表</div>
     </div>
   </div>
