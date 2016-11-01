@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<script type="text/javascript" src="webpage.js"></script>
 </head>
-<body>
+<body onload="clock();">
 	<ul class="w3-navbar w3-border navbar">
 		<li style="width:5%"><a href="home.html"><i class="fa fa-home w3-large" style="padding-left:5px"></i></a></li>
 		<li style="width:35%">&nbsp;</li>
@@ -17,6 +17,7 @@
 		<li class="nav"><a href="map.html">新聞地圖</a></li>
 		<li class="nav"><a href="#">教學影片</a></li>
 		<li class="nav"><a href="#">聯絡我們</a></li>
+		<li class="nav"><a href="#"><span id="timmer"></span></a></li>
 	</ul>
   <div>
   <div class="display">
@@ -66,12 +67,18 @@
 		<a href="#"><i class="fa fa-search w3-xlarge" style="padding-left:20px"></i></a>
       	<!-- <div class="go w3-btn w3-purple">GO</div> -->
     </div>
-		
-    <br><br><br><br><br><br><br>"報社"、"月份"、"類型"為下拉式選單<br><svg height="500" width="500">
+	<a href="salad-days/map.html">github</a>
+    <br><br><br><br><br><br><br>"報社"、"月份"、"類型"為下拉式選單<br>
+
+    <svg height="500" width="500">
  <polygon points="30,98 60,218 120,30 180,218 210,98"
   style="fill:lime;stroke:grey;stroke-width:5;fill-rule:nonzero;" />
  <circle cx="181" cy="247" r="20" stroke="orange" stroke-width="3" fill="yellow" />
  <circle cx="61" cy="247" r="20" stroke="orange" stroke-width="3" fill="yellow" />
+ <rect width="80" height="30" style="fill:#5da937;stroke-width:3" />
+
+</svg>
+
       <div class="w3-display-bottomright" id="chart">圖表</div>
     </div>
   </div>
