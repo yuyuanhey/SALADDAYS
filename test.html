@@ -6,13 +6,14 @@
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 <body>
+
 	<script type="text/javascript">
+		var parseTime = d3.timeParse("%d-#b-%y");
 		d3.csv("./stocks.csv",function(data){
 			data.forEach(function(d){
-				d.data = d.date;
+				d.data = parseTime(d.date);
 				d.close = +d.close;
 			});
-			console.log(data);
 		});
 	
 	</script>
