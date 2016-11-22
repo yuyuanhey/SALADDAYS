@@ -1,4 +1,5 @@
 body{
+  color:#563d12;
   font-family: Microsoft JhengHei;
 }
 .navbar{
@@ -8,6 +9,9 @@ body{
   text-align:center;
   width:10%;
   font-size:18px;
+}
+.navHover:hover{
+  font-weight: bold;
 }
 .line{
   margin-right:10px;
