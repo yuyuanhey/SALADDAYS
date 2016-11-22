@@ -3,10 +3,10 @@ library(XML)
 library(RCurl)
 library(httr)
 Sys.setlocale(category = "LC_ALL", locale = "cht")
-#我們希望可以爬40頁，但因為檔案會有點多，所以先爬10頁就好:-D
+#我們希望可以爬40頁，但因為檔案會有點多，所以先爬5頁就好:-D
 #因為網址中有中文，所以path會出現亂碼，我們還沒有找到解決的方法
 startNo = 1
-endNo   = 10
+endNo   = 5
 subPath <- "https://tw.news.yahoo.com/world/archive/"
 alldata = data.frame()
 for( pid in startNo:endNo )
