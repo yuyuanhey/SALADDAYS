@@ -68,31 +68,31 @@
 		<div id="target2" style="width:100%; display:none;">
 			<p class="subtitle">組員名單</p>
 			<div class="pictureDiv">
-				<a href="https://www.facebook.com/profile.php?id=100001266835648">
+				<a href="https://www.facebook.com/profile.php?id=100001266835648" title="前往禹媛的FB">
 				<img class="picture" src="./photo/profile-01.png"/>
 				<p class="name">禹媛</p>
 				</a>
 			</div>
 			<div class="pictureDiv">
-				<a href="https://www.facebook.com/yiru.shen.1612?fref=ts">
+				<a href="https://www.facebook.com/yiru.shen.1612?fref=ts" title="前往宜儒的FB">
 				<img class="picture" src="./photo/profile-02.png"/>
 				<p class="name">宜儒</p>
 				</a>
 			</div>
 			<div class="pictureDiv">
-				<a href="https://www.facebook.com/profile.php?id=100001716956350&fref=ts">
+				<a href="https://www.facebook.com/profile.php?id=100001716956350&fref=ts" title="前往湘陵的FB">
 				<img class="picture" src="./photo/profile-03.png"/>
 				<p class="name">湘陵</p>
 				</a>
 			</div>
 			<div class="pictureDiv">
-				<a href="https://www.facebook.com/profile.php?id=100001162914977&fref=ts">
+				<a href="https://www.facebook.com/profile.php?id=100001162914977&fref=ts" title="前往丞瑀的FB">
 				<img class="picture" src="./photo/profile-05.png"/>
 				<p class="name">丞瑀</p>
 				</a>
 			</div>
 			<div class="pictureDiv">
-				<a href="https://www.facebook.com/cshy.shen?fref=ts">
+				<a href="https://www.facebook.com/cshy.shen?fref=ts" title="前往祥茵的FB">
 				<img class="picture" src="./photo/profile-06.png"/>
 				<p class="name">祥茵</p>
 				</a>
@@ -133,13 +133,14 @@
 		<!--新聞地圖-->
 		<div id="map" style="width:100%; display:none;">
 			<div style="width:90%; margin-left:5%;">
-				<button class="button">One Months</button>
+				<button class="button">One Month</button>
 				<button class="button">Three Months</button>
 				<button class="button">One Year</button>
 				<div style="display:inline-block;width:40%;"></div>
-				<a href="#" title="產生統計圖表"><img src="./photo/bars-chart.png" class="button2"></img></a>
+				<img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');"/>
+				<div class="tipBar"><p class="tip" id="tip1">產生統計圖表</p></div>
 			</div>
-			<div style="width:90%;margin:2% 5% 5% 5%;height:500px;background-color:#FFF4C1;opacity:0.7;"></div>
+			<div style="width:90%;margin:1% 5% 5% 5%;height:500px;background-color:#FFF4C1;opacity:0.7;"></div>
 		</div>
     </div>
 
@@ -153,6 +154,12 @@
 		if(target1 && target2 && target3 && vedio1 && vedio2 && map){
 		 	document.getElementById('map').style.display = "block";
 		    changeOpacity('map');
+		}
+		function showTip(id){
+			document.getElementById(id).style.display = "inline-block";
+		}
+		function hideTip(id){
+			document.getElementById(id).style.display = "none";
 		}
     </script>
 </body>

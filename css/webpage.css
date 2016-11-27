@@ -160,3 +160,17 @@ a:visited{
   text-decoration: none;
   outline: none;
 }
+.tip{
+  display:none;
+  background-color:#000;
+  color:#fff;
+  padding-left:8px;
+  padding-right:8px;
+  text-align:center;
+}
+.tipBar{
+  background-color: transparent;
+  width:12%;
+  height:18px;
+  margin-left: 87%;
+}
