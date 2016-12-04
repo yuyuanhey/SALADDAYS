@@ -122,7 +122,7 @@ for( pid in startNo:endNo ){
 
 #cross-strait
 endNo = 8
-area = "China"
+area = "Cross-strait"
 for( pid in startNo:endNo ){
   urlPath <- paste(subPath, pid, "&event_area=cross-strait", sep='')
   temp    <- getURL(urlPath, encoding = "UTF-8")
