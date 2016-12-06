@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<title>Change Opacity</title>
+	<!-- <script type="text/javascript" src="webpage.js"></script> -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+	<!-- <link rel="stylesheet" href="w3school.css"> -->
+	<!-- <link rel="stylesheet" href="webpage.css"> -->
+	<style>
+		/*#square{
+			width:100px;
+			height:100px;
+			background-color: pink;
+		}*/
+		div{
+			width:100px;
+			height:100px;
+			background-color: pink;
+			opacity:1;
+		}
+		@keyframes changeOpacity{
+			0% {opacity:0;}
+			25% {opacity:0.25;}
+			50% {opacity:0.5;}
+			75% {opacity:0.75;}
+		}
+	</style>
+	<script>
+		function changeOpacity(id){
+			document.getElementById(id).style.animationName = "example";
+			document.getElementById(id).style.animationDuration = "3s";
+			document.getElementById(id).style.backgroundColor = "blue";
+			console.log("change");
+		}
+	</script>
+</head>
+<body>
+	<div id="square" onclick="changeOpacity('square');">
+	</div>
+
+</body>

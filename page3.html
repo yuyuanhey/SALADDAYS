@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Salad Days</title>
+	<script type="text/javascript" src="./javascript/webpage.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/w3school.css">
+	<link rel="stylesheet" href="./css/webpage.css">
+</head>
+
+<body>
+	<div style="width:100%; height:100px">
+		<a href="page1.html">
+		<img src="./photo/logo.jpg" class="fa w3-spin" style="border-radius:100%;height:90px;margin-top:5px;margin-left:42%;animation-duration:10s;"/>
+		</a>
+	</div>
+	<div style="width:90%; margin-left:5%">
+		<ul class="w3-navbar">
+		<!--新聞地圖  -->
+			<li class="nav1 navHover">
+				<a href="#" onclick="zoomIn('map');">新聞地圖</a>
+			</li>
+		<!--教學影片  -->
+			<li class="w3-dropdown-hover nav1">
+	    		<a href="#" class="navHover" onclick="zoomIn('vedio1');">教學影片</a>
+	    	<div class="w3-dropdown-content w3-white w3-card-4">
+	      		<a href="#" class="navHover" onclick="zoomIn('vedio1');">影片1</a>
+	      		<a href="#" class="navHover" onclick="zoomIn('vedio2');">影片2</a>
+	    	</div>
+	  		</li>
+	  	<!--關於我們  -->
+	    	<li class="w3-dropdown-hover nav1">
+	    	  <a href="#" class="navHover" onclick="zoomIn('target1');">關於我們</a>
+	    	  <div class="w3-dropdown-content w3-white w3-card-4">
+	    	    <a href="#" class="navHover" onclick="zoomIn('target1');">成立初衷</a>
+	    	    <a href="#" class="navHover" onclick="zoomIn('target2');">組員名單</a>
+	    	    <a href="#" class="navHover" onclick="zoomIn('target3');">活動花絮</a>
+	    	  </div>
+	    	</li>
+	    	<li style="width:60%;">&nbsp;</li>
+	    	<a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook iconSetting"></i></a>
+	    	<a href="mailto:b04705004@ntu.edu.tw" title="Connect with us!"><i class="fa fa-envelope-o iconSetting"></i></a>
+		</ul>
+	  <!-- 劃出nav下的線 -->
+	  <div class="line"></div>
+	</div>
+
+	<div class="display">
+		<!-- 成立初衷 -->
+		<div id="target1" style="width:100%; display:none;">
+			<p class="subtitle">成立初衷</p>
+			<p style="text-align:center;font-size:16px">
+				Salad Days，出自莎士比亞的《安東尼與克麗奧佩托拉》<br>用以形容充滿熱情、理想、純真的年輕時期。<br>
+				時至今日，Salad Days亦可作為人生高峰期的代稱，<br>
+				而這也正是我們對自己的期許。<br>
+				我們是風味各異的蔬果，如生菜一般的生手。<br>
+				但即便如此，也希望趁著新鮮年華，<br>
+				透過彼此的協調搭配，嘗試各式醬料主題，<br>
+				以完成最美味的佳餚，<br>
+				創造出獨一無二的Salad Days！
+			</p>
+		</div>
+		<!-- 組員名單 -->
+		<div id="target2" style="width:100%; display:none;">
+			<p class="subtitle">組員名單</p>
+			<div class="pictureDiv">
+				<a href="https://www.facebook.com/profile.php?id=100001266835648" title="前往禹媛的FB">
+				<img class="picture" src="./photo/profile-01.png"/>
+				<p class="name">禹媛</p>
+				</a>
+			</div>
+			<div class="pictureDiv">
+				<a href="https://www.facebook.com/yiru.shen.1612?fref=ts" title="前往宜儒的FB">
+				<img class="picture" src="./photo/profile-02.png"/>
+				<p class="name">宜儒</p>
+				</a>
+			</div>
+			<div class="pictureDiv">
+				<a href="https://www.facebook.com/profile.php?id=100001716956350&fref=ts" title="前往湘陵的FB">
+				<img class="picture" src="./photo/profile-03.png"/>
+				<p class="name">湘陵</p>
+				</a>
+			</div>
+			<div class="pictureDiv">
+				<a href="https://www.facebook.com/profile.php?id=100001162914977&fref=ts" title="前往丞瑀的FB">
+				<img class="picture" src="./photo/profile-05.png"/>
+				<p class="name">丞瑀</p>
+				</a>
+			</div>
+			<div class="pictureDiv">
+				<a href="https://www.facebook.com/cshy.shen?fref=ts" title="前往祥茵的FB">
+				<img class="picture" src="./photo/profile-06.png"/>
+				<p class="name">祥茵</p>
+				</a>
+			</div>
+		</div>
+		<!-- 活動花絮 -->
+		<div id="target3" style="width:100%; display:none;">
+			<p class="subtitle">活動花絮</p>
+			<div class="bigDiv1">
+				<img src="./photo/photo1.jpg"/ class="box">
+				<img src="./photo/photo1.jpg"/ class="box">
+			</div>
+			<div class="bigDiv1">
+				<img src="./photo/photo1.jpg" class="smallDiv"/>
+				<img src="./photo/photo1.jpg" class="smallDiv"/>
+				<img src="./photo/photo1.jpg" class="smallDiv"/>
+			</div>
+			<div class="bigDiv1">
+				<img src="./photo/photo1.jpg" class="smallDiv"/>
+				<img src="./photo/photo1.jpg" class="smallDiv"/>
+				<img src="./photo/photo1.jpg" class="smallDiv"/>
+			</div>
+		</div>
+		<!-- 教學影片1 -->
+		<div id="vedio1" style="width:100%; display:none;">
+			<p class="subtitle">影片一</p>
+			<video controls class="vedio">
+				<source src="./vedio/vedioOne.mp4" type="video/mp4">
+			</video>
+		</div>
+		<!-- 教學影片2 -->
+		<div id="vedio2" style="width:100%; display:none;">
+			<p class="subtitle">影片二</p>
+			<video controls class="vedio">
+				<source src="./vedio/vedioTwo.mp4" type="video/mp4">
+			</video>
+		</div>
+		<!--新聞地圖-->
+		<div id="map" style="width:100%; display:none;">
+			<div style="width:90%; margin-left:5%;">
+				<button class="button">One Month</button>
+				<button class="button">Three Months</button>
+				<button class="button">One Year</button>
+				<div style="display:inline-block;width:40%;"></div>
+				<img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');"/>
+				<div class="tipBar"><p class="tip" id="tip1">產生統計圖表</p></div>
+			</div>
+			<div style="width:90%;margin:1% 5% 5% 5%;height:500px;background-color:#FFF4C1;opacity:0.7;"></div>
+		</div>
+    </div>
+
+    <script>
+		target1 = document.getElementById('target1').style.display == 'none';
+		target2 = document.getElementById('target2').style.display == 'none';
+		target3 = document.getElementById('target3').style.display == 'none';
+		vedio1  = document.getElementById('vedio1').style.display  == 'none';
+		vedio2  = document.getElementById('vedio2').style.display  == 'none';
+		map     = document.getElementById('map').style.display     == 'none';
+		if(target1 && target2 && target3 && vedio1 && vedio2 && map){
+		 	document.getElementById('map').style.display = "block";
+		    changeOpacity('map');
+		}
+		function showTip(id){
+			document.getElementById(id).style.display = "inline-block";
+		}
+		function hideTip(id){
+			document.getElementById(id).style.display = "none";
+		}
+    </script>
+</body>
+
+</html>
