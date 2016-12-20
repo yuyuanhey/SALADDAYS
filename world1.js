@@ -27,7 +27,7 @@ var basic_choropleth = new Datamap({
 	  	try: "#ccc"
 		},
 		data: {
-			"AFG": { "fillKey": "AFGcolor", "count": 1}
+			"AFG": { "fillKey": "AFGcolor", "count": 100}
 			// ALB: { fillKey: "defaultFill"},
 			// DZA: { fillKey: "defaultFill"},
 			// AND: { fillKey: "defaultFill"},
