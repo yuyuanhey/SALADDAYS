@@ -21,9 +21,9 @@ var basic_choropleth = new Datamap({
   		},
 	  // projection: 'mercator',
 		fills: {
-		AFGcolor: colors(2),
-	  	defaultFill: colors(1),
-	  	authorHasTraveledTo: color[1],
+		AFGcolor: color[0],
+	  	defaultFill: color[4],
+	  	authorHasTraveledTo: color[3],
 	  	try: "#ccc"
 		},
 		data: {
