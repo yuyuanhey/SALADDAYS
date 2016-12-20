@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="./css/webpage.css">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-	<script src="/datamaps-master/dist/datamaps.world.min.js"></script>
+	<script src="https://yuyuanhey.github.io/SALADDAYS/datamaps-master/dist/datamaps.world.min.js"></script>
 </head>
 
 <body>
@@ -143,7 +143,9 @@
 				<img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');"/>
 				<div class="tipBar"><p class="tip" id="tip1">產生統計圖表</p></div>
 			</div>
-			<div style="width:90%;margin:1% 5% 5% 5%;height:100%;background-color:#FFF4C1;opacity:0.7;">
+			<div style="width:90%;margin:1% 5% 5% 5%;height:100%;background-color:#FFF4C1;opacity:0.7;padding:5%">
+				 <div id="container" style="position:relative;height:500px;background-color:white;width:90%;margin-left:5%"></div>
+				<br>
 				<p>文字雲 - 國家出現頻率</p>
 				<img src="./photo/wordcloud-country.png" style="height:300px;margin:20px"/>
 				<p>文字雲 - 新聞標題關鍵字</p>
@@ -151,7 +153,6 @@
 			</div>
 		</div>
     </div>
-    <div id="container" style="position:relative; width:1000px;height:1000px"></div>
 
     <script>
 		target1 = document.getElementById('target1').style.display == 'none';
