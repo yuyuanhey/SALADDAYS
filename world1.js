@@ -11,11 +11,10 @@ var basic_choropleth = new Datamap({
 		geographyConfig: {
     		highlightBorderColor: '#bada55',
    			popupTemplate: function(geography, data) {
-   				if(data > 0) 
+   				if(typeof data.count == 'undefined')
+   					data.count = 0;
      			return '<div class="hoverinfo">' + geography.properties.name
      			+ " " +  data.count + ' ';
-     			else return '<div class="hoverinfo">' + geography.properties.name
-     			+ " " +  0 + ' ';
      		},
     		highlightBorderWidth: 3
   		},
@@ -27,8 +26,8 @@ var basic_choropleth = new Datamap({
 	  	try: "#ccc"
 		},
 		data: {
-			"AFG": { "fillKey": "AFGcolor", "count": 100}
-			// ALB: { fillKey: "defaultFill"},
+			"AFG": { "fillKey": "AFGcolor", "count": 100},
+			"ALB": { "fillKey": "AFGcolor"}
 			// DZA: { fillKey: "defaultFill"},
 			// AND: { fillKey: "defaultFill"},
 			// AGO: { fillKey: "authorHasTraveledTo"},
@@ -51,39 +50,3 @@ var basic_choropleth = new Datamap({
 	    // GER: { fillKey: "try" },*/
     	}
 }); 
-// var width = 1024;
-// var height = 768;
-// var ctrl = d3.select("body").append("svg").attr("width", width).attr("height", height);
-// // d3.csv("testWorld.csv",
-// //       function(d) { 
-// //       	//console.log(data.Var1);
-//       	//country, chinese, code, count
-//       	//console.log(data[1].Freq)
-//       	//console.log(data[1].Var1)
-// });
-
-/*d3.csv("./HistoricalQuotes.csv", 
-	function(data)
-	{
-		var ln = data.length;
-		console.log(data);
-		var maxy = d3.max(data, function(d){ return d.close; });
-		var lines = d3.line().x(function(d,i){return i*(width/ln);}).y(function(d){return height-d.close*(height/maxy)});
-		ctrl.append("path").attr("d", function(d){
-			return "M0,"+height+"L"+width+","+height;
-		}).attr("stroke", "black").attr("fill", "none");
-		ctrl.append("path").attr("d", function(d){
-			return "M0,0"+"L0,"+height;
-		}).attr("stroke", "black").attr("fill", "none");
-		ctrl.append("path").data([data]).attr("d", lines).attr("stroke", "red").attr("fill", "none");
-		var x = d3.scaleTime().range([0, width]);
-		var y = d3.scaleLinear().range([height, 0]);	
-		x.domain(d3.extent(data, function(d) { return d.date; }));
-		y.domain([0, maxy]);
-		ctrl.append("g")
-      	.attr("transform", "translate(0," + height + ")")
-      	.call(d3.axisBottom(x));
-  		ctrl.append("g")
-      	.call(d3.axisLeft(y));
-	}
-);*/

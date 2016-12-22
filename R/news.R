@@ -142,4 +142,4 @@ for( pid in startNo:endNo ){
     print(paste("End Try&Catch", urlPath))
   })
 }
-write.csv(alldata, file = "C:/Users/test/desktop/news.csv")
+write.csv(alldata, file = "C:/Users/user/Documents/GitHub/SALADDAYS/R/new1221.csv")
