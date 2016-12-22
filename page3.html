@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Salad Days</title>
 	<link rel="Shortcut Icon" type="image/x-icon" href="./photo/logo.ico" />
 	<script type="text/javascript" src="./javascript/webpage.js"></script>
@@ -11,9 +11,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/w3school.css">
 	<link rel="stylesheet" href="./css/webpage.css">
+	<link rel="stylesheet" href="./css/webpage-ipod.css">
 	<!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script> -->
 	<script type="text/javascript" src="./javascript/topojson.min.js"></script>
 	<script type="text/javascript" src="./javascript/d3.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="http://lmcdwriting.org/userfiles/lmcsilver20121007/fancyapps-fancyBox-0ffc358/source/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://lmcdwriting.org/userfiles/lmcsilver20121007/fancyapps-fancyBox-0ffc358/source/jquery.fancybox.css" media="screen"></link>
 	<!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script> -->
 	<script type="text/javascript" src="https://yuyuanhey.github.io/SALADDAYS/datamaps-master/dist/datamaps.world.min.js"></script>
 </head>
@@ -21,7 +25,7 @@
 <body>
 	<div style="width:100%; height:100px">
 		<a href="page1.html">
-		<img src="./photo/logo.jpg" class="fa w3-spin" style="border-radius:100%;height:90px;margin-top:20px;margin-left:47%;animation-duration:10s;"/>
+		<img src="./photo/logo.jpg" class="fa w3-spin logo"/>
 		</a>
 	</div>
 	<div style="width:90%; margin-left:5%">
@@ -47,9 +51,13 @@
 	    	    <a href="#" class="navHover" onclick="zoomIn('target3');">活動花絮</a>
 	    	  </div>
 	    	</li>
-	    	<li style="width:60%;">&nbsp;</li>
+	    	<li class="icon-width">&nbsp;</li>
+	    	<li>
 	    	<a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook iconSetting"></i></a>
+	    	</li>
+	    	<li>
 	    	<a href="mailto:b04705004@ntu.edu.tw" title="Connect with us!"><i class="fa fa-envelope-o iconSetting"></i></a>
+	    	</li>
 		</ul>
 	  <!-- 劃出nav下的線 -->
 	  <div class="line"></div>
@@ -59,7 +67,7 @@
 		<!-- 成立初衷 -->
 		<div id="target1" style="width:100%; display:none;">
 			<p class="subtitle">成立初衷</p>
-			<p style="text-align:center;font-size:16px">
+			<p class="text">
 				Salad Days，出自莎士比亞的《安東尼與克麗奧佩托拉》<br>用以形容充滿熱情、理想、純真的年輕時期。<br>
 				時至今日，Salad Days亦可作為人生高峰期的代稱，<br>
 				而這也正是我們對自己的期許。<br>
@@ -73,6 +81,11 @@
 		<!-- 組員名單 -->
 		<div id="target2" style="width:100%; display:none;">
 			<p class="subtitle">組員名單</p>
+			<div class="pictureDiv" id="logoNotShown">
+				<img class="picture" src="./photo/logo.jpg"/>
+				<p class="name">&nbsp;</p>
+				</a>
+			</div>
 			<div class="pictureDiv">
 				<a href="https://www.facebook.com/profile.php?id=100001266835648" title="前往禹媛的FB">
 				<img class="picture" src="./photo/profile-01.png"/>
@@ -85,13 +98,14 @@
 				<p class="name">宜儒</p>
 				</a>
 			</div>
+
 			<div class="pictureDiv">
 				<a href="https://www.facebook.com/profile.php?id=100001716956350&fref=ts" title="前往湘陵的FB">
 				<img class="picture" src="./photo/profile-03.png"/>
 				<p class="name">湘陵</p>
 				</a>
 			</div>
-			<div class="pictureDiv">
+			<div class="pictureDiv"> 
 				<a href="https://www.facebook.com/profile.php?id=100001162914977&fref=ts" title="前往丞瑀的FB">
 				<img class="picture" src="./photo/profile-05.png"/>
 				<p class="name">丞瑀</p>
@@ -105,11 +119,11 @@
 			</div>
 		</div>
 		<!-- 活動花絮 -->
-		<div id="target3" style="width:100%; display:none;">
+		<div id="target3" style="width:100%; display:none;margin-bottom: 50px">
 			<p class="subtitle">活動花絮</p>
 			<div class="bigDiv1">
 				<img src="./photo/photo1.jpg"/ class="box">
-				<img src="./photo/photo1.jpg"/ class="box">
+				<img src="./photo/photo2.jpg"/ class="box">
 			</div>
 			<div class="bigDiv1">
 				<img src="./photo/photo1.jpg" class="smallDiv"/>
@@ -142,17 +156,19 @@
 				<button class="button">One Month</button>
 				<button class="button">Three Months</button>
 				<button class="button">One Year</button>
-				<div style="display:inline-block;width:40%;"></div>
-				<img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');"/>
+				<div class="buttonLine"></div>
+				<img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');" onclick="fancyboximg(600, 450, 'https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif','這是圖說');" />
 				<div class="tipBar"><p class="tip" id="tip1">產生統計圖表</p></div>
 			</div>
+			<!-- Display Block -->
 			<div style="width:90%;margin:1% 5% 5% 5%;height:100%;background-color:#FFF4C1;opacity:0.7;padding:5%">
-				 <div id="container" style="position:relative;height:500px;background-color:white;width:90%;margin-left:5%"></div>
+			<!-- MAP -->
+				 <div id="container" class="worldMap"></div>
 				<br>
 				<p>文字雲 - 國家出現頻率</p>
-				<img src="./photo/wordcloud-country.png" style="height:300px;margin:20px"/>
+				<img src="./photo/wordcloud-country.png" class="wordCloud"/>
 				<p>文字雲 - 新聞標題關鍵字</p>
-				<img src="./photo/wordcloud-title.png" style="height:300px;margin:20px" />
+				<img src="./photo/wordcloud-title.png" class="wordCloud"/>
 			</div>
 		</div>
     </div>
@@ -169,12 +185,37 @@
 		    changeOpacity('map');
 		}
 		function showTip(id){
-			document.getElementById(id).style.display = "inline-block";
+			if(screen.width < "850")
+				console.log("It's a tablet")
+			else document.getElementById(id).style.display = "inline-block";
 		}
 		function hideTip(id){
-			document.getElementById(id).style.display = "none";
+			if(screen.width < "850")
+				console.log("850")
+			else document.getElementById(id).style.display = "none";
 		}
+		$('#my_page').fancybox({ 
+		        'scrolling'     : 'no',
+		        'overlayOpacity': 0.1,
+		        'showCloseButton'   : false,
+		        'content' : '<p>your html here</p>'
+		});
+		function fancyboximg(w0321, h0321, s0321, t0321) {
+			$.fancybox({
+				fitToView: false,
+				beforeShow: function () {
+					this.width = w0321;
+					this.height = h0321;
+				},
+				href: s0321,
+				title: t0321,
+				type: 'image',
+				padding: 5,
+				openEffect: 'elastic',
+				preload: true
+				});
+		};
     </script>
 </body>
-<script type="text/javascript" src="world1.js"></script> 
+<script type="text/javascript" src="world1.js"></script>
 </html>
