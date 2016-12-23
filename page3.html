@@ -53,10 +53,12 @@
 	    	  </div>
 	    	</li>
 	    	<li class="icon-width SPdelete">&nbsp;</li>
-	    	<li>
+	    	<li class="SPdelete">
+	    	<!-- FB logo -->
 	    	<a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook iconSetting"></i></a>
 	    	</li>
-	    	<li>
+	    	<li class="SPdelete">
+	    	<!-- Email logo -->
 	    	<a href="mailto:b04705004@ntu.edu.tw" title="Connect with us!"><i class="fa fa-envelope-o iconSetting"></i></a>
 	    	</li>
 		</ul>
@@ -154,9 +156,9 @@
 		<!--新聞地圖-->
 		<div id="map" style="width:100%; display:none;">
 			<div style="width:90%; margin-left:5%;">
-				<button class="button">One Month</button>
-				<button class="button">Three Months</button>
-				<button class="button">One Year</button>
+				<button class="button" id="oneM">One Month</button>
+				<button class="button" id="threeM">Three Months</button>
+				<button class="button" id="oneY">One Year</button>
 				<div class="buttonLine"></div>
 				<img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');" onclick="fancyboximg(600, 450, 'https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif','這是圖說');" />
 				<div class="tipBar"><p class="tip" id="tip1">產生統計圖表</p></div>
@@ -216,6 +218,14 @@
 				preload: true
 				});
 		};
+		if(screen.width < "700"){
+			oneM = document.getElementById("oneM");
+			threeM = document.getElementById("threeM");
+			oneY = document.getElementById("oneY");
+			oneM.innerHTML = "一個月";
+			threeM.innerHTML = "三個月";
+			oneY.innerHTML = "一年";
+		}
     </script>
 </body>
 <script type="text/javascript" src="world1.js"></script>
