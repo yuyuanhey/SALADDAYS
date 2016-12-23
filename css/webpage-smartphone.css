@@ -63,15 +63,15 @@
 		display:block;
 		width:100%;
 		margin-right:0px;
+		margin-left: 0px;
   		padding-left:0px;
 	}
 	.picture{
-	  	margin-left:25%;
-	 	display:inline-block;
+	  	margin-left:35%;
+	 	display:block;
 	  	border-radius: 100%;
-	  	margin-left: 0%;
-	  	width:150px;
-	  	height:150px;
+	  	width:120px;
+	  	height:120px;
 	}
 	.name{
 	 	text-align: center;

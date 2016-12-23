@@ -204,6 +204,10 @@
 		        'content' : '<p>your html here</p>'
 		});
 		function fancyboximg(w0321, h0321, s0321, t0321) {
+			if(screen.width < "700"){
+				w0321 = w0321 * 0.6;
+				h0321 = h0321 * 0.6;
+			}
 			$.fancybox({
 				fitToView: false,
 				beforeShow: function () {
