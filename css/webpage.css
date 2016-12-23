@@ -17,6 +17,10 @@ a:visited{
   text-align: center;
   font-size:24px
 }
+.logoBar{
+  width:100%;
+  height:100px;
+}
 .logo{
   border-radius:100%;
   height:90px;
