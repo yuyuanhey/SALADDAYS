@@ -30,16 +30,16 @@ a:visited{
 }
 .nav1{
   text-align:center;
-  width:10%;
+  width:150px;
   font-size:18px;
 }
 .icon-width{
-  width:55%;
+  width:500px;
 }
 .iconSetting{
   font-size: 20px;
   text-align:center;
-  width:3%;
+  width:50px;
   border-bottom: 0px;
   padding-top:10px;
 }
