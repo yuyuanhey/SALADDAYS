@@ -156,7 +156,8 @@
 				<button class="button" id="threeM" onclick="showBlock('threeMd')">三個月</button>
 				<button class="button" id="oneY" onclick="showBlock('oneYd')">一年</button>
 				<div class="buttonLine"></div>
-				<img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');" onclick="fancyboximg(600, 400, 'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-1.png','這是圖說');" />
+				<img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');" onclick="showGallery();">
+				<!-- <img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');" onclick="fancyboximg(600, 400, 'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-1.png','這是圖說');" /> -->
 				<div class="tipBar"><p class="tip" id="tip1">產生統計圖表</p></div>
 			</div>
 
@@ -246,6 +247,20 @@
 			document.getElementById(buttonId).style.backgroundColor = "#FFC408";
 			document.getElementById(buttonId).style.boxShadow = "0 4px #666";
 			document.getElementById(buttonId).style.color = "white";
+		}
+		function showGallery(){
+			oneM = document.getElementById('oneMd').style.display == "none";
+			threeM = document.getElementById('threeMd').style.display == "none";
+			oneY = document.getElementById('oneYd').style.display == "none";
+			if(!oneM){
+				
+			}
+			else if(!threeM){
+
+			}
+			else{
+
+			}
 		}
 		$('#my_page').fancybox({ 
 		        'scrolling'     : 'no',
