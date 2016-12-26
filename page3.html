@@ -3,12 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Salad Days</title>
 	<link rel="Shortcut Icon" type="image/x-icon" href="./photo/logo.ico" />
 	<script type="text/javascript" src="./javascript/webpage.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./samples/style.css" type="text/css">
 	<link rel="stylesheet" href="./css/w3school.css">
 	<link rel="stylesheet" href="./css/webpage.css">
 	<link rel="stylesheet" href="./css/webpage-tablet.css">
@@ -19,7 +21,8 @@
 	<script type="text/javascript" src="./javascript/d3.min.js"></script>
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script type="text/javascript" src="./javascript/fancybox.js"></script>
-	
+    <script src="./amcharts/amcharts.js" type="text/javascript"></script>
+    <script src="./amcharts/xy.js" type="text/javascript"></script>
 	<!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script> -->
 	<script type="text/javascript" src="https://yuyuanhey.github.io/SALADDAYS/datamaps-master/dist/datamaps.world.min.js"></script>
 </head>
@@ -154,13 +157,15 @@
 				<button class="button" id="threeM">三個月</button>
 				<button class="button" id="oneY">一年</button>
 				<div class="buttonLine"></div>
-				<img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');" onclick="fancyboximg(600, 450, 'https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif','這是圖說');" />
+				<img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');" onclick="fancyboximg(600, 450, 'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-1.png','這是圖說');" />
 				<div class="tipBar"><p class="tip" id="tip1">產生統計圖表</p></div>
 			</div>
 			<!-- Display Block -->
-			<div style="width:90%;margin:1% 5% 5% 5%;height:100%;background-color:#FFF4C1;opacity:0.7;padding:5%">
+			<div style="width:90%;margin:1% 5% 5% 5%;height:100%;background-color:#FFF8D7;padding:5%">
 			<!-- MAP -->
 				<div id="container" class="worldMap"></div>
+			<!-- Scatter plot -->
+				<div id="chartdiv" class="worldMap"></div>
 				<!--<br>
 				<p>文字雲 - 國家出現頻率</p>
 				<img src="./photo/wordcloud-country.png" class="wordCloud"/>
@@ -240,4 +245,7 @@
     </script>
 </body>
 <script type="text/javascript" src="world1.js"></script>
+<script src="./samples/xyBubbleWithZoom.js"></script>
+<style>
+</style>
 </html>

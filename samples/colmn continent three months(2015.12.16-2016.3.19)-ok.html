@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>amCharts examples</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="../amcharts/amcharts.js" type="text/javascript"></script>
+        <script src="../amcharts/serial.js" type="text/javascript"></script>
+<!-- this is one year chart -->
+
+        <script>
+            var chart;
+            var chartData = [
+                {
+                    "Continent": "北美洲",
+                    "Total News Count": 98,
+                    "average News Count": 27.5
+                },
+                {
+                    "Continent": "非洲",
+                    "Total News Count": 74,
+                    "average News Count": 0.67
+                },
+                {
+                    "Continent": "中南美洲",
+                    "Total News Count": 79,
+                    "average News Count": 0.55
+                },
+                {
+                    "Continent": "亞洲",
+                    "Total News Count": 109,
+                    "average News Count": 2.22
+                },
+                {
+                    "Continent": "兩岸三地",
+                    "Total News Count": 17,
+                    "average News Count": 18.7,
+                },
+                {
+                    "Continent": "歐洲",
+                    "Total News Count": 109,
+                    "average News Count": 2.19,
+                }
+
+            ];
+
+
+            AmCharts.ready(function () {
+
+                // SERIAL CHART
+                chart = new AmCharts.AmSerialChart();
+                chart.dataProvider = chartData;
+                chart.categoryField = "Continent";
+                chart.startDuration = 1;
+
+                // AXES
+                // category
+                var categoryAxis = chart.categoryAxis;
+                categoryAxis.gridPosition = "start";
+
+                // value
+                // first value axis (on the left)
+                var valueAxis1 = new AmCharts.ValueAxis();
+                valueAxis1.axisColor = "#FCD202";
+                valueAxis1.axisThickness = 2;
+                chart.addValueAxis(valueAxis1);
+                // second value axis (on the right)
+                var valueAxis2 = new AmCharts.ValueAxis();
+                valueAxis2.position = "right"; // this line makes the axis  to appear on the right
+                valueAxis2.axisColor = "#8A2BE2";
+                valueAxis2.gridAlpha = 0;
+                valueAxis2.axisThickness = 2;
+                chart.addValueAxis(valueAxis2);
+
+                // GRAPHS
+                // column graph
+                var graph1 = new AmCharts.AmGraph();
+                graph1.valueAxis = valueAxis1; 
+                graph1.type = "column";
+                graph1.title = "Total News Count";
+                graph1.lineColor = "#8A2BE2";
+                graph1.valueField = "Total News Count";
+                graph1.lineAlpha = 1;
+                graph1.fillAlphas = 1;
+                graph1.alphaField = "alpha";
+                graph1.balloonText = "<span style='font-size:9px;'>[[title]] in [[category]]:<b>[[value]]</b> [[additional]]</span>";
+                chart.addGraph(graph1);
+
+                // line
+                var graph2 = new AmCharts.AmGraph();
+                graph1.valueAxis = valueAxis2; 
+                graph2.type = "line";
+                graph2.title = "average News Count";
+                graph2.lineColor = "#fcd202";
+                graph2.valueField = "average News Count";
+                graph2.lineThickness = 3;
+                graph2.bullet = "round";
+                graph2.bulletBorderThickness = 3;
+                graph2.bulletBorderColor = "#fcd202";
+                graph2.bulletBorderAlpha = 1;
+                graph2.bulletColor = "#ffffff";
+                graph2.balloonText = "<span style='font-size:9px;'>[[title]] in [[category]]:<b>[[value]]</b> [[additional]]</span>";
+                chart.addGraph(graph2);
+
+                // LEGEND
+                var legend = new AmCharts.AmLegend();
+                legend.useGraphSettings = true;
+                chart.addLegend(legend);
+                // WRITE
+                chart.addTitle("three months (2015.12.16-2016.3.19)");
+                chart.write("chartdiv");
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="chartdiv" style="width:50%; height:400px;"></div>
+    </body>
+
+</html>
