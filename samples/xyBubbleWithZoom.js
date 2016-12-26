@@ -6,7 +6,7 @@ var chartData = [
     "count": 1,
     "index": 36.63,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "AGO",
@@ -14,7 +14,7 @@ var chartData = [
     "count": 1,
     "index": 37.84,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "BEN",
@@ -22,7 +22,7 @@ var chartData = [
     "count": 3,
     "index": 29.24,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "BWA",
@@ -30,7 +30,7 @@ var chartData = [
     "count": 0,
     "index": 22.91,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "BFA",
@@ -38,7 +38,7 @@ var chartData = [
     "count": 1,
     "index": 23.79,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "BDI",
@@ -46,7 +46,7 @@ var chartData = [
     "count": 5,
     "index": 42.39,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "CMR",
@@ -54,7 +54,7 @@ var chartData = [
     "count": 3,
     "index": 39.63,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "CAF",
@@ -62,7 +62,7 @@ var chartData = [
     "count": 5,
     "index": "null",
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "TCD",
@@ -70,7 +70,7 @@ var chartData = [
     "count": 1,
     "index": 40.17,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "DJI",
@@ -78,7 +78,7 @@ var chartData = [
     "count": 1,
     "index": 71.04,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "EGY",
@@ -86,7 +86,7 @@ var chartData = [
     "count": 15,
     "index": 50.17,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "ERI",
@@ -94,7 +94,7 @@ var chartData = [
     "count": 0,
     "index": 84.86,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "ETH",
@@ -102,7 +102,7 @@ var chartData = [
     "count": 1,
     "index": 41.38,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "GAB",
@@ -110,7 +110,7 @@ var chartData = [
     "count": 6,
     "index": 31.38,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "GMB",
@@ -118,7 +118,7 @@ var chartData = [
     "count": 7,
     "index": 44.5,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "GHA",
@@ -126,7 +126,7 @@ var chartData = [
     "count": 5,
     "index": 15.5,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "GIN",
@@ -134,7 +134,7 @@ var chartData = [
     "count": 0,
     "index": 32.56,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "GNB",
@@ -142,7 +142,7 @@ var chartData = [
     "count": 0,
     "index": 28.7,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "KEN",
@@ -150,7 +150,7 @@ var chartData = [
     "count": 12,
     "index": 32.07,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "LSO",
@@ -158,7 +158,7 @@ var chartData = [
     "count": 0,
     "index": 28.36,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "LBR",
@@ -166,7 +166,7 @@ var chartData = [
     "count": 1,
     "index": 30.78,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "MDG",
@@ -174,7 +174,7 @@ var chartData = [
     "count": 1,
     "index": 27.43,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "MWI",
@@ -182,7 +182,7 @@ var chartData = [
     "count": 0,
     "index": 26.41,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "MLI",
@@ -190,7 +190,7 @@ var chartData = [
     "count": 0,
     "index": 36.33,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "MRT",
@@ -198,7 +198,7 @@ var chartData = [
     "count": 0,
     "index": 25.27,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "MAR",
@@ -206,7 +206,7 @@ var chartData = [
     "count": 3,
     "index": 39.19,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "MOZ",
@@ -214,7 +214,7 @@ var chartData = [
     "count": 3,
     "index": 29.98,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "NAM",
@@ -222,7 +222,7 @@ var chartData = [
     "count": 0,
     "index": 12.5,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "NER",
@@ -230,7 +230,7 @@ var chartData = [
     "count": 4,
     "index": 23.85,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "NGA",
@@ -238,7 +238,7 @@ var chartData = [
     "count": 28,
     "index": 34.09,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "COG",
@@ -246,7 +246,7 @@ var chartData = [
     "count": 0,
     "index": 44.31,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "RWA",
@@ -254,7 +254,7 @@ var chartData = [
     "count": 0,
     "index": 56.57,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "SEN",
@@ -262,7 +262,7 @@ var chartData = [
     "count": 4,
     "index": 27.77,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "SLE",
@@ -270,7 +270,7 @@ var chartData = [
     "count": 0,
     "index": 28.47,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "SOM",
@@ -278,7 +278,7 @@ var chartData = [
     "count": 15,
     "index": 72.31,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "ZAF",
@@ -286,7 +286,7 @@ var chartData = [
     "count": 12,
     "index": 22.06,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "SSD",
@@ -294,7 +294,7 @@ var chartData = [
     "count": 14,
     "index": 38.04,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "SDN",
@@ -302,7 +302,7 @@ var chartData = [
     "count": 4,
     "index": 72.34,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "SWZ",
@@ -310,7 +310,7 @@ var chartData = [
     "count": 1,
     "index": 47.28,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "TGO",
@@ -318,7 +318,7 @@ var chartData = [
     "count": 0,
     "index": 28.5,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "TUN",
@@ -326,7 +326,7 @@ var chartData = [
     "count": 3,
     "index": 38.68,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "UGA",
@@ -334,7 +334,7 @@ var chartData = [
     "count": 6,
     "index": 31.65,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "TZA",
@@ -342,7 +342,7 @@ var chartData = [
     "count": 0,
     "index": 28.09,
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "ESH",
@@ -350,7 +350,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "Africa",
-    "color": "#FFDCB9"
+    "color": "#0000ff"
   },
   {
     "code": "YEM",
@@ -358,7 +358,7 @@ var chartData = [
     "count": 8,
     "index": 66.36,
     "continent": "Africa",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "ZAR",
@@ -366,7 +366,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "Africa",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "ZMB",
@@ -374,7 +374,7 @@ var chartData = [
     "count": 4,
     "index": 34.35,
     "continent": "Africa",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "ZWE",
@@ -382,7 +382,7 @@ var chartData = [
     "count": 8,
     "index": 39.19,
     "continent": "Africa",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "AFG",
@@ -390,7 +390,7 @@ var chartData = [
     "count": 13,
     "index": 37.44,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "AIA",
@@ -398,7 +398,7 @@ var chartData = [
     "count": 28,
     "index": 17.03,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "BHR",
@@ -406,7 +406,7 @@ var chartData = [
     "count": 0,
     "index": 58.69,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "BGD",
@@ -414,7 +414,7 @@ var chartData = [
     "count": 0,
     "index": 42.95,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "BTN",
@@ -422,7 +422,7 @@ var chartData = [
     "count": 0,
     "index": 32.65,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "BRN",
@@ -430,7 +430,7 @@ var chartData = [
     "count": 0,
     "index": 36.76,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "KHM",
@@ -438,7 +438,7 @@ var chartData = [
     "count": 1,
     "index": 40.99,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "COM",
@@ -446,7 +446,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "COK",
@@ -454,7 +454,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "TMP",
@@ -462,7 +462,7 @@ var chartData = [
     "count": 0,
     "index": 32.63,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "FJI",
@@ -470,7 +470,7 @@ var chartData = [
     "count": 1,
     "index": 31.28,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "GUF",
@@ -478,7 +478,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "IND",
@@ -486,7 +486,7 @@ var chartData = [
     "count": 19,
     "index": 40.49,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "IDN",
@@ -494,7 +494,7 @@ var chartData = [
     "count": 22,
     "index": 40.75,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "IRN",
@@ -502,7 +502,7 @@ var chartData = [
     "count": 9,
     "index": 72.32,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "IRQ",
@@ -510,7 +510,7 @@ var chartData = [
     "count": 22,
     "index": 47.76,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "ISR",
@@ -518,7 +518,7 @@ var chartData = [
     "count": 5,
     "index": 32.09,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "JPN",
@@ -526,7 +526,7 @@ var chartData = [
     "count": 85,
     "index": 26.95,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "JOR",
@@ -534,7 +534,7 @@ var chartData = [
     "count": 1,
     "index": 42.07,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "KAZ",
@@ -542,7 +542,7 @@ var chartData = [
     "count": 1,
     "index": 53.46,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "KIR",
@@ -550,7 +550,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "KOR",
@@ -558,7 +558,7 @@ var chartData = [
     "count": 6,
     "index": 26.55,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "KWT",
@@ -566,7 +566,7 @@ var chartData = [
     "count": 1,
     "index": 30.84,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "KGZ",
@@ -574,7 +574,7 @@ var chartData = [
     "count": 1,
     "index": 30.69,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "LAO",
@@ -582,7 +582,7 @@ var chartData = [
     "count": 4,
     "index": "null",
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "LBN",
@@ -590,7 +590,7 @@ var chartData = [
     "count": 1,
     "index": 31.81,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "LBY",
@@ -598,7 +598,7 @@ var chartData = [
     "count": 14,
     "index": 45.99,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "MYS",
@@ -606,7 +606,7 @@ var chartData = [
     "count": 3,
     "index": 43.29,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "MDV",
@@ -614,7 +614,7 @@ var chartData = [
     "count": 0,
     "index": 34.32,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "MHL",
@@ -622,7 +622,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "MNG",
@@ -630,7 +630,7 @@ var chartData = [
     "count": 2,
     "index": 25.25,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "MMR",
@@ -638,7 +638,7 @@ var chartData = [
     "count": 15,
     "index": 42.08,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "NPL",
@@ -646,7 +646,7 @@ var chartData = [
     "count": 0,
     "index": 32.71,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "NCL",
@@ -654,7 +654,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "NZL",
@@ -662,7 +662,7 @@ var chartData = [
     "count": 8,
     "index": 10.06,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "PRK",
@@ -670,7 +670,7 @@ var chartData = [
     "count": 31,
     "index": 83.25,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "OMN",
@@ -678,7 +678,7 @@ var chartData = [
     "count": 0,
     "index": 38.83,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "PAK",
@@ -686,7 +686,7 @@ var chartData = [
     "count": 12,
     "index": 50.46,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "PNG",
@@ -694,7 +694,7 @@ var chartData = [
     "count": 3,
     "index": 25.87,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "PHL",
@@ -702,7 +702,7 @@ var chartData = [
     "count": 32,
     "index": 41.19,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "QAT",
@@ -710,7 +710,7 @@ var chartData = [
     "count": 0,
     "index": 35.35,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "SAU",
@@ -718,7 +718,7 @@ var chartData = [
     "count": 6,
     "index": 59.41,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "SGP",
@@ -726,7 +726,7 @@ var chartData = [
     "count": 6,
     "index": 45.87,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "SLB",
@@ -734,7 +734,7 @@ var chartData = [
     "count": 2,
     "index": "null",
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "LKA",
@@ -742,7 +742,7 @@ var chartData = [
     "count": 2,
     "index": 60.28,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "SYR",
@@ -750,7 +750,7 @@ var chartData = [
     "count": 40,
     "index": 77.29,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "TJK",
@@ -758,7 +758,7 @@ var chartData = [
     "count": 0,
     "index": 36.19,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "THA",
@@ -766,7 +766,7 @@ var chartData = [
     "count": 11,
     "index": 40.07,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "TUR",
@@ -774,7 +774,7 @@ var chartData = [
     "count": 34,
     "index": 44.16,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "TKM",
@@ -782,7 +782,7 @@ var chartData = [
     "count": 0,
     "index": 80.83,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "TUV",
@@ -790,7 +790,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "ARE",
@@ -798,7 +798,7 @@ var chartData = [
     "count": 1,
     "index": 36.73,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "UZB",
@@ -806,7 +806,7 @@ var chartData = [
     "count": 1,
     "index": 61.14,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "VUT",
@@ -814,7 +814,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "VNM",
@@ -822,7 +822,7 @@ var chartData = [
     "count": 10,
     "index": 72.63,
     "continent": "Asian",
-    "color": "#00BB00"
+    "color": "#ff0000"
   },
   {
     "code": "CHN",
@@ -830,7 +830,7 @@ var chartData = [
     "count": 42,
     "index": 73.55,
     "continent": "Cross-strait",
-    "color": "#EA0000"
+    "color": "#ffff00"
   },
   {
     "code": "TWN",
@@ -838,7 +838,7 @@ var chartData = [
     "count": 37,
     "index": 24.83,
     "continent": "Cross-strait",
-    "color": "#EA0000"
+    "color": "#ffff00"
   },
   {
     "code": "ALB",
@@ -846,7 +846,7 @@ var chartData = [
     "count": 0,
     "index": 28.77,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "AND",
@@ -854,7 +854,7 @@ var chartData = [
     "count": 0,
     "index": 19.87,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "ARM",
@@ -862,7 +862,7 @@ var chartData = [
     "count": 0,
     "index": 28.43,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "AUS",
@@ -870,7 +870,7 @@ var chartData = [
     "count": 16,
     "index": 10.85,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "AZE",
@@ -878,7 +878,7 @@ var chartData = [
     "count": 0,
     "index": 58.41,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "BLR",
@@ -886,7 +886,7 @@ var chartData = [
     "count": 1,
     "index": 47.98,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "BEL",
@@ -894,7 +894,7 @@ var chartData = [
     "count": 71,
     "index": 11.98,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "BIH",
@@ -902,7 +902,7 @@ var chartData = [
     "count": 0,
     "index": 27.51,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "BGR",
@@ -910,7 +910,7 @@ var chartData = [
     "count": 2,
     "index": 32.91,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "HRV",
@@ -918,7 +918,7 @@ var chartData = [
     "count": 2,
     "index": 26.12,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "CYP",
@@ -926,7 +926,7 @@ var chartData = [
     "count": 0,
     "index": 16.52,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "CZE",
@@ -934,7 +934,7 @@ var chartData = [
     "count": 0,
     "index": 11.62,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "DNK",
@@ -942,7 +942,7 @@ var chartData = [
     "count": 3,
     "index": 8.24,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "EST",
@@ -950,7 +950,7 @@ var chartData = [
     "count": 1,
     "index": 11.19,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "FIN",
@@ -958,7 +958,7 @@ var chartData = [
     "count": 1,
     "index": 7.52,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "FRA",
@@ -966,7 +966,7 @@ var chartData = [
     "count": 63,
     "index": 21.15,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "GEO",
@@ -974,7 +974,7 @@ var chartData = [
     "count": 0,
     "index": 27.7,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "DEU",
@@ -982,7 +982,7 @@ var chartData = [
     "count": 59,
     "index": 11.47,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "GIB",
@@ -990,7 +990,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "GRC",
@@ -998,7 +998,7 @@ var chartData = [
     "count": 14,
     "index": 31.01,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "GRL",
@@ -1006,7 +1006,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "HUN",
@@ -1014,7 +1014,7 @@ var chartData = [
     "count": 5,
     "index": 27.44,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "ISL",
@@ -1022,7 +1022,7 @@ var chartData = [
     "count": 3,
     "index": 13.87,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "IRL",
@@ -1030,7 +1030,7 @@ var chartData = [
     "count": 0,
     "index": 11.2,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "ITA",
@@ -1038,7 +1038,7 @@ var chartData = [
     "count": 22,
     "index": 27.94,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "LVA",
@@ -1046,7 +1046,7 @@ var chartData = [
     "count": 0,
     "index": 71.25,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "LIE",
@@ -1054,7 +1054,7 @@ var chartData = [
     "count": 0,
     "index": 17.67,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "LTU",
@@ -1062,7 +1062,7 @@ var chartData = [
     "count": 0,
     "index": 18.8,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "LUX",
@@ -1070,7 +1070,7 @@ var chartData = [
     "count": 2,
     "index": 13.61,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "MKD",
@@ -1078,7 +1078,7 @@ var chartData = [
     "count": 2,
     "index": 36.26,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "MCO",
@@ -1086,7 +1086,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "MNE",
@@ -1094,7 +1094,7 @@ var chartData = [
     "count": 1,
     "index": 34.63,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "NLD",
@@ -1102,7 +1102,7 @@ var chartData = [
     "count": 13,
     "index": 9.22,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "NOR",
@@ -1110,7 +1110,7 @@ var chartData = [
     "count": 5,
     "index": 7.75,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "POL",
@@ -1118,7 +1118,7 @@ var chartData = [
     "count": 5,
     "index": 12.71,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "PRT",
@@ -1126,7 +1126,7 @@ var chartData = [
     "count": 1,
     "index": 17.11,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "SRB",
@@ -1134,7 +1134,7 @@ var chartData = [
     "count": 0,
     "index": 27.66,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "ROU",
@@ -1142,7 +1142,7 @@ var chartData = [
     "count": 1,
     "index": 24.9,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "RUS",
@@ -1150,7 +1150,7 @@ var chartData = [
     "count": 34,
     "index": 44.97,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "SVK",
@@ -1158,7 +1158,7 @@ var chartData = [
     "count": 0,
     "index": 11.66,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "SVN",
@@ -1166,7 +1166,7 @@ var chartData = [
     "count": 2,
     "index": 20.55,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "ESP",
@@ -1174,7 +1174,7 @@ var chartData = [
     "count": 15,
     "index": 19.95,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "SWE",
@@ -1182,7 +1182,7 @@ var chartData = [
     "count": 3,
     "index": 9.47,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "CHE",
@@ -1190,7 +1190,7 @@ var chartData = [
     "count": 16,
     "index": 13.85,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "UKR",
@@ -1198,7 +1198,7 @@ var chartData = [
     "count": 8,
     "index": 39.1,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "GBR",
@@ -1206,7 +1206,7 @@ var chartData = [
     "count": 63,
     "index": 20,
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "YUG",
@@ -1214,7 +1214,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "Europe",
-    "color": "#AE00AE"
+    "color": "#ff8000"
   },
   {
     "code": "CAN",
@@ -1222,7 +1222,7 @@ var chartData = [
     "count": 41,
     "index": 10.99,
     "continent": "North America",
-    "color": "#00FFFF"
+    "color": "#8000ff"
   },
   {
     "code": "CYM",
@@ -1230,7 +1230,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "North America",
-    "color": "#00FFFF"
+    "color": "#8000ff"
   },
   {
     "code": "USA",
@@ -1238,7 +1238,7 @@ var chartData = [
     "count": 330,
     "index": 24.41,
     "continent": "North America",
-    "color": "#00FFFF"
+    "color": "#8000ff"
   },
   {
     "code": "ARG",
@@ -1246,7 +1246,7 @@ var chartData = [
     "count": 12,
     "index": 26.11,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "BHS",
@@ -1254,7 +1254,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "BLZ",
@@ -1262,7 +1262,7 @@ var chartData = [
     "count": 1,
     "index": 18.54,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "BOL",
@@ -1270,7 +1270,7 @@ var chartData = [
     "count": 5,
     "index": 31.29,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "BRA",
@@ -1278,7 +1278,7 @@ var chartData = [
     "count": 56,
     "index": 31.93,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "CHL",
@@ -1286,7 +1286,7 @@ var chartData = [
     "count": 4,
     "index": 23,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "COL",
@@ -1294,7 +1294,7 @@ var chartData = [
     "count": 28,
     "index": 39.08,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "CRI",
@@ -1302,7 +1302,7 @@ var chartData = [
     "count": 0,
     "index": 12.26,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "CUB",
@@ -1310,7 +1310,7 @@ var chartData = [
     "count": 15,
     "index": 70.21,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "COD",
@@ -1318,7 +1318,7 @@ var chartData = [
     "count": 7,
     "index": "null",
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "DOM",
@@ -1326,7 +1326,7 @@ var chartData = [
     "count": 2,
     "index": 27.31,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "ECU",
@@ -1334,7 +1334,7 @@ var chartData = [
     "count": 5,
     "index": 33.65,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "SLV",
@@ -1342,7 +1342,7 @@ var chartData = [
     "count": 5,
     "index": "null",
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "GNQ",
@@ -1350,7 +1350,7 @@ var chartData = [
     "count": 0,
     "index": 66.23,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "FLK",
@@ -1358,7 +1358,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "GTM",
@@ -1366,7 +1366,7 @@ var chartData = [
     "count": 4,
     "index": 37.92,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "GUY",
@@ -1374,7 +1374,7 @@ var chartData = [
     "count": 0,
     "index": 27.21,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "HTI",
@@ -1382,7 +1382,7 @@ var chartData = [
     "count": 12,
     "index": 25.08,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "HND",
@@ -1390,7 +1390,7 @@ var chartData = [
     "count": 2,
     "index": "null",
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "JAM",
@@ -1398,7 +1398,7 @@ var chartData = [
     "count": 2,
     "index": 11.18,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "MEX",
@@ -1406,7 +1406,7 @@ var chartData = [
     "count": 18,
     "index": 43.69,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "MDA",
@@ -1414,7 +1414,7 @@ var chartData = [
     "count": 1,
     "index": 27.85,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "NIC",
@@ -1422,7 +1422,7 @@ var chartData = [
     "count": 2,
     "index": 27.94,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "PAN",
@@ -1430,7 +1430,7 @@ var chartData = [
     "count": 8,
     "index": 28.98,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "PRY",
@@ -1438,7 +1438,7 @@ var chartData = [
     "count": 0,
     "index": 33.74,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "PER",
@@ -1446,7 +1446,7 @@ var chartData = [
     "count": 12,
     "index": 31.21,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "PRI",
@@ -1454,7 +1454,7 @@ var chartData = [
     "count": 0,
     "index": "null",
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "SUR",
@@ -1462,7 +1462,7 @@ var chartData = [
     "count": 0,
     "index": 18.2,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "TTO",
@@ -1470,7 +1470,7 @@ var chartData = [
     "count": 0,
     "index": 22.39,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "URY",
@@ -1478,7 +1478,7 @@ var chartData = [
     "count": 0,
     "index": 15.94,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   },
   {
     "code": "VEN",
@@ -1486,7 +1486,7 @@ var chartData = [
     "count": 35,
     "index": 40.61,
     "continent": "South and Central America",
-    "color": "#4A4AFF"
+    "color": "#00ff00"
   }
             ];
 
@@ -1556,5 +1556,5 @@ var chartData = [
                 chart.addChartScrollbar(chartScrollbar);
 */
                 // WRITE
-                chart.write("chartdiv");
+                chart.write("chartdiv-oneY");
             });

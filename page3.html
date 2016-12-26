@@ -152,25 +152,36 @@
 		<!--新聞地圖-->
 		<div id="map" style="width:100%; display:none;">
 			<div style="width:90%; margin-left:5%;">
-				<button class="button" id="oneM">一個月</button>
-				<button class="button" id="threeM">三個月</button>
-				<button class="button" id="oneY">一年</button>
+				<button class="button" id="oneM" onclick="showBlock('oneMd')">一個月</button>
+				<button class="button" id="threeM" onclick="showBlock('threeMd')">三個月</button>
+				<button class="button" id="oneY" onclick="showBlock('oneYd')">一年</button>
 				<div class="buttonLine"></div>
-				<img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');" onclick="fancyboximg(600, 450, 'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-1.png','這是圖說');" />
+				<img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');" onclick="fancyboximg(600, 400, 'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-1.png','這是圖說');" />
 				<div class="tipBar"><p class="tip" id="tip1">產生統計圖表</p></div>
 			</div>
-			<!-- Display Block -->
-			<div style="width:90%;margin:1% 5% 5% 5%;height:100%;background-color:#FFF8D7;padding:5%">
-			<!-- MAP -->
-				<div id="container" class="worldMap"></div>
-			<!-- Scatter plot -->
-				<div id="chartdiv" class="worldMap"></div>
-				<!--<br>
-				<p>文字雲 - 國家出現頻率</p>
-				<img src="./photo/wordcloud-country.png" class="wordCloud"/>
-				<p>文字雲 - 新聞標題關鍵字</p>
-				<img src="./photo/wordcloud-title.png" class="wordCloud"/> -->
+
+			<!-- one Month Display Block -->
+			<div class="displayBlock" id="oneMd">
+				<!-- MAP -->
+				<div id="container1M" class="worldMap"></div>
+				<!-- Scatter plot -->
+				<div id="chartdiv-oneM" class="worldMap"></div>
 			</div>
+			<!-- three Months Display Block -->
+			<div class="displayBlock" id="threeMd">
+				<!-- Map -->
+				<div id="container3M" class="worldMap"></div>
+				<!-- Scatter plot -->
+				<div id="chartdiv-threeM" class="worldMap"></div>
+			</div>
+			<!-- one Year Display Block -->
+			<div class="displayBlock" id="oneYd">
+				<!-- Map -->
+				<div id="container1Y" class="worldMap"></div>
+				<!-- Scatter plot -->
+				<div id="chartdiv-oneY" class="worldMap"></div>
+			</div>
+	
 		</div>
     </div>
     <!-- 劃出display下的線 -->
@@ -198,6 +209,7 @@
 		 	document.getElementById('map').style.display = "block";
 		    changeOpacity('map');
 		}
+		showBlock('oneYd');
 		function showTip(id){
 			if(screen.width < "850")
 				console.log("It's a tablet")
@@ -207,6 +219,12 @@
 			if(screen.width < "850")
 				console.log("850")
 			else document.getElementById(id).style.display = "none";
+		}
+		function showBlock(id){
+			oneM   = document.getElementById('oneMd').style.display = "none";
+			threeM = document.getElementById('threeMd').style.display = "none";
+			oneY   = document.getElementById('oneYd').style.display = "none";
+			document.getElementById(id).style.display = "block";
 		}
 		$('#my_page').fancybox({ 
 		        'scrolling'     : 'no',

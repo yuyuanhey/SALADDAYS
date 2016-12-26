@@ -224,3 +224,11 @@ a:visited{
   height:300px;
   margin:20px;
 }
+.displayBlock{
+  display:none;
+  width:90%;
+  margin:1% 5% 5% 5%;
+  height:100%;
+  background-color:#FFF8D7;
+  padding:5%;
+}

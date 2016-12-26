@@ -5,9 +5,9 @@ var test1 = {"test": [{
   }]};
 var color = ["rgba(255, 0, 0, 1)", "rgba(255, 0, 0, 0.7)", "rgba(255, 0, 0, 0.5)", "rgba(255, 0, 0, 0.3)", "rgba(255, 0, 0, 0.1)"]
 var colors = d3.scale.category20b();
-var dataset = d3.csv("C:/Users/user/desktop/testWorld.csv",function(d){console.log(d);});
+// var dataset = d3.csv("C:/Users/user/desktop/testWorld.csv",function(d){console.log(d);});
 var basic_choropleth = new Datamap({
-		element: document.getElementById("container"),
+		element: document.getElementById("container1Y"),
 		geographyConfig: {
     		highlightBorderColor: '#bada55',
    			popupTemplate: function(geography, data) {
