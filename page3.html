@@ -221,10 +221,31 @@
 			else document.getElementById(id).style.display = "none";
 		}
 		function showBlock(id){
-			oneM   = document.getElementById('oneMd').style.display = "none";
-			threeM = document.getElementById('threeMd').style.display = "none";
-			oneY   = document.getElementById('oneYd').style.display = "none";
+			
+			document.getElementById('oneMd').style.display = "none";
+			document.getElementById('oneM').style.backgroundColor = "#FFE153";
+			document.getElementById('oneM').style.boxShadow = "0 7px #999";
+			document.getElementById('oneM').style.color = "#563d12";
+
+			document.getElementById('threeMd').style.display = "none";
+			document.getElementById('threeM').style.backgroundColor = "#FFE153";
+			document.getElementById('threeM').style.boxShadow = "0 7px #999";
+			document.getElementById('threeM').style.color = "#563d12";
+
+			document.getElementById('oneYd').style.display = "none";
+			document.getElementById('oneY').style.backgroundColor = "#FFE153";
+			document.getElementById('oneY').style.boxShadow = "0 7px #999";
+			document.getElementById('oneY').style.color = "#563d12";
+			
 			document.getElementById(id).style.display = "block";
+
+			var buttonId;
+			if(id == 'oneMd') buttonId = 'oneM';
+			else if(id == 'threeMd') buttonId = 'threeM';
+			else buttonId = 'oneY';
+			document.getElementById(buttonId).style.backgroundColor = "#FFC408";
+			document.getElementById(buttonId).style.boxShadow = "0 4px #666";
+			document.getElementById(buttonId).style.color = "white";
 		}
 		$('#my_page').fancybox({ 
 		        'scrolling'     : 'no',
