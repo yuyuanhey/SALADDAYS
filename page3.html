@@ -6,29 +6,52 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Salad Days</title>
 	<link rel="Shortcut Icon" type="image/x-icon" href="./photo/logo.ico" />
-	<script type="text/javascript" src="./javascript/webpage.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/w3school.css">
 	<link rel="stylesheet" href="./css/webpage.css">
 	<link rel="stylesheet" href="./css/webpage-tablet.css">
 	<link rel="stylesheet" href="./css/webpage-smartphone.css">
-	<link rel="stylesheet" type="text/css" href="./css/fancybox.css" media="screen"></link>
-	<!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script> -->
+	
+	
+	<!-- JavaScript -->
 	<script type="text/javascript" src="./javascript/topojson.min.js"></script>
 	<script type="text/javascript" src="./javascript/d3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script type="text/javascript" src="./javascript/fancybox.js"></script>
+	
     <script src="./amcharts/amcharts.js" type="text/javascript"></script>
     <script src="./amcharts/xy.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./javascript/webpage.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script> -->
 	<script type="text/javascript" src="https://yuyuanhey.github.io/SALADDAYS/datamaps-master/dist/datamaps.world.min.js"></script>
+	
+	<style>
+		.mySlides {display:none}
+		.pic{
+			width:100%;
+			margin-bottom:50px;
+			margin-top:50px;
+			/*margin-left:18%;*/
+		}
+		.btn{
+			width:50px;
+			display:inline-block;
+		}
+		.red{
+			background-color: red;
+		}
+	</style>
 </head>
 
 <body>
 	<div class="logoBar">
-		<a href="page1.html">
+		<a href="https://yuyuanhey.github.io/SALADDAYS/page1.html">
 		<img src="./photo/logo.jpg" class="fa w3-spin logo"/>
 		</a>
 	</div>
@@ -56,7 +79,15 @@
 	    	  </div>
 	    	</li>
 	    	<!-- <li class="icon-width SPdelete">&nbsp;</li> -->
-	    	
+	    	    <!-- 劃出display下的線 -->
+			<li>
+		    	<!-- FB logo -->
+		    	<a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook iconSetting"></i></a>
+		    </li>
+		    <li>
+		    	<!-- Email logo -->
+		    	<a href="mailto:b04705004@ntu.edu.tw" title="Connect with us!"><i class="fa fa-envelope-o iconSetting"></i></a>
+			</li>
 		</ul>
 	  <!-- 劃出nav下的線 -->
 	  <div class="line"></div>
@@ -152,13 +183,117 @@
 		<!--新聞地圖-->
 		<div id="map" style="width:100%; display:none;">
 			<div style="width:90%; margin-left:5%;">
-				<button class="button" id="oneM" onclick="showBlock('oneMd')">一個月</button>
-				<button class="button" id="threeM" onclick="showBlock('threeMd')">三個月</button>
-				<button class="button" id="oneY" onclick="showBlock('oneYd')">一年</button>
-				<div class="buttonLine"></div>
-				<img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');" onclick="showGallery();">
-				<!-- <img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');" onclick="fancyboximg(600, 400, 'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-1.png','這是圖說');" /> -->
-				<div class="tipBar"><p class="tip" id="tip1">產生統計圖表</p></div>
+				<div class="myButton" id="oneM" onclick="showBlock('oneMd')">一個月</div>
+				<div class="myButton" id="threeM" onclick="showBlock('threeMd')">三個月</div>
+				<div class="myButton" id="oneY" onclick="showBlock('oneYd')">一年</div>
+				<!-- <div class="myButtonLine"></div> -->
+
+		<!-- Panel oneMonth-->
+				<div data-role="panel" id="pushPanel1M" data-display="push" data-dismissible="false" data-position-fixed="true"  data-position="right"> 
+				  	<a href="page3.html" data-rel="close" style="text-align:left; margin-left:80%;"><i class="fa fa-close" style="font-size:20px"></i></a>
+				    <div class="w3-content w3-center" style="max-width:500px; margin-top:-20px">
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-1.png','');">
+				    		<img class="mySlides pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-1.png">
+				    	</div>
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-2.png','');">
+				    		<img class="mySlides pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-2.png">
+				    	</div>
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-3.png','');">
+				    		<img class="mySlides pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-3.png">
+				    	</div>
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-4.png','');">
+				    		<img class="mySlides pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-4.png">
+				    	</div>
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-5.png','');">
+				    		<img class="mySlides pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-5.png">
+				    	</div>
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-6.png','');">
+				    		<img class="mySlides pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-6.png">
+				    	</div>
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-7.png','');">
+				    		<img class="mySlides pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-7.png">
+				    	</div>
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-8.png','');">
+				    		<img class="mySlides pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-8.png">
+				    	</div>
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-9.png','');">
+				    		<img class="mySlides pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-9.png">
+				    	</div>
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-10.png','');">
+				    		<img class="mySlides pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-10.png">
+				    	</div>
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-11.png','');">
+				    		<img class="mySlides pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-11.png">
+				    	</div>
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-12.png','');">
+				    		<img class="mySlides pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-12.png">
+				    	</div>
+					</div>
+
+					<div class="w3-center">
+						<div class="demo btn" onclick="currentDiv(1);">1</div>
+						<div class="demo btn" onclick="currentDiv(2);">2</div>
+						<div class="demo btn" onclick="currentDiv(3);">3</div>
+						<div class="demo btn" onclick="currentDiv(4);">4</div>
+						<div class="demo btn" onclick="currentDiv(5);">5</div>
+						<div class="demo btn" onclick="currentDiv(6);">6</div>
+						<div class="demo btn" onclick="currentDiv(7);">7</div>
+						<div class="demo btn" onclick="currentDiv(8);">8</div>
+						<div class="demo btn" onclick="currentDiv(9);">9</div>
+						<div class="demo btn" onclick="currentDiv(10);">10</div>
+						<div class="demo btn" onclick="currentDiv(11);">11</div>
+						<div class="demo btn" onclick="currentDiv(12);">12</div>
+					</div>
+				  </div>
+	<!-- Panel oneMonth End -->
+
+	<!-- Panel three Month-->
+				<div data-role="panel" id="pushPanel3M" data-display="push" data-dismissible="false" data-position-fixed="true"  data-position="right"> 
+				  	<a href="page3.html" data-rel="close" style="text-align:left; margin-left:80%;"><i class="fa fa-close" style="font-size:20px"></i></a>
+				    <div class="w3-content w3-center" style="max-width:500px; margin-top:-20px">
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-1.png','');">
+				    		<img class="mySlides2 pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-1.png">
+				    	</div>
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-2.png','');">
+				    		<img class="mySlides2 pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-2.png">
+				    	</div>
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-3.png','');">
+				    		<img class="mySlides2 pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-3.png">
+				    	</div>
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-4.png','');">
+				    		<img class="mySlides2 pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-4.png">
+				    	</div>
+					</div>
+
+					<div class="w3-center">
+						<div class="demo2 btn" onclick="currentDiv2(1);">1</div>
+						<div class="demo2 btn" onclick="currentDiv2(2);">2</div>
+						<div class="demo2 btn" onclick="currentDiv2(3);">3</div>
+						<div class="demo2 btn" onclick="currentDiv2(4);">4</div>
+					</div>
+				</div>
+	<!-- Panel Three months end -->
+	
+	<!-- Panel one Year-->
+				<div data-role="panel" id="pushPanel1Y" data-display="push" data-dismissible="false" data-position-fixed="true"  data-position="right"> 
+				  	<a href="page3.html" data-rel="close" style="text-align:left; margin-left:80%;"><i class="fa fa-close" style="font-size:20px"></i></a>
+				    <div class="w3-content w3-center" style="max-width:500px; margin-top:-20px">
+				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1Y.png','');">
+				    		<img class="pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/1Y.png">
+				    	</div>
+					</div>
+				</div>
+	<!-- Panel one Year end -->
+
+				<!-- 點擊出現圖表 -->
+				 <!-- class="ui-btn ui-btn-inline ui-corner-all ui-shadow" -->
+				<a href="#pushPanel1M" id="oneMP"><img src="./photo/bars-chart.png" class="myButton2"></a>
+				<a href="#pushPanel3M" id="threeMP"><img src="./photo/bars-chart.png" class="myButton2"></a>
+				<a href="#pushPanel1Y" id="oneYP"><img src="./photo/bars-chart.png" class="myButton2"></a>
+
+
+				<!-- <img src="./photo/bars-chart.png" class="myButton2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');" onclick="fancyboximg(600, 400, 'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-1.png','這是圖說');" /> -->
+				<!-- <div class="tipBar"><p class="tip" id="tip1">產生統計圖表</p></div> -->
 			</div>
 
 			<!-- one Month Display Block -->
@@ -185,20 +320,7 @@
 	
 		</div>
     </div>
-    <!-- 劃出display下的線 -->
-    <div style="width:90%; margin-left:5%; margin-bottom:20px">
-		<div class="line SPdelete"></div>
-		<ul class="w3-navbar" style="margin-left:40%">
-			<li class="SPdelete">
-		    	<!-- FB logo -->
-		    	<a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook iconSetting"></i></a>
-		    	</li>
-		    	<li class="SPdelete">
-		    	<!-- Email logo -->
-		    	<a href="mailto:b04705004@ntu.edu.tw" title="Connect with us!"><i class="fa fa-envelope-o iconSetting"></i></a>
-			</li>
-		</ul>
-	</div>
+
     <script>
 		target1 = document.getElementById('target1').style.display == 'none';
 		target2 = document.getElementById('target2').style.display == 'none';
@@ -227,78 +349,123 @@
 			document.getElementById('oneM').style.backgroundColor = "#FFE153";
 			document.getElementById('oneM').style.boxShadow = "0 7px #999";
 			document.getElementById('oneM').style.color = "#563d12";
+			document.getElementById('oneMP').style.display = "none";
 
 			document.getElementById('threeMd').style.display = "none";
 			document.getElementById('threeM').style.backgroundColor = "#FFE153";
 			document.getElementById('threeM').style.boxShadow = "0 7px #999";
 			document.getElementById('threeM').style.color = "#563d12";
+			document.getElementById('threeMP').style.display = "none";
 
 			document.getElementById('oneYd').style.display = "none";
 			document.getElementById('oneY').style.backgroundColor = "#FFE153";
 			document.getElementById('oneY').style.boxShadow = "0 7px #999";
 			document.getElementById('oneY').style.color = "#563d12";
+			document.getElementById('oneYP').style.display = "none";
 			
 			document.getElementById(id).style.display = "block";
 
 			var buttonId;
-			if(id == 'oneMd') buttonId = 'oneM';
-			else if(id == 'threeMd') buttonId = 'threeM';
-			else buttonId = 'oneY';
+			if(id == 'oneMd'){
+				buttonId = 'oneM';
+				document.getElementById('oneMP').style.display = "inline-block";
+			}
+			else if(id == 'threeMd'){
+				buttonId = 'threeM';
+				document.getElementById('threeMP').style.display = "inline-block";
+			}
+			else{
+				buttonId = 'oneY';
+				document.getElementById('oneYP').style.display = "inline-block";
+			}
 			document.getElementById(buttonId).style.backgroundColor = "#FFC408";
 			document.getElementById(buttonId).style.boxShadow = "0 4px #666";
 			document.getElementById(buttonId).style.color = "white";
 		}
-		function showGallery(){
-			oneM = document.getElementById('oneMd').style.display == "none";
-			threeM = document.getElementById('threeMd').style.display == "none";
-			oneY = document.getElementById('oneYd').style.display == "none";
-			if(!oneM){
-				
-			}
-			else if(!threeM){
-
-			}
-			else{
-
-			}
+		//slideShow
+		var slideIndex = 1;
+		showDivs(slideIndex);
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
 		}
-		$('#my_page').fancybox({ 
-		        'scrolling'     : 'no',
-		        'overlayOpacity': 0.1,
-		        'showCloseButton'   : false,
-		        'content' : '<p>your html here</p>'
-		});
-		function fancyboximg(w0321, h0321, s0321, t0321) {
-			if(screen.width < "700"){
-				w0321 = w0321 * 0.6;
-				h0321 = h0321 * 0.6;
-			}
-			$.fancybox({
-				fitToView: false,
-				beforeShow: function () {
-					this.width = w0321;
-					this.height = h0321;
-				},
-				href: s0321,
-				title: t0321,
-				type: 'image',
-				padding: 5,
-				openEffect: 'elastic',
-				preload: true
-				});
-		};
-		/*if(screen.width <= "700"){
-			oneM = document.getElementById("oneM");
-			threeM = document.getElementById("threeM");
-			oneY = document.getElementById("oneY");
-			oneM.innerHTML = "一個月";
-			threeM.innerHTML = "三個月";
-			oneY.innerHTML = "一年";
-		}*/
+		function currentDiv(n) {
+		  showDivs(slideIndex = n);
+		}
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		     dots[i].className = dots[i].className.replace(" w3-red", "");
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " w3-red";
+		}
+
+		var slideIndex2 = 1;
+		showDivs2(slideIndex2);
+		function currentDiv2(n) {
+		  showDivs2(slideIndex2 = n);
+		}
+		function showDivs2(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides2");
+		  var dots = document.getElementsByClassName("demo2");
+		  if (n > x.length) {slideIndex2 = 1}    
+		  if (n < 1) {slideIndex2 = x.length}
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		     dots[i].className = dots[i].className.replace(" w3-red", "");
+		  }
+		  x[slideIndex2-1].style.display = "block";  
+		  dots[slideIndex2-1].className += " w3-red";
+		}
+
+
     </script>
 </body>
 <script type="text/javascript" src="world1.js"></script>
 <script src="./samples/xyBubbleWithZoom.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/fancybox.css" media="screen"></link>
+<script type="text/javascript" src="./javascript/fancybox.js"></script>
+<script>
+$('#my_page').fancybox({ 
+		        'scrolling'     : 'no',
+		        'overlayOpacity': 0.1,
+		        'showCloseButton'   : false,
+		        'content' : '<p>your html here</p>'
+});
+function fancyboximg(w0321, h0321, s0321, t0321) {
+	if(screen.width < "700"){
+		w0321 = w0321 * 0.6;
+		h0321 = h0321 * 0.6;
+	}
+	$.fancybox({
+		fitToView: false,
+		beforeShow: function () {
+			this.width = w0321;
+			this.height = h0321;
+		},
+		href: s0321,
+		title: t0321,
+		type: 'image',
+		padding: 5,
+		openEffect: 'elastic',
+		preload: true
+		});
+};
+</script>
 <style>
+	body{
+		background-color: white;
+	}
 </style>
 </html>

@@ -1488,7 +1488,7 @@ var chartData = [
     "continent": "South and Central America",
     "color": "#00ff00"
   }
-            ];
+];
 
             AmCharts.ready(function () {
                 // XY Chart
@@ -1503,7 +1503,7 @@ var chartData = [
                 xAxis.title = "新聞數";
                 xAxis.position = "bottom";
                 xAxis.axisAlpha = 0;
-                xAxis.minMaxMultiplayer = 0.8;
+                xAxis.minMaxMultiplayer = 10;
                 chart.addValueAxis(xAxis);
 
                 // Y
@@ -1515,46 +1515,25 @@ var chartData = [
                 chart.addValueAxis(yAxis);
 
                 // GRAPHS
-                // first graph
                 var graph = new AmCharts.AmGraph();
-                graph.valueField = "count";
-                graph.minBulletSize = 8;
-                graph.maxBulletSize = 100;
+                // graph.valueField = ;
+                graph.minBulletSize = 10;
                 graph.colorField = "color";
-                graph.lineColor = "color";
+                graph.lineColor = "#ccc";
                 graph.xField = "count";
                 graph.yField = "index";
                 graph.lineAlpha = 0;
                 graph.fillAlphas = 0;
-                graph.lineAlpha = 0;
-                // graph.bulletBorderAlpha = 0.2;
-                graph.bulletAlpha = 0.8;
-                graph.bullet = "bubble";
+                graph.bulletAlpha = 1;
+                graph.bullet = "round";
                 graph.balloonText = "<p style='font-size:9px'>country:<b>[[country]]</b><br> in <b>[[continent]]</b><br>index:<b>[[index]]</b> count:<b>[[count]]</b><br></p>";
                 chart.addGraph(graph);
 
-                // second graph
-                /*graph = new AmCharts.AmGraph();
-                graph.valueField = "value2";
-                graph.lineColor = "#fcd202";
-                graph.xField = "x2";
-                graph.yField = "y2";
-                graph.lineAlpha = 0;
-                graph.bullet = "bubble";
-                graph.balloonText = "x:<b>[[x]]</b> y:<b>[[y]]</b><br>value:<b>[[value]]</b>";
-                chart.addGraph(graph);
-*/
                 // CURSOR
                 var chartCursor = new AmCharts.ChartCursor();
                 chartCursor.valueLineBalloonEnabled = true;
                 chart.addChartCursor(chartCursor);
 
-                // SCROLLBAR
-                /*var chartScrollbar = new AmCharts.ChartScrollbar();
-                chartScrollbar.scrollbarHeight = 5;
-                chartScrollbar.offset = 15
-                chart.addChartScrollbar(chartScrollbar);
-*/
                 // WRITE
                 chart.write("chartdiv-oneY");
             });

@@ -224,3 +224,5 @@ function zoomIn(id){
         console.log(id +  " " + document.getElementById(id).style.display);
     }
 }
+
+

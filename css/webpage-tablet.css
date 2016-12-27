@@ -68,7 +68,7 @@
 	 	text-align: center;
 	  	font-size: 18px;
 	}
-	.button {
+	.myButton {
 		/*display: inline-block;*/
 		padding: 10px 10px;
 		/*margin-right:5px;*/
@@ -85,11 +85,11 @@
 		/*border-radius: 15px;*/
 		/*box-shadow: 0 7px #999;*/
 	}
-	.buttonLine{
+	.myButtonLine{
   		display:inline-block;
   		width:20%;
   	}
-	.button2{
+	.myButton2{
 		display: inline-block;
 		padding: 10px 10px;
 		margin-right:5px;

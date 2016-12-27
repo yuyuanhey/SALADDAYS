@@ -30,18 +30,20 @@ a:visited{
 }
 .nav1{
   text-align:center;
-  width:150px;
+  width:130px;
   font-size:18px;
+  font-weight: bold;
+  color:#563d12;
 }
 .icon-width{
   width:0px;
 }
 .iconSetting{
-  font-size: 20px;
+  font-size: 16px;
   text-align:center;
-  width:50px;
-  border-bottom: 0px;
-  padding-top:10px;
+  width:5%;
+  /*border-bottom: 0px;*/
+  /*padding-top:10px;*/
 }
 .navHover:hover{
   font-weight: bold;
@@ -156,14 +158,15 @@ a:visited{
   75% {opacity:0.75;}
   100%{opacity:1;}
 }
-.button {
+.myButton {
   display: inline-block;
-  padding: 10px 10px;
-  margin-right:5px;
+  padding: 7px 7px;
+  margin-right:-10px;
   margin-top: 20px;
+  margin-left:25px;
   /*margin-bottom: 15px;*/
-  width:15%;
-  font-size: 18px;
+  width:8%;
+  font-size: 16px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -173,29 +176,36 @@ a:visited{
   border-radius: 15px;
   box-shadow: 0 7px #999;
 }
-.button:hover {
+.myButton:hover {
   background-color: #FFDC35;
 }
-.button:active {
+.myButton:active {
   background-color: #FFED97;
   box-shadow: 0 4px #666;
   transform: translateY(4px);
   opacity: 0.8;
 }
-.buttonLine{
+.myButtonLine{
   display:inline-block;
   width:40%;
 }
-.button2{
+.myButton2{
   display: inline-block;
   padding: 10px 10px;
   margin-right:5px;
-  margin-top:10px;
-  width:80px;
+  margin-left: 25px;
+  margin-top:-5px;
+  width:60px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
+}
+#threeMP{
+  display:none;
+}
+#oneMP{
+  display:none;
 }
 .tip{
   display:none;
