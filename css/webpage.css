@@ -6,26 +6,17 @@ a:visited{
   color:#563d12;
   font-weight: bold;
 }
-.homeloge:hover{
-  color:#563d12;
-}
 .homepage{
   height:400px;
   animation-duration:10s;
   margin-top:50px;
-  margin-left:35%;
+  margin-left:37%;
   border-radius: 100%;
 }
 .homepageText{
   text-align: center;
   margin-top:50px;
   font-size:24px
-}
-.homepageText:hover{
-  color:#563d12;
-}
-a:hover{
-  color:#563d12;
 }
 .logoBar{
   width:100%;
@@ -204,7 +195,8 @@ a:hover{
   padding: 10px 10px;
   margin-right:5px;
   margin-left: 25px;
-  margin-top:-5px;
+  /*margin-top:-5px;*/
+  margin-bottom:-25px;
   width:60px;
   cursor: pointer;
   text-align: center;
