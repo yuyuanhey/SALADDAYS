@@ -1490,50 +1490,50 @@ var chartData = [
   }
 ];
 
-            AmCharts.ready(function () {
-                // XY Chart
-                chart = new AmCharts.AmXYChart();
+AmCharts.ready(function () {
+    // XY Chart
+    chart = new AmCharts.AmXYChart();
 
-                chart.dataProvider = chartData;
-                chart.startDuration = 1.5;
+    chart.dataProvider = chartData;
+    chart.startDuration = 1.5;
 
-                // AXES
-                // X
-                var xAxis = new AmCharts.ValueAxis();
-                xAxis.title = "新聞數";
-                xAxis.position = "bottom";
-                xAxis.axisAlpha = 0;
-                xAxis.minMaxMultiplayer = 10;
-                chart.addValueAxis(xAxis);
+    // AXES
+    // X
+    var xAxis = new AmCharts.ValueAxis();
+    xAxis.title = "新聞數";
+    xAxis.position = "bottom";
+    xAxis.axisAlpha = 0;
+    xAxis.minMaxMultiplayer = 10;
+    chart.addValueAxis(xAxis);
 
-                // Y
-                var yAxis = new AmCharts.ValueAxis();
-                yAxis.title = "新聞自由指數";
-                yAxis.position = "left";
-                yAxis.minMaxMultiplier = 1;
-                yAxis.axisAlpha = 0;
-                chart.addValueAxis(yAxis);
+    // Y
+    var yAxis = new AmCharts.ValueAxis();
+    yAxis.title = "新聞自由指數";
+    yAxis.position = "left";
+    yAxis.minMaxMultiplier = 1;
+    yAxis.axisAlpha = 0;
+    chart.addValueAxis(yAxis);
 
-                // GRAPHS
-                var graph = new AmCharts.AmGraph();
-                // graph.valueField = ;
-                graph.minBulletSize = 10;
-                graph.colorField = "color";
-                graph.lineColor = "#ccc";
-                graph.xField = "count";
-                graph.yField = "index";
-                graph.lineAlpha = 0;
-                graph.fillAlphas = 0;
-                graph.bulletAlpha = 1;
-                graph.bullet = "round";
-                graph.balloonText = "<p style='font-size:9px'>country:<b>[[country]]</b><br> in <b>[[continent]]</b><br>index:<b>[[index]]</b> count:<b>[[count]]</b><br></p>";
-                chart.addGraph(graph);
+    // GRAPHS
+    var graph = new AmCharts.AmGraph();
+    // graph.valueField = ;
+    graph.minBulletSize = 10;
+    graph.colorField = "color";
+    graph.lineColor = "#ccc";
+    graph.xField = "count";
+    graph.yField = "index";
+    graph.lineAlpha = 0;
+    graph.fillAlphas = 0;
+    graph.bulletAlpha = 1;
+    graph.bullet = "round";
+    graph.balloonText = "<p style='font-size:9px'>country:<b>[[country]]</b><br> in <b>[[continent]]</b><br>index:<b>[[index]]</b> count:<b>[[count]]</b><br></p>";
+    chart.addGraph(graph);
 
-                // CURSOR
-                var chartCursor = new AmCharts.ChartCursor();
-                chartCursor.valueLineBalloonEnabled = true;
-                chart.addChartCursor(chartCursor);
+    // CURSOR
+    var chartCursor = new AmCharts.ChartCursor();
+    chartCursor.valueLineBalloonEnabled = true;
+    chart.addChartCursor(chartCursor);
 
-                // WRITE
-                chart.write("chartdiv-oneY");
-            });
+    // WRITE
+    chart.write("xyBubbles");
+});
