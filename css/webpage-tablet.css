@@ -89,7 +89,7 @@
   		display:inline-block;
   		width:20%;
   	}
-	.myButton2{
+	/*.myButton2{
 		display: inline-block;
 		padding: 10px 10px;
 		margin-right:5px;
@@ -99,7 +99,7 @@
 		text-align: center;
 		text-decoration: none;
 		outline: none;
-	}
+	}*/
 	.worldMap{
 		position:relative;
 		height:300px;
