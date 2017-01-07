@@ -184,9 +184,9 @@
 		<!--新聞地圖-->
 		<div id="map" style="width:100%; display:none;">
 			<div style="width:90%; margin-left:5%;">
-				<!-- <div class="myButton" id="oneM" onclick="showBlock('oneMd')">一個月</div> -->
-				<!-- <div class="myButton" id="threeM" onclick="showBlock('threeMd')">三個月</div> -->
-				<!-- <div class="myButton" id="oneY" onclick="showBlock('oneYd')">一年</div> -->
+				<div class="myButton" id="oneM" onclick="showBlock('oneMd')">搜尋新聞</div>
+				<div class="myButton" id="threeM" onclick="showBlock('threeMd')">統計圖表</div>
+				<div class="myButton" id="oneY" onclick="showBlock('oneYd')">補充圖表</div>
 				<!-- <div class="myButtonLine"></div> -->
 
 		<!-- Panel oneMonth-->
@@ -248,71 +248,32 @@
 				  </div>
 	<!-- Panel oneMonth End -->
 
-	<!-- Panel three Month-->
-	<!--
-				<div data-role="panel" id="pushPanel3M" data-display="push" data-dismissible="false" data-position-fixed="true"  data-position="right"> 
-				  	<a href="page3.html" data-rel="close" style="text-align:left; margin-left:80%;"><i class="fa fa-close" style="font-size:20px"></i></a>
-				    <div class="w3-content w3-center" style="max-width:500px; margin-top:-20px">
-				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-1.png','');">
-				    		<img class="mySlides2 pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-1.png">
-				    	</div>
-				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-2.png','');">
-				    		<img class="mySlides2 pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-2.png">
-				    	</div>
-				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-3.png','');">
-				    		<img class="mySlides2 pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-3.png">
-				    	</div>
-				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-4.png','');">
-				    		<img class="mySlides2 pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/3M-4.png">
-				    	</div>
-					</div>
-
-					<div class="w3-center">
-						<div class="demo2 btn" onclick="currentDiv2(1);">1</div>
-						<div class="demo2 btn" onclick="currentDiv2(2);">2</div>
-						<div class="demo2 btn" onclick="currentDiv2(3);">3</div>
-						<div class="demo2 btn" onclick="currentDiv2(4);">4</div>
-					</div>
-				</div>
-				-->
-	<!-- Panel Three months end -->
-	
-	<!-- Panel one Year-->
-	<!--
-				<div data-role="panel" id="pushPanel1Y" data-display="push" data-dismissible="false" data-position-fixed="true"  data-position="right"> 
-				  	<a href="page3.html" data-rel="close" style="text-align:left; margin-left:80%;"><i class="fa fa-close" style="font-size:20px"></i></a>
-				    <div class="w3-content w3-center" style="max-width:500px; margin-top:-20px">
-				    	<div onclick=" fancyboximg(600,450,'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1Y.png','');">
-				    		<img class="pic" src="https://yuyuanhey.github.io/SALADDAYS/photo/chart/1Y.png">
-				    	</div>
-					</div>
-				</div>
-			-->
-	<!-- Panel one Year end -->
-
-				<!-- 點擊出現圖表 -->
-				 <!-- class="ui-btn ui-btn-inline ui-corner-all ui-shadow" -->
-				<!-- <a href="#pushPanel3M" id="threeMP"><img src="./photo/bars-chart.png" class="myButton2"></a> -->
-				<!-- <a href="#pushPanel1Y" id="oneYP"><img src="./photo/bars-chart.png" class="myButton2"></a> -->
-
-
-				<!-- <img src="./photo/bars-chart.png" class="myButton2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');" onclick="fancyboximg(600, 400, 'https://yuyuanhey.github.io/SALADDAYS/photo/chart/1M-1.png','這是圖說');" /> -->
-				<!-- <div class="tipBar"><p class="tip" id="tip1">產生統計圖表</p></div> -->
 			</div>
 
+<!-- 搜尋新聞 -->
+ 			<div  id="oneMd" style="display: block">
+				<select id="mySelect" class="w3-select selection" name="option" data-role="none">
+				<!-- disabled selected -->
+					<option value="" disabled selected>選擇篩選時間</option>
+					<option value="1">年</option>
+					<option value="2">月</option>
+					<option value="3">日</option>
+				</select>
+				<input type="text" id="myInput" onkeyup="myFunction()" placeholder="輸入關鍵字" title="Type in a name" style="display: inline-block;" data-role="none">
+				
+				<select id="mySelect2" class="w3-select selection" name="option" data-role="none" style="margin: 40px 0px 12px 40px;">
+					<option value="" disabled selected>選擇篩選條件</option>
+					<option value="4">地區</option>
+					<option value="5">國家</option>
+					<option value="6">標題</option>
+				</select>
+				<input type="text" id="myInput2" onkeyup="myFunction()" placeholder="輸入關鍵字" title="Type in a name" style="display: inline-block;" data-role="none">
+				<div style="margin-left:12%;font-size:16px" id="tableCount">新聞總數 : 1857</div>
+				<table id="myTable" class="w3-table w3-bordered w3-margin-top w3-border"></table>
+			</div>
 
-<!-- 			<div class="displayBlock" id="oneMd">
-				<div id="container1M" class="worldMap"></div>
-				<div id="chartdiv-oneM" class="worldMap"></div>
-			</div>
-			<div class="displayBlock" id="threeMd">
-				<div id="container3M" class="worldMap"></div>
-				<div id="chartdiv-threeM" class="worldMap"></div>
-			</div>
--->
-			<!-- one Year Display Block -->
-			<div class="displayBlock" id="oneYd" style="display: block">
-				<!-- <span>TestTESTSETSE123213</span> -->
+<!-- 統計圖表 -->
+			<div class="displayBlock" id="threeMd" style="display: block">
 				<div class="subtitle2">圖表一的標題</div>
 				<div id="countInMonth" class="worldMap"></div>
 				<div class="text2">圖表一的解釋</div>
@@ -322,12 +283,14 @@
 				<div id="sixContinent" class="worldMap"></div>
 				<div class="text2">圖表二的解釋</div>
 
-				<!-- Map -->
 				<div class="subtitle2">圖表三的標題</div>
 				<div id="container1Y" class="worldMap"></div>
 				<div class="text2">圖表三的解釋</div>
+			</div>
 
-				<!-- Scatter plot -->
+<!-- 補充圖表 -->
+			<div class="displayBlock" id="oneYd" style="display: block">
+			<!-- Scatter plot -->
 				<div class="subtitle2">散布圖的標題</div>
 				<div id="xyBubbles" class="worldMap"></div>
 				<div class="text2">散布圖的解釋</div>
@@ -346,8 +309,7 @@
 		if(target1 && target2 && target3 && vedio1 && vedio2 && map){
 		 	document.getElementById('map').style.display = "block";
 		    changeOpacity('map');
-		}
-		// showBlock('oneYd');
+		}		
 		function showTip(id){
 			if(screen.width < "850")
 				console.log("It's a tablet")
@@ -358,46 +320,38 @@
 				console.log("850")
 			else document.getElementById(id).style.display = "none";
 		}
-		/*
-		function showBlock(id){
-			
+
+
+		showBlock('threeMd');
+		function showBlock(id){	
 			document.getElementById('oneMd').style.display = "none";
 			document.getElementById('oneM').style.backgroundColor = "#FFE153";
 			document.getElementById('oneM').style.boxShadow = "0 7px #999";
 			document.getElementById('oneM').style.color = "#563d12";
-			document.getElementById('oneMP').style.display = "none";
 
 			document.getElementById('threeMd').style.display = "none";
 			document.getElementById('threeM').style.backgroundColor = "#FFE153";
 			document.getElementById('threeM').style.boxShadow = "0 7px #999";
 			document.getElementById('threeM').style.color = "#563d12";
-			document.getElementById('threeMP').style.display = "none";
 
 			document.getElementById('oneYd').style.display = "none";
 			document.getElementById('oneY').style.backgroundColor = "#FFE153";
 			document.getElementById('oneY').style.boxShadow = "0 7px #999";
 			document.getElementById('oneY').style.color = "#563d12";
-			document.getElementById('oneYP').style.display = "none";
 			
 			document.getElementById(id).style.display = "block";
 
 			var buttonId;
-			if(id == 'oneMd'){
+			if(id == 'oneMd')
 				buttonId = 'oneM';
-				document.getElementById('oneMP').style.display = "inline-block";
-			}
-			else if(id == 'threeMd'){
+			else if(id == 'threeMd')
 				buttonId = 'threeM';
-				document.getElementById('threeMP').style.display = "inline-block";
-			}
-			else{
+			else
 				buttonId = 'oneY';
-				document.getElementById('oneYP').style.display = "inline-block";
-			}
 			document.getElementById(buttonId).style.backgroundColor = "#FFC408";
 			document.getElementById(buttonId).style.boxShadow = "0 4px #666";
 			document.getElementById(buttonId).style.color = "white";
-		}*/
+		}
 		//slideShow
 		var slideIndex = 1;
 		showDivs(slideIndex);
@@ -422,29 +376,6 @@
 		  x[slideIndex-1].style.display = "block";  
 		  dots[slideIndex-1].className += " w3-red";
 		}
-
-		var slideIndex2 = 1;
-		showDivs2(slideIndex2);
-		function currentDiv2(n) {
-		  showDivs2(slideIndex2 = n);
-		}
-		function showDivs2(n) {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides2");
-		  var dots = document.getElementsByClassName("demo2");
-		  if (n > x.length) {slideIndex2 = 1}    
-		  if (n < 1) {slideIndex2 = x.length}
-		  for (i = 0; i < x.length; i++) {
-		     x[i].style.display = "none";  
-		  }
-		  for (i = 0; i < dots.length; i++) {
-		     dots[i].className = dots[i].className.replace(" w3-red", "");
-		  }
-		  x[slideIndex2-1].style.display = "block";  
-		  dots[slideIndex2-1].className += " w3-red";
-		}
-
-
     </script>
 </body>
 
@@ -453,6 +384,7 @@
 <script type="text/javascript" src="./javascript/countInMonth.js"></script>
 <script type="text/javascript" src="./javascript/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="./javascript/fancybox.js"></script>
+<script type="text/javascript" src="./javascript/drawTable.js"></script>
 <link rel="stylesheet" type="text/css" href="./css/fancybox.css" media="screen"></link>
 
 <script>

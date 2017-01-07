@@ -257,3 +257,55 @@ a:visited{
   background-color:#FFF8D7;
   padding:1% 2% 1% 2%;
 }
+#myInput, #myInput2{
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 300px;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #ddd;
+  margin: 40px 0px 12px 10px;
+}
+.thDate{
+  text-align: center;
+  width:80px;
+}
+#myTable{
+  border-collapse: collapse;
+  width:auto;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin: 50px 0px 100px 12%;
+}
+
+#myTable th, #myTable td {
+  text-align: center;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header{
+  background-color: #ccc;
+}
+
+.tableHover:hover{
+  background-color: #FFF8D7;
+}
+.tableHeader{
+  background-color: #E0E0E0;
+}
+#myTable td:hover{
+  background-color: #FFE153;
+}
+.selection{
+  background-position: 10px 10px;
+  /*background-color:#FFE153;*/
+  width: 120px;
+  font-size: 14px;
+  padding: 10px 5px 10px 5px;
+  border: 1px solid #ddd;
+  margin: 40px 0px 12px 12%;
+}
