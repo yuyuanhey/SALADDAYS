@@ -15,15 +15,14 @@ function myFunction() {
   var filter2 = input2.value.toUpperCase();
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
-
+  var check1 = (fIndex1 == 1 || fIndex1 == 2 || fIndex1 == 3);
+  var check2 = (fIndex2 == 1 || fIndex2 == 2 || fIndex2 == 3);
   if(select1 && select2){
     for (i = 0; i < tr.length; i++) {
       td1 = tr[i].getElementsByTagName("td")[fIndex1-1];
       td2 = tr[i].getElementsByTagName("td")[fIndex2-1];
       if (td1 && td2) {
         // var check = (td1.innerHTML)
-        var check1 = (fIndex1 == 1 || fIndex1 == 2 || fIndex1 == 3);
-        var check2 = (fIndex2 == 1 || fIndex2 == 2 || fIndex2 == 3);
         if(check1 && check2){
           if(td1.innerHTML == parseInt(filter1) && td2.innerHTML == parseInt(filter2)){
             tr[i].style.display = "";
@@ -70,28 +69,55 @@ function myFunction() {
       td1 = tr[i].getElementsByTagName("td")[fIndex1-1];
       // td2 = tr[i].getElementsByTagName("td")[fIndex2-1];
       if (td1) {
-        if (td1.innerHTML == parseInt(filter1)) {
-          tr[i].style.display = "";
-        }else if(filter1 == ""){
-          tr[i].style.display = "";
+        if(check1){
+          if (td1.innerHTML == parseInt(filter1)) {
+            tr[i].style.display = "";
+          }else if(filter1 == ""){
+            tr[i].style.display = "";
+          }
+          else {
+            tr[i].style.display = "none";
+          }
         }
-        else {
-          tr[i].style.display = "none";
+        else{
+          if (td1.innerHTML.toUpperCase().indexOf(filter1) > -1) {
+              tr[i].style.display = "";
+          }else if(filter1 == ""){
+            tr[i].style.display = "";
+          }else {
+              tr[i].style.display = "none";
+          }
         }
-      }       
+      }
+
     }
   }
   else if(!select1 && select2){
     for (i = 0; i < tr.length; i++) {
-      // td1 = tr[i].getElementsByTagName("td")[fIndex1-1];
       td2 = tr[i].getElementsByTagName("td")[fIndex2-1];
+      // td2 = tr[i].getElementsByTagName("td")[fIndex2-1];
       if (td2) {
-        if (td2.innerHTML.toUpperCase().indexOf(filter2) > -1) {
-          tr[i].style.display = "";
-        } else {
-          tr[i].style.display = "none";
+        if(check2){
+          if (td2.innerHTML == parseInt(filter2)) {
+            tr[i].style.display = "";
+          }else if(filter2 == ""){
+            tr[i].style.display = "";
+          }
+          else {
+            tr[i].style.display = "none";
+          }
         }
-      }       
+        else{
+          if (td2.innerHTML.toUpperCase().indexOf(filter2) > -1) {
+              tr[i].style.display = "";
+          }else if(filter2 == ""){
+            tr[i].style.display = "";
+          }else {
+              tr[i].style.display = "none";
+          }
+        }
+      }
+
     }
   }
   var count = 0;
@@ -16850,7 +16876,7 @@ $.makeTable = function (mydata) {
                 TableRow += "<td style='width:150px'>" + val + "</td>";
               }
               else if(key == "title"){
-                TableRow += "<td style='width:460px;text-align:left;padding-left:30px'><a href='http://internationalnewsstation.tw/?event="+val+"' style='text-decoration:none;'>" + val + "</a></td>";
+                TableRow += "<td style='width:480px;text-align:left;padding-left:30px'><a href='http://internationalnewsstation.tw/?event="+val+"' style='text-decoration:none;'>" + val + "</a></td>";
               }
             }
         });
