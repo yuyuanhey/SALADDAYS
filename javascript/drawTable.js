@@ -21,7 +21,10 @@ function myFunction() {
       td1 = tr[i].getElementsByTagName("td")[fIndex1-1];
       td2 = tr[i].getElementsByTagName("td")[fIndex2-1];
       if (td1 && td2) {
-        if (td1.innerHTML.toUpperCase().indexOf(filter1) > -1 && td2.innerHTML.toUpperCase().indexOf(filter2) > -1) {
+        // var check = (td1.innerHTML)
+        if (td1.innerHTML == parseInt(filter1) && td2.innerHTML.toUpperCase().indexOf(filter2) > -1) {
+          tr[i].style.display = "";
+        }else if(filter1 == "" && td2.innerHTML.toUpperCase().indexOf(filter2) > -1){
           tr[i].style.display = "";
         } else {
           tr[i].style.display = "none";
@@ -34,9 +37,12 @@ function myFunction() {
       td1 = tr[i].getElementsByTagName("td")[fIndex1-1];
       // td2 = tr[i].getElementsByTagName("td")[fIndex2-1];
       if (td1) {
-        if (td1.innerHTML.toUpperCase().indexOf(filter1) > -1) {
+        if (td1.innerHTML == parseInt(filter1)) {
           tr[i].style.display = "";
-        } else {
+        }else if(filter1 == ""){
+          tr[i].style.display = "";
+        }
+        else {
           tr[i].style.display = "none";
         }
       }       
