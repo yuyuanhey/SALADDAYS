@@ -157,15 +157,16 @@
 				<img src="./photo/photo2.jpg"/ class="box">
 			</div>
 			<div class="bigDiv1">
-				<img src="./photo/photo1.jpg" class="smallDiv"/>
-				<img src="./photo/photo1.jpg" class="smallDiv"/>
-				<img src="./photo/photo1.jpg" class="smallDiv"/>
+				<img src="./photo/photo3.jpg" class="smallDiv"/>
+				<img src="./photo/photo4.jpg" class="smallDiv"/>
+				<img src="./photo/photo5.jpg" class="smallDiv"/>
+				<img src="./photo/photo6.jpg" class="smallDiv"/>
 			</div>
-			<div class="bigDiv1">
+			<!-- <div class="bigDiv1">
+				<img src="./photo/photo6.jpg" class="smallDiv"/>
 				<img src="./photo/photo1.jpg" class="smallDiv"/>
-				<img src="./photo/photo1.jpg" class="smallDiv"/>
-				<img src="./photo/photo1.jpg" class="smallDiv"/>
-			</div>
+				<img src="./photo/photo2.jpg" class="smallDiv"/>
+			</div> -->
 		</div>
 		<!-- 教學影片1 -->
 		<div id="vedio1" style="width:100%; display:none;">
@@ -177,8 +178,9 @@
 		<!-- 教學影片2 -->
 		<div id="vedio2" style="width:100%; display:none;">
 			<p class="subtitle">影片二</p>
-			<video controls class="vedio">
+			<video controls="controls" class="vedio">
 				<source src="./vedio/vedioTwo.mp4" type="video/mp4">
+				<!-- <source src="https://www.youtube.com/watch?v=1TCgqhpGSEg"> -->
 			</video>
 		</div>
 		<!--新聞地圖-->
@@ -254,15 +256,21 @@
  			<div  id="oneMd" style="display: block">
 				<select id="mySelect" class="w3-select selection" name="option" data-role="none">
 				<!-- disabled selected -->
-					<option value="" disabled selected>選擇篩選時間</option>
+					<option value="" disabled selected>選擇篩選條件</option>
 					<option value="1">年</option>
 					<option value="2">月</option>
 					<option value="3">日</option>
+					<option value="4">地區</option>
+					<option value="5">國家</option>
+					<option value="6">標題</option>
 				</select>
 				<input type="text" id="myInput" onkeyup="myFunction()" placeholder="輸入關鍵字" title="Type in a name" style="display: inline-block;" data-role="none">
 				
 				<select id="mySelect2" class="w3-select selection" name="option" data-role="none" style="margin: 40px 0px 12px 40px;">
 					<option value="" disabled selected>選擇篩選條件</option>
+					<option value="1">年</option>
+					<option value="2">月</option>
+					<option value="3">日</option>
 					<option value="4">地區</option>
 					<option value="5">國家</option>
 					<option value="6">標題</option>

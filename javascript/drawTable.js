@@ -22,12 +22,45 @@ function myFunction() {
       td2 = tr[i].getElementsByTagName("td")[fIndex2-1];
       if (td1 && td2) {
         // var check = (td1.innerHTML)
-        if (td1.innerHTML == parseInt(filter1) && td2.innerHTML.toUpperCase().indexOf(filter2) > -1) {
-          tr[i].style.display = "";
-        }else if(filter1 == "" && td2.innerHTML.toUpperCase().indexOf(filter2) > -1){
-          tr[i].style.display = "";
-        } else {
-          tr[i].style.display = "none";
+        var check1 = (fIndex1 == 1 || fIndex1 == 2 || fIndex1 == 3);
+        var check2 = (fIndex2 == 1 || fIndex2 == 2 || fIndex2 == 3);
+        if(check1 && check2){
+          if(td1.innerHTML == parseInt(filter1) && td2.innerHTML == parseInt(filter2)){
+            tr[i].style.display = "";
+          }else if(filter1 == "" && td2.innerHTML == parseInt(filter2)){
+            tr[i].style.display = "";
+          } else if(filter2 == "" && td1.innerHTML == parseInt(filter1)){
+            tr[i].style.display = "";
+          }else if(filter2 == "" && filter1 == ""){
+            tr[i].style.display = "";
+          }else {
+            tr[i].style.display = "none";
+          }
+        }
+        else if(check1 && !check2){
+          if (td1.innerHTML == parseInt(filter1) && td2.innerHTML.toUpperCase().indexOf(filter2) > -1) {
+            tr[i].style.display = "";
+          }else if(filter1 == "" && td2.innerHTML.toUpperCase().indexOf(filter2) > -1){
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+        else if(!check1 && check2){
+          if (td2.innerHTML == parseInt(filter2) && td1.innerHTML.toUpperCase().indexOf(filter1) > -1) {
+            tr[i].style.display = "";
+          }else if(filter2 == "" && td1.innerHTML.toUpperCase().indexOf(filter1) > -1){
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+        else{
+          if (td2.innerHTML.toUpperCase().indexOf(filter2) > -1 && td1.innerHTML.toUpperCase().indexOf(filter1) > -1) {
+            tr[i].style.display = "";
+          }else {
+            tr[i].style.display = "none";
+          }
         }
       }       
     }
