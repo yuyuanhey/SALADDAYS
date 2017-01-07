@@ -16817,7 +16817,7 @@ $.makeTable = function (mydata) {
                 TableRow += "<td style='width:150px'>" + val + "</td>";
               }
               else if(key == "title"){
-                TableRow += "<td style='width:460px;text-align:left;padding-left:30px'>" + val + "</td>";
+                TableRow += "<td style='width:460px;text-align:left;padding-left:30px'><a href='http://internationalnewsstation.tw/?event="+val+"' style='text-decoration:none;'>" + val + "</a></td>";
               }
             }
         });

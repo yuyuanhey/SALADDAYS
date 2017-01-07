@@ -1,5 +1,5 @@
 var chart;
-var chartData = [
+var chartDataBubble = [
   {
     "code": "DZA",
     "country": "Algeria",
@@ -1232,14 +1232,14 @@ var chartData = [
     "continent": "North America",
     "color": "#8000ff"
   },
-  /*{
+  {
     "code": "USA",
     "country": "United States of America",
     "count": 330,
     "index": 24.41,
     "continent": "North America",
     "color": "#8000ff"
-  },*/
+  },
   {
     "code": "ARG",
     "country": "Argentina",
@@ -1494,7 +1494,7 @@ AmCharts.ready(function () {
     // XY Chart
     chart = new AmCharts.AmXYChart();
 
-    chart.dataProvider = chartData;
+    chart.dataProvider = chartDataBubble;
     chart.startDuration = 1.5;
 
     // AXES
@@ -1503,7 +1503,7 @@ AmCharts.ready(function () {
     xAxis.title = "新聞數";
     xAxis.position = "bottom";
     xAxis.axisAlpha = 0;
-    xAxis.minMaxMultiplayer = 10;
+    xAxis.minMaxMultiplayer = 1;
     chart.addValueAxis(xAxis);
 
     // Y
