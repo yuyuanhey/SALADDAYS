@@ -1,0 +1,296 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>amCharts examples</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="../amcharts/amcharts.js" type="text/javascript"></script>
+        <script src="../amcharts/serial.js" type="text/javascript"></script>
+
+        <script>
+            var chart;
+
+            var chartData = [
+
+
+
+            	{
+					"month":"2016/8/20-2016/9/19",
+					"United States of America"	:35,
+					"Japan":	4,
+					"Belgium":	2,
+					"France"	:13,
+					"United Kingdom":	1,
+					"Germany":	6,
+					"Brazil":	6,
+					"China":	1,
+					"Canada":	2,
+					"Syria":	9,
+					"Taiwan":	1,
+					"Venezuela":	1,
+					"Russia":	1,
+					"Turkey":	4,
+					"Philippines":	2,
+					"North Korea":	4,
+					"Australia":	2,
+					"Colombia":	4,
+					"Nigeria":	1,
+					"Indonesia":	0,
+					"Iraq":	0,
+					"Italy":	5,
+					"India":	0,
+					"Mexico":	3,
+					"Austria":	1,
+					"Switzerland":	0,
+					"Cuba":	0,
+					"Egypt":	0,
+					"Myanmar":	2,
+					"Somalia":	1,
+					"Spain":	4,
+					"Greece":	1,
+					"Libya":	1,
+					"South Sudan":	0,
+					"Afghanistan":	2,
+					"Netherlands":	0,
+					"Argentina":	1,
+					"Haiti":	0,
+					"Kenya":	1,
+					"Pakistan":	0,
+					"Peru":	0,
+					"South Africa":	1,
+					"Thailand":	2,
+					"Vietnam":	0,
+					"Iran":	0,
+					"New Zealand":	0,
+					"Panama":	0,
+					"Ukraine":	0,
+					"Yemen":	1,
+					"Zimbabwe":	2,
+					
+				},
+				
+            	{
+                	"month":"2016/9/20-2016/10/19",
+                  	"United States of America"	:34,
+					"Japan":	3,
+					"Belgium":	5,
+					"France":	5,
+					"United Kingdom":	3,
+					"Germany":	5,
+					"Brazil":	1,
+					"China":	0,
+					"Canada":	1,
+					"Syria":	1,
+					"Taiwan":	0,
+					"Venezuela":	1,
+					"Russia":	6,
+					"Turkey":	0,
+					"Philippines":	4,
+					"North Korea":	2,
+					"Australia":	2,
+					"Colombia":	5,
+					"Nigeria":	1,
+					"Indonesia":	2,
+					"Iraq":	1,
+					"Italy":	2,
+					"India":	4,
+					"Mexico":	1,
+					"Austria":	0,
+					"Switzerland":	0,
+					"Cuba":	2,
+					"Egypt":	1,
+					"Myanmar":	0,
+					"Somalia":	3,
+					"Spain":	1,
+					"Greece":	1,
+					"Libya":	0,
+					"South Sudan":	0,
+					"Afghanistan":	4,
+					"Netherlands":	0,
+					"Argentina":	0,
+					"Haiti":	6,
+					"Kenya":	0,
+					"Pakistan":	2,
+					"Peru":	0,
+					"South Africa":	0,
+					"Thailand":	2,
+					"Vietnam":	0,
+					"Iran":	0,
+					"New Zealand":	0,
+					"Panama":	0,
+					"Ukraine":	0,
+					"Yemen":	0,
+					"Zimbabwe":	0,
+					
+                },
+                {
+                	"month":"2016/10/20-2016/11/19",
+                    "United States of America":	33,
+					"Japan":	12,
+					"Belgium":	10,
+					"France":	3,
+					"United Kingdom":	5,
+					"Germany":	7,
+					"Brazil":	5,
+					"China":	0,
+					"Canada":	4,
+					"Syria":	2,
+					"Taiwan":	0,
+					"Venezuela":	5,
+					"Russia":	8,
+					"Turkey":	0,
+					"Philippines":	1,
+					"North Korea":	1,
+					"Australia":	2,
+					"Colombia":	2,
+					"Nigeria":	3,
+					"Indonesia":	1,
+					"Iraq":	3,
+					"Italy":	3,
+					"India":	3,
+					"Mexico":	1,
+					"Austria":	0,
+					"Switzerland":	0,
+					"Cuba":	2,
+					"Egypt":	1,
+					"Myanmar":	0,
+					"Somalia":	1,
+					"Spain":	1,
+					"Greece":	0,
+					"Libya":	2,
+					"South Sudan":	1,
+					"Afghanistan":	1,
+					"Netherlands":	0,
+					"Argentina":	0,
+					"Haiti":	0,
+					"Kenya":	2,
+					"Pakistan":	2,
+					"Peru":	1,
+					"South Africa":	3,
+					"Thailand":	1,
+					"Vietnam":	1,
+					"Iran":	0,
+					"New Zealand":	2,
+					"Panama":	0,
+					"Ukraine":	0,
+					"Yemen":	0,
+					"Zimbabwe":	0,
+                },
+
+
+             
+            ];
+
+
+            AmCharts.ready(function () {
+                // SERIAL CHART
+                chart = new AmCharts.AmSerialChart();
+                chart.dataProvider = chartData;
+                chart.categoryField = "month";
+                chart.startDuration = 0.1;
+                chart.balloon.color = "#000000";
+
+                // AXES
+                // category
+                var categoryAxis = chart.categoryAxis;
+                categoryAxis.fillAlpha = 1;
+                categoryAxis.fillColor = "#FAFAFA";
+                categoryAxis.gridAlpha = 0;
+                categoryAxis.axisAlpha = 0;
+                categoryAxis.gridPosition = "start";
+                categoryAxis.position = "bottom";
+
+                // value
+                var valueAxis = new AmCharts.ValueAxis();
+                valueAxis.title = "quantity數量";
+                valueAxis.dashLength = 4;
+                valueAxis.axisAlpha = 3;
+                valueAxis.maximum = 70;
+                valueAxis.minimum = 0;
+                valueAxis.integersOnly = true;
+                valueAxis.gridCount = 10;
+                valueAxis.reversed =false; // this line makes the value axis reversed
+                chart.addValueAxis(valueAxis);
+
+                // GRAPHS
+                // Africa graph
+                var graph = new AmCharts.AmGraph();
+                graph.title = "United States of America";
+                graph.valueField = "United States of America";
+                graph.hidden = hidden; // this line makes the graph initially hidden
+                graph.balloonText = "The number of news in  United States of America on [[category]]: [[value]]";
+                graph.lineAlpha = 1;
+                graph.bullet = "round";
+                chart.addGraph(graph);
+
+                // Central and South America graph
+                var graph = new AmCharts.AmGraph();
+                graph.title = "Central and South America中南美洲";
+                graph.valueField = "Central and South America";
+                graph.hidden = true; // this line makes the graph initially hidden
+                graph.balloonText = "The number of news in  Central and South America on [[category]]: [[value]]";
+                graph.bullet = "round";
+                chart.addGraph(graph);
+
+                // Europe graph
+                var graph = new AmCharts.AmGraph();
+                graph.title = "Europe歐洲";
+                graph.valueField = "Europe";
+                graph.balloonText = "The number of news in  Europe on [[category]]: [[value]]";
+                graph.bullet = "round";
+                chart.addGraph(graph);
+
+                 // USA and Canada graph
+                var graph = new AmCharts.AmGraph();
+                graph.title = "USA and Canada北美洲";
+                graph.valueField = "USA and Canada";
+                graph.balloonText = "The number of news in  USA and Canada on [[category]]: [[value]]";
+                graph.lineAlpha = 1;
+                graph.bullet = "round";
+                chart.addGraph(graph);
+
+                // Asian graph
+                var graph = new AmCharts.AmGraph();
+                graph.title = "Asian亞洲";
+                graph.valueField = "Asian";
+                graph.balloonText = "The number of news in  Asian on [[category]]: [[value]]";
+                graph.lineAlpha = 1;
+                graph.bullet = "round";
+                chart.addGraph(graph);
+
+                // Cross-strait graph
+                var graph = new AmCharts.AmGraph();
+                graph.title = "Cross-strait兩岸三地";
+                graph.valueField = "Cross-strait";
+                graph.hidden = true; // this line makes the graph initially hidden
+                graph.balloonText = "The number of news in  Cross-strait on [[category]]: [[value]]";
+                graph.lineAlpha = 1;
+                graph.bullet = "round";
+                chart.addGraph(graph);
+
+                // CURSOR
+                var chartCursor = new AmCharts.ChartCursor();
+                chartCursor.cursorPosition = "mouse";
+                chartCursor.zoomable = false;
+                chartCursor.cursorAlpha = 0;
+                chart.addChartCursor(chartCursor);
+
+                // LEGEND
+                var legend = new AmCharts.AmLegend();
+                legend.useGraphSettings = true;
+                chart.addLegend(legend);
+
+                // WRITE
+                chart.write("chartdiv");
+                chart.addTitle("六大區域新聞數量折線圖(from 2015.12.16 to 2016.12.21)");
+                chart.write("chartdiv");
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="chartdiv" style="width: 100%; height: 400px;"></div>
+    </body>
+
+</html>

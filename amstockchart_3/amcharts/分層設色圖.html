@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>amMap example</title>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+        <link rel="stylesheet" href="https://www.amcharts.com/lib/3/ammap.css" type="text/css">
+        <script src="https://www.amcharts.com/lib/3/amcharts.js" type="text/javascript"></script>
+        <script src="https://www.amcharts.com/lib/3//serial.js" type="text/javascript"></script>
+        <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+        <script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+        <script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+        <script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+    var map;
+    var dataProvider = {
+        mapVar: AmCharts.maps.worldHigh,
+        getAreaFromMap: true,
+        areas: [
+        {
+            id: "US",
+            value: 400,
+            color: "pink",},
+        {
+            id: "AU",
+            value: 250,
+            color: "pink",},
+        {
+            id: "CN",
+            value: 40,
+            color: "pink",},
+        {
+            id: "TW",
+            value: 50,
+            color: "pink",}
+       ]
+    };
+
+    AmCharts.ready(function() {
+        map   = new AmCharts.AmMap();
+        map.colorSteps = 10;
+
+        map.areasSettings = {
+            autoZoom : false,
+            // selectable: true,
+            // color : "#B4B4B7",
+            // colorSolid : "#84ADE9",
+            // selectedColor : "#84ADE9",
+            // rollOverColor : "#9EC2F7",
+            // rollOverOutlineColor : "#ffffff",
+            balloonText: "[[title]] [[value]]",
+        };
+
+        map.zoomControl = {
+            zoomControlEnabled : true
+        };
+        map.dataProvider = dataProvider;
+        map.title = "Total News Count";
+        // map.accessibleLabel = "<span>[[title]]: [[value]]</span>"
+
+        map.lineColor = "#a668d5";
+        map.valueField = "count";
+        map.lineAlpha = 1;
+        map.fillAlphas = 1;
+        map.alphaField = "alpha";
+        map.balloonText = "[[title]] [[value]]";
+
+        var valueLegend = new AmCharts.ValueLegend();
+        valueLegend.right = 10;
+        valueLegend.minValue = "little";
+        valueLegend.maxValue = "a lot!";
+
+        map.write("mapdiv");
+    });
+
+    google.charts.load('upcoming', {'packages':['geochart']});
+    google.charts.setOnLoadCallback(drawRegionsMap);
+    function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+              
+          ['Country', 'Popularity'],
+          ['Germany', 1],
+          ['US', 300],
+          ['Brazil', 400],
+          ['Canada', 500],
+          ['France', 600],
+          ['RU', 700],
+          ['TW', 600],
+          ['CN', 300]
+        ]);
+
+        var options = {
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+        </script>
+    </head>
+
+    <body>
+        <div id="mapdiv" style="width: 100%; background-color:#EEEEEE; height: 500px;display:inline-block;"></div>
+        <div id="regions_div" style="width: 100%; height: 500px;"></div>
+    </body>
+
+</html>
