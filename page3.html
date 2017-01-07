@@ -16,19 +16,19 @@
 	<link rel="stylesheet" href="./css/webpage.css">
 	<link rel="stylesheet" href="./css/webpage-tablet.css">
 	<link rel="stylesheet" href="./css/webpage-smartphone.css">
-	
-	
+
 	<!-- JavaScript -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
 	<script type="text/javascript" src="./javascript/topojson.min.js"></script>
 	<script type="text/javascript" src="./javascript/d3.min.js"></script>
 	<script type="text/javascript" src="./javascript/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="./javascript/jquery.mobile-1.4.5.min.js"></script>
 	<script type="text/javascript" src="./javascript/jquery.min.js"></script>
     <script type="text/javascript" src="./amcharts/amcharts.js"></script>
     <script type="text/javascript" src="./amcharts/xy.js"></script>
     <script type="text/javascript" src="./amcharts/serial.js"></script>
     <script type="text/javascript" src="./javascript/webpage.js"></script>
-	<script type="text/javascript" src="./javascript/datamaps.world.min.js"></script>
+	<script type="text/javascript" src="./javascript/datamaps.world.min.js"></script>	
 	
 	<style>
 		.mySlides {display:none}
@@ -192,6 +192,7 @@
 				<!-- <div class="myButtonLine"></div> -->
 
 		<!-- Panel oneMonth-->
+		<!--
 				<div data-role="panel" id="pushPanel1M" data-display="push" data-dismissible="false" data-position-fixed="true"  data-position="right"> 
 				  	<a href="page3.html" data-rel="close" style="text-align:left; margin-left:80%;"><i class="fa fa-close" style="font-size:20px"></i></a>
 				    <div class="w3-content w3-center" style="max-width:500px; margin-top:-20px">
@@ -248,7 +249,9 @@
 						<div class="demo btn" onclick="currentDiv(12);">12</div>
 					</div>
 				  </div>
+				  -->
 	<!-- Panel oneMonth End -->
+
 
 			</div>
 
@@ -282,14 +285,48 @@
 
 <!-- 統計圖表 -->
 			<div class="displayBlock" id="threeMd" style="display: block">
-				<div class="subtitle2">圖表一的標題</div>
+				<div class="subtitle2">每月新聞總數</div>
 				<div id="countInMonth" class="worldMap"></div>
-				<div class="text2">圖表一的解釋</div>
+				<div class="text2">
+					<b>新聞來源：</b>一眼看天下─中華民國外交部 <br>
+					<b>統計時間：</b>2015/12/16至2016/12/21<br>
+					<b>呈現內容：</b>於統計時間內，中華民國外交部節錄各個月國際新聞的數量。<br>
+					<b>資料分析：</b>平均每個月的新聞數量多界在120-180則之間，唯三月及八月的新聞數量明顯較多。<br>
+				</div>
 
-				<div class="subtitle2" style="display: inline-block;margin-left: 45%">圖表二的標題</div>
-				<a href="#pushPanel1M"><img src="./photo/bars-chart.png" class="myButton2"></a>
+				<div class="subtitle2" style="display: inline-block;margin-left: 42%">每月各州新聞總數</div>
+				<!-- <div class="w3-container"> -->
+					<a onclick="document.getElementById('id01').style.display='block';showBarLineChart('1')"><img src="./photo/bars-chart.png" class="myButton2"></a>
+					<div id="id01" class="w3-modal">
+						<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+							<span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn" style="margin:10px 20px 10px 0px">&times;</span>
+							<div id="BarLine1" class="w3-container BarLine"></div>
+							<div id="BarLine2" class="w3-container BarLine"></div>
+							<div id="BarLine3" class="w3-container BarLine"></div>
+							<div id="BarLine4" class="w3-container BarLine"></div>
+							<div id="BarLine5" class="w3-container BarLine"></div>
+							<div id="BarLine6" class="w3-container BarLine"></div>
+							<div id="BarLine7" class="w3-container BarLine"></div>
+							<div id="BarLine8" class="w3-container BarLine"></div>
+							<div id="BarLine9" class="w3-container BarLine"></div>
+							<div id="BarLine10" class="w3-container BarLine"></div>
+							<div id="BarLine11" class="w3-container BarLine"></div>
+							<div id="BarLine12" class="w3-container BarLine"></div>
+							<div style="width:600px; margin:2% 100px 2% 15%; height:30px">
+								<input style="width: 600px" id="sliderBarChart" class="mdl-slider mdl-js-slider" type="range" min="1" max="12" value="0" tabindex="0" oninput="showBarLineChart(this.value)" onchange="showBarLineChart(this.value)">
+							</div>
+						</div>
+					</div>
+
 				<div id="sixContinent" class="worldMap"></div>
-				<div class="text2">圖表二的解釋</div>
+				<div class="text2">
+					<b>新聞來源：</b>一眼看天下─中華民國外交部<br>
+					<b>統計時間：</b>2015/12/16至2016/12/21<br>
+					<b>呈現內容：</b>於統計時間內，中華民國外交部節錄各個月六大地區的國際新聞數量。<br>
+					<b>資料分析：</b><br>　　以亞洲(含大洋洲)在各月的新聞數量最多，其次是歐洲(含俄羅斯)、北美洲，再來是中南美洲、非洲，以及兩岸三地。由圖中可看出，歐洲及北美洲的新聞數量在一年中相對穩定；中南美洲的新聞數量在二月之後出現大幅度的飆升；反觀與台灣最相關的、兩岸三地的新聞數量在二月之後出現明顯的下滑。<br>
+					　　根據統計，目前亞洲(含大洋洲)有60個國家、歐洲(含俄羅斯)共計43國、北美洲為美加兩國、中南美洲有33個國家、非洲有54個，兩岸三地為台灣、中國、香港這3個地區。經過計算，各洲的國家平均被報導數量並不均勻。可見新聞數量與該洲的國家數量並不成正比。<br>
+
+				</div>
 
 				<div class="subtitle2">圖表三的標題</div>
 				<div id="container1Y" class="worldMap"></div>
@@ -299,9 +336,17 @@
 <!-- 補充圖表 -->
 			<div class="displayBlock" id="oneYd" style="display: block">
 			<!-- Scatter plot -->
-				<div class="subtitle2">散布圖的標題</div>
+				<div class="subtitle2">各國新聞自由指數　VS.　新聞數</div>
 				<div id="xyBubbles" class="worldMap"></div>
-				<div class="text2">散布圖的解釋</div>
+				<div class="text2">
+					<b>新聞來源：</b>一眼看天下─中華民國外交部<br>
+					<b>統計時間：</b>2015/12/16至2016/12/21<br>
+					<b>參考資料：</b><a href="https://zh.wikipedia.org/wiki/%E6%96%B0%E9%97%BB%E8%87%AA%E7%94%B1%E6%8C%87%E6%95%B0" style="text-decoration:none">維基百科</a><br>
+					<b>呈現內容：</b>各國新聞自由指數與新聞數的關聯。<br>
+					<b>資料分析：</b><br>　　「新聞自由指數」乃指無國界記者組織根據各國新聞自由狀況，針對記者和媒體的直接攻擊情況及間接地針對出版自由的各種壓力所做的排名情況，獲得的分數越小代表新聞自由度越大。該指數的調查對象來自世界各地，包括一百多位無國界記者及其夥伴組織成員、相關領域的專家(比如研究員、法學家以及人權活動家)。<br>
+					　　由圖中可知，歐洲各國的新聞自由指數多落在較低的位置，表示新聞自由度相較而言較大；值得注意的是，根據新聞自由指數定義，指數大約大於40時，表示新聞自由受限制，圖中散落於40以上的點，相對應的國家多位於亞洲與非洲。<br>
+					　　我們尚無法根據新聞自由指數，研判與中華民國外交部節錄各國新聞數的關聯性，這兩者之間的關係是我們期望繼續研究與觀察的方向。<br>
+				</div>
 			</div>
 	
 		</div>
@@ -394,6 +439,7 @@
 <script type="text/javascript" src="./javascript/fancybox.js"></script>
 <script type="text/javascript" src="./javascript/drawTable.js"></script>
 <script type="text/javascript" src="./javascript/xyBubbleWithZoom.js"></script>
+<script type="text/javascript" src="./javascript/BarAndLineChart.js"></script>
 <link rel="stylesheet" type="text/css" href="./css/fancybox.css" media="screen"></link>
 
 <script>
@@ -422,6 +468,15 @@ function fancyboximg(w0321, h0321, s0321, t0321) {
 		preload: true
 		});
 };
+showBarLineChart("1");
+function showBarLineChart(value){
+  var showBarLine = "BarLine" + value;
+  for(i=1; i<=12; i++){
+    var index = "BarLine" + i.toString();
+    document.getElementById(index).style.display = "none";
+  }
+  document.getElementById(showBarLine).style.display = "block";
+}
 </script>
 <style>
 	body{
