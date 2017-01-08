@@ -291,7 +291,9 @@
 					<b>新聞來源：</b>一眼看天下─中華民國外交部 <br>
 					<b>統計時間：</b>2015/12/16至2016/12/21<br>
 					<b>呈現內容：</b>於統計時間內，中華民國外交部節錄各個月國際新聞的數量。<br>
-					<b>資料分析：</b>平均每個月的新聞數量多界在120-180則之間，唯三月及八月的新聞數量明顯較多。<br>
+					<b>資料分析：</b><br>　　平均每個月的新聞數量多界在120-180則之間，唯三月及八月的新聞數量明顯較多。<br>
+					　　由三月的新聞來看，內容較多提及難民危機、各國對難民的態度和方式以及恐怖攻擊。由此可知，難民議題是一個全球性的議題，雖然主要的關係國家是美歐和西亞非洲等難民來源地，但是對全球政治、經濟、文化等影響仍是不容小覷的，也因此新聞媒體才會花如此多的篇幅報導。<br>
+					　　由八月的新聞來看，發現新聞的分布較為分散，世界各國都有並不僅僅侷限於美國或中國等世界強國。舉例而言，有關於恐攻的新聞就會提及比利時、法國、德國等國家，爆炸案則提及吉爾吉斯、泰國、土耳其、菲律賓及阿富汗。<br>
 				</div>
 
 				<div class="subtitle2" style="display: inline-block;margin-left: 42%">每月各州新聞總數</div>
@@ -329,8 +331,32 @@
 				</div>
 
 				<div class="subtitle2">圖表三的標題</div>
-				<div id="container1Y" class="worldMap"></div>
-				<div class="text2">圖表三的解釋</div>
+				<div id="plot3" class="worldMap" style="height:700px"></div>
+				<div style="width: 300px; margin:1% 2% 1%; transform:rotate(270deg);">
+					<input style="width: 300px; margin-left:-180px" id="slider1" class="mdl-slider mdl-js-slider" type="range" min="0" max="12" value="0" tabindex="0" oninput="showMessage(this.value)" onchange="showMessage(this.value)">
+				</div>
+				<div id="heatMap0" class="map worldMap" style="opacity:0.5"></div>
+				<div id="heatMap1" class="map worldMap"></div>
+				<div id="heatMap2" class="map worldMap"></div>
+				<div id="heatMap3" class="map worldMap"></div>
+				<div id="heatMap4" class="map worldMap"></div>
+				<div id="heatMap5" class="map worldMap"></div>
+				<div id="heatMap6" class="map worldMap"></div>
+				<div id="heatMap7" class="map worldMap"></div>
+				<div id="heatMap8" class="map worldMap"></div>
+				<div id="heatMap9" class="map worldMap"></div>
+				<div id="heatMap10" class="map worldMap"></div>
+				<div id="heatMap11" class="map worldMap"></div>
+				<div id="heatMap12" class="map worldMap"></div>
+				<div id="message" class="text"></div>
+				<div class="text2">
+					<b>新聞來源：</b>一眼看天下─中華民國外交部<br>
+					<b>統計時間：</b>2015/12/16至2016/12/21<br>
+					<b>呈現內容：</b>於統計時間內，中華民國外交部節錄各個月六大地區的國際新聞數量。<br>
+					<b>資料分析：</b><br>　　以亞洲(含大洋洲)在各月的新聞數量最多，其次是歐洲(含俄羅斯)、北美洲，再來是中南美洲、非洲，以及兩岸三地。由圖中可看出，歐洲及北美洲的新聞數量在一年中相對穩定；中南美洲的新聞數量在二月之後出現大幅度的飆升；反觀與台灣最相關的、兩岸三地的新聞數量在二月之後出現明顯的下滑。<br>
+					　　根據統計，目前亞洲(含大洋洲)有60個國家、歐洲(含俄羅斯)共計43國、北美洲為美加兩國、中南美洲有33個國家、非洲有54個，兩岸三地為台灣、中國、香港這3個地區。經過計算，各洲的國家平均被報導數量並不均勻。可見新聞數量與該洲的國家數量並不成正比。<br>
+
+				</div>
 			</div>
 
 <!-- 補充圖表 -->
@@ -405,30 +431,46 @@
 			document.getElementById(buttonId).style.boxShadow = "0 4px #666";
 			document.getElementById(buttonId).style.color = "white";
 		}
-		//slideShow
-		var slideIndex = 1;
-		showDivs(slideIndex);
-		function plusDivs(n) {
-		  showDivs(slideIndex += n);
+		// //slideShow
+		// var slideIndex = 1;
+		// showDivs(slideIndex);
+		// function plusDivs(n) {
+		//   showDivs(slideIndex += n);
+		// }
+		// function currentDiv(n) {
+		//   showDivs(slideIndex = n);
+		// }
+		// function showDivs(n) {
+		//   var i;
+		//   var x = document.getElementsByClassName("mySlides");
+		//   var dots = document.getElementsByClassName("demo");
+		//   if (n > x.length) {slideIndex = 1}    
+		//   if (n < 1) {slideIndex = x.length}
+		//   for (i = 0; i < x.length; i++) {
+		//      x[i].style.display = "none";  
+		//   }
+		//   for (i = 0; i < dots.length; i++) {
+		//      dots[i].className = dots[i].className.replace(" w3-red", "");
+		//   }
+		//   x[slideIndex-1].style.display = "block";  
+		//   dots[slideIndex-1].className += " w3-red";
+		// }
+		function showMessage(value){
+			var showMap = "heatMap" + value;
+			for(i=0; i<=12; i++){
+				var index = "heatMap" + i.toString();
+				document.getElementById(index).style.display = "none";
+			}
+			if(value == '0')
+				document.getElementById("message").innerHTML = "拖拉顯示各月分層設色圖";
+			else
+				document.getElementById("message").innerHTML = value+"月份分層設色圖";
+			
+			document.getElementById(showMap).style.display = "block";
+			
 		}
-		function currentDiv(n) {
-		  showDivs(slideIndex = n);
-		}
-		function showDivs(n) {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("demo");
-		  if (n > x.length) {slideIndex = 1}    
-		  if (n < 1) {slideIndex = x.length}
-		  for (i = 0; i < x.length; i++) {
-		     x[i].style.display = "none";  
-		  }
-		  for (i = 0; i < dots.length; i++) {
-		     dots[i].className = dots[i].className.replace(" w3-red", "");
-		  }
-		  x[slideIndex-1].style.display = "block";  
-		  dots[slideIndex-1].className += " w3-red";
-		}
+		showMessage("0");
+		// document.getElementById("heatMap1").style.display = "block";
     </script>
 </body>
 
@@ -440,6 +482,8 @@
 <script type="text/javascript" src="./javascript/drawTable.js"></script>
 <script type="text/javascript" src="./javascript/xyBubbleWithZoom.js"></script>
 <script type="text/javascript" src="./javascript/BarAndLineChart.js"></script>
+<script type="text/javascript" src="./javascript/plot3.js"></script>
+<script type="text/javascript" src="./javascript/map12.js"></script>
 <link rel="stylesheet" type="text/css" href="./css/fancybox.css" media="screen"></link>
 
 <script>
