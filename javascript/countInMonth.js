@@ -111,7 +111,7 @@ var chart;
                 // chart.addTitle("全球每月新聞數量長條圖(from 2015.12.16 to 2016.12.21)");
             });
             
-            var chart;
+var chart;
 var chartData1 = [
   {
     "code": "DZA",
@@ -1799,7 +1799,7 @@ AmCharts.ready(function () {
 
                 // Cross-strait graph
                 var graph = new AmCharts.AmGraph();
-                graph.title = "Cross-strait 兩岸三地";
+                graph.title = "兩岸三地";
                 graph.valueField = "Cross-strait";
                 graph.balloonText = "<span style='font-size:14px'>兩岸三地 : [[value]]</span>";
                 graph.lineAlpha = 1;
@@ -1808,7 +1808,7 @@ AmCharts.ready(function () {
 
                 // Africa graph
                 var graph = new AmCharts.AmGraph();
-                graph.title = "Africa 非洲";
+                graph.title = "非洲";
                 graph.valueField = "Africa";
                 graph.balloonText = "<span style='font-size:14px'>非洲 : [[value]]</span>";
                 graph.lineAlpha = 1;
@@ -1817,7 +1817,7 @@ AmCharts.ready(function () {
 
                 // Central and South America graph
                 var graph = new AmCharts.AmGraph();
-                graph.title = "Central and South America 中南美洲";
+                graph.title = "中南美洲";
                 graph.valueField = "Central and South America";
                 graph.balloonText = "<span style='font-size:14px'>中南美洲 : [[value]]</span>";
                 graph.bullet = "round";
@@ -1825,7 +1825,7 @@ AmCharts.ready(function () {
 
                 // Europe graph
                 var graph = new AmCharts.AmGraph();
-                graph.title = "Europe 歐洲";
+                graph.title = "歐洲";
                 graph.valueField = "Europe";
                 graph.balloonText = "<span style='font-size:14px'>歐洲 : [[value]]</span>";
                 graph.bullet = "round";
@@ -1833,7 +1833,7 @@ AmCharts.ready(function () {
 
                  // USA and Canada graph
                 var graph = new AmCharts.AmGraph();
-                graph.title = "North America 北美洲";
+                graph.title = "北美洲";
                 graph.valueField = "USA and Canada";
                 graph.balloonText = "<span style='font-size:14px'>北美洲 : [[value]]</span>";
                 graph.lineAlpha = 1;
@@ -1842,7 +1842,7 @@ AmCharts.ready(function () {
 
                 // Asian graph
                 var graph = new AmCharts.AmGraph();
-                graph.title = "Asian 亞洲";
+                graph.title = "亞洲";
                 graph.valueField = "Asian";
                 graph.balloonText = "<span style='font-size:14px'>亞洲 : [[value]]</span>";
                 graph.lineAlpha = 1;

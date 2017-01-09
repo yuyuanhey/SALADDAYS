@@ -683,9 +683,9 @@ var data1 = google.visualization.arrayToDataTable([
 
        
         ]);
-       
+       // '#F2F3F4',
        	var options = {};
-        options['colors'] = ['#F2F3F4','#fcf3cf', '#d5f5e3','#a9dfbf','#73c6b6','#117a65','#1b4f72'];
+        options['colors'] = ['#fcf3cf', '#d5f5e3','#a9dfbf','#73c6b6','#117a65','#1b4f72'];
         var chart = new google.visualization.GeoChart(document.getElementById('heatMap1'));
         chart.draw(data1, options);
         
