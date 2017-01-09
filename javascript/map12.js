@@ -3,7 +3,7 @@
 
     function drawRegionsMap() {
 var data1 = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
+          ['Country', 'News'],
           ['China Mainland',13],
           ['Taiwan',12],
           ['Japan',5],
@@ -37,7 +37,7 @@ var data1 = google.visualization.arrayToDataTable([
           ['Hong Kong',1]
         ]);
         var data2 = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
+          ['Country', 'News'],
           ['United States',24],
           ['Japan',9],
           ['China Mainland',8],
@@ -99,7 +99,7 @@ var data1 = google.visualization.arrayToDataTable([
           ['South Africa',1]
         ]);
         var data3 = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
+          ['Country', 'News'],
           ['United States',24],
           ['Belgium',10],
           ['Germany',6],
@@ -160,7 +160,7 @@ var data1 = google.visualization.arrayToDataTable([
           ['Morocco',1]
         ]);
         var data4 = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
+          ['Country', 'News'],
           ['United States',25],
           ['Belgium',11],
           ['Japan',10],
@@ -224,7 +224,7 @@ var data1 = google.visualization.arrayToDataTable([
 
         ]);
         var data5 = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
+          ['Country', 'News'],
           ['United States',29],
           ['Canada',9],
           ['Germany',7],
@@ -287,7 +287,7 @@ var data1 = google.visualization.arrayToDataTable([
 
         ]);
         var data6 = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
+          ['Country', 'News'],
           ['United States',26],
           ['France',10],
           ['United Kingdom',7],
@@ -344,7 +344,7 @@ var data1 = google.visualization.arrayToDataTable([
 
         ]);
         var data7 = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
+          ['Country', 'News'],
           ['United States',31],
           ['United Kingdom',19],
           ['Venezuela',7],
@@ -397,7 +397,7 @@ var data1 = google.visualization.arrayToDataTable([
 
         ]);
         var data8 = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
+          ['Country', 'News'],
           ['United States',39],
           ['Germany',10],
           ['Japan',9],
@@ -456,7 +456,7 @@ var data1 = google.visualization.arrayToDataTable([
 
         ]);
         var data9 = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
+          ['Country', 'News'],
           ['United States',35],
           ['France',13],
           ['Syria',9],
@@ -513,7 +513,7 @@ var data1 = google.visualization.arrayToDataTable([
 
         ]);
         var data10 = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
+          ['Country', 'News'],
           ['United States',34],
           ['Russia',6],
           ['Haiti',6],
@@ -567,7 +567,7 @@ var data1 = google.visualization.arrayToDataTable([
 
         ]);
         var data11 = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
+          ['Country', 'News'],
           ['United States',33],
           ['Japan',12],
           ['Belgium',10],
@@ -622,7 +622,7 @@ var data1 = google.visualization.arrayToDataTable([
 
         ]);
         var data12 = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
+          ['Country', 'News'],
           ['United States',29],
           ['Japan',12],
           ['Colombia',7],
@@ -684,8 +684,10 @@ var data1 = google.visualization.arrayToDataTable([
        
         ]);
        // '#F2F3F4',
-       	var options = {};
-        options['colors'] = ['#fcf3cf', '#d5f5e3','#a9dfbf','#73c6b6','#117a65','#1b4f72'];
+//        #2980b9
+
+       	var options = {height:615};
+        options['colors'] = ['#f0f3f4', '#f7dc6f','#abebc6','#76d7c4','#5dade2','#2980b9'];
         var chart = new google.visualization.GeoChart(document.getElementById('heatMap1'));
         chart.draw(data1, options);
         

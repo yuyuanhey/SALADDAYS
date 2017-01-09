@@ -4,62 +4,62 @@ var chart;
                 {
                     "months": "1月",
                     "quantities": 127,
-                    "color": "#FF0F00"
+                    "color": "#47D1F7"
                 },
                 {
                     "months": "2月",
                     "quantities": 138,
-                    "color": "#FF6600"
+                    "color": "#47D1F7"
                 },
                 {
                     "months": "3月",
                     "quantities": 182,
-                    "color": "#FF9E01"
+                    "color": "#47D1F7"
                 },
                 {
                     "months": "4月",
                     "quantities": 157,
-                    "color": "#FCD202"
+                    "color": "#47D1F7"
                 },
                 {
                     "months": "5月",
                     "quantities": 167,
-                    "color": "#F8FF01"
+                    "color": "#47D1F7"
                 },
                 {
                     "months": "6月",
                     "quantities": 156,
-                    "color": "#B0DE09"
+                    "color": "#47D1F7"
                 },
                 {
                     "months": "7月",
                     "quantities": 151,
-                    "color": "#04D215"
+                    "color": "#47D1F7"
                 },
                 {
                     "months": "8月",
                     "quantities": 179,
-                    "color": "#0D8ECF"
+                    "color": "#47D1F7"
                 },
                 {
                     "months": "9月",
                     "quantities": 141,
-                    "color": "#0D52D1"
+                    "color": "#47D1F7"
                 },
                 {
                     "months": "10月",
                     "quantities": 145,
-                    "color": "#2A0CD0"
+                    "color": "#47D1F7"
                 },
                 {
                     "months": "11月",
                     "quantities": 166,
-                    "color": "#8A0CCF"
+                    "color": "#47D1F7"
                 },
                 {
                     "months": "12月",
                     "quantities": 124,
-                    "color": "#CD0D74"
+                    "color": "#47D1F7"
                 }
             ];
 
@@ -69,7 +69,7 @@ var chart;
                 chart = new AmCharts.AmSerialChart();
                 chart.dataProvider = chartData;
                 chart.categoryField = "months";
-                chart.startDuration = 0.8;
+                chart.startDuration = 0.3;
 
                 // AXES
                 // category
@@ -83,7 +83,7 @@ var chart;
                 // value
                 var valueAxis = new AmCharts.ValueAxis();
                 valueAxis.dashLength = 5;
-                valueAxis.title = "新聞數量";
+                valueAxis.title = "國際新聞數量";
                 valueAxis.axisAlpha = 0;
                 chart.addValueAxis(valueAxis);
 
@@ -1608,7 +1608,7 @@ AmCharts.ready(function () {
     chart = new AmCharts.AmXYChart();
 
     chart.dataProvider = chartData1;
-    chart.startDuration = 1.5;
+    chart.startDuration = 0.3;
 
     // AXES
     // X
@@ -1770,7 +1770,7 @@ AmCharts.ready(function () {
                 chart = new AmCharts.AmSerialChart();
                 chart.dataProvider = chartData2;
                 chart.categoryField = "month";
-                chart.startDuration = 0.5;
+                chart.startDuration = 0.3;
                 chart.balloon.color = "#000000";
 
                 // AXES
@@ -1785,7 +1785,7 @@ AmCharts.ready(function () {
 
                 // value
                 var valueAxis = new AmCharts.ValueAxis();
-                valueAxis.title = "新聞數量";
+                valueAxis.title = "國際新聞數量";
                 valueAxis.dashLength = 4;
                 valueAxis.axisAlpha = 3;
                 valueAxis.maximum = 62;

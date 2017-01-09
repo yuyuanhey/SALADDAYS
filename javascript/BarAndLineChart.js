@@ -460,7 +460,7 @@ AmCharts.ready(function () {
 
         var valueAxis2 = new AmCharts.ValueAxis();
         valueAxis2.position = "right"; // this line makes the axis  to appear on the right
-        valueAxis2.axisColor = "#ADD8E6";
+        valueAxis2.axisColor = "#7CE85A";
         valueAxis2.gridAlpha = 0;
         valueAxis2.maximum = 50;
         valueAxis2.strictMinMax = true;
@@ -470,8 +470,8 @@ AmCharts.ready(function () {
         var graph1 = new AmCharts.AmGraph();
         graph1.valueAxis = valueAxis1; 
         graph1.type = "column";
-        graph1.title = "總新聞數";
-        graph1.lineColor = "#ADD8E6";
+        graph1.title = "國際新聞數量";
+        graph1.lineColor = "#7CE85A";
         graph1.valueField = "Total News Count";
         graph1.lineAlpha = 1;
         graph1.fillAlphas = 1;
@@ -483,7 +483,7 @@ AmCharts.ready(function () {
         var graph2 = new AmCharts.AmGraph();
         graph1.valueAxis = valueAxis2;
         graph2.type = "line";
-        graph2.title = "平均新聞數";
+        graph2.title = "平均國際新聞數量";
         graph2.lineColor = "#fcd202";
         graph2.valueField = "average News Count";
         graph2.lineThickness = 3;
