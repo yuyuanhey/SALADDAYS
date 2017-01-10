@@ -188,81 +188,19 @@
 			</video>
 		</div>
 		<!--新聞地圖-->
+		<div id="floatButton" class="fa" onclick="document.getElementById('id02').style.display='block'">&#xf002;</div>
 		<div id="map" style="width:100%; display:none;">
 			<div style="width:90%; margin-left:5%;">
-				<div class="myButton" id="oneM" onclick="showBlock('oneMd')">搜尋新聞</div>
+				<div class="myButton" id="oneM" onclick="showBlock('oneMd')" style="display:none">搜尋新聞</div>
 				<div class="myButton" id="threeM" onclick="showBlock('threeMd')">統計圖表</div>
 				<div class="myButton" id="oneY" onclick="showBlock('oneYd')">補充圖表</div>
-				<!-- <div class="myButtonLine"></div> -->
-
-		<!-- Panel oneMonth-->
-		<!--
-				<div data-role="panel" id="pushPanel1M" data-display="push" data-dismissible="false" data-position-fixed="true"  data-position="right"> 
-				  	<a href="page3.html" data-rel="close" style="text-align:left; margin-left:80%;"><i class="fa fa-close" style="font-size:20px"></i></a>
-				    <div class="w3-content w3-center" style="max-width:500px; margin-top:-20px">
-				    	<div onclick=" fancyboximg(600,420,'./photo/chart/1M-1.png','一月');">
-				    		<img class="mySlides pic" src="./photo/chart/1M-1.png">
-				    	</div>
-				    	<div onclick=" fancyboximg(600,420,'./photo/chart/1M-2.png','二月');">
-				    		<img class="mySlides pic" src="./photo/chart/1M-2.png">
-				    	</div>
-				    	<div onclick=" fancyboximg(600,420,'./photo/chart/1M-3.png','三月');">
-				    		<img class="mySlides pic" src="./photo/chart/1M-3.png">
-				    	</div>
-				    	<div onclick=" fancyboximg(600,420,'./photo/chart/1M-4.png','四月');">
-				    		<img class="mySlides pic" src="./photo/chart/1M-4.png">
-				    	</div>
-				    	<div onclick=" fancyboximg(600,420,'./photo/chart/1M-5.png','五月');">
-				    		<img class="mySlides pic" src="./photo/chart/1M-5.png">
-				    	</div>
-				    	<div onclick=" fancyboximg(600,420,'./photo/chart/1M-6.png','六月');">
-				    		<img class="mySlides pic" src="./photo/chart/1M-6.png">
-				    	</div>
-				    	<div onclick=" fancyboximg(600,420,'./photo/chart/1M-7.png','七月');">
-				    		<img class="mySlides pic" src="./photo/chart/1M-7.png">
-				    	</div>
-				    	<div onclick=" fancyboximg(600,420,'./photo/chart/1M-8.png','八月');">
-				    		<img class="mySlides pic" src="./photo/chart/1M-8.png">
-				    	</div>
-				    	<div onclick=" fancyboximg(600,420,'./photo/chart/1M-9.png','九月');">
-				    		<img class="mySlides pic" src="./photo/chart/1M-9.png">
-				    	</div>
-				    	<div onclick=" fancyboximg(600,420,'./photo/chart/1M-10.png','十月');">
-				    		<img class="mySlides pic" src="./photo/chart/1M-10.png">
-				    	</div>
-				    	<div onclick=" fancyboximg(600,420,'./photo/chart/1M-11.png','十一月');">
-				    		<img class="mySlides pic" src="./photo/chart/1M-11.png">
-				    	</div>
-				    	<div onclick=" fancyboximg(600,420,'./photo/chart/1M-12.png','十二月');">
-				    		<img class="mySlides pic" src="./photo/chart/1M-12.png">
-				    	</div>
-					</div>
-
-					<div class="w3-center">
-						<div class="demo btn" onclick="currentDiv(1);">1</div>
-						<div class="demo btn" onclick="currentDiv(2);">2</div>
-						<div class="demo btn" onclick="currentDiv(3);">3</div>
-						<div class="demo btn" onclick="currentDiv(4);">4</div>
-						<div class="demo btn" onclick="currentDiv(5);">5</div>
-						<div class="demo btn" onclick="currentDiv(6);">6</div>
-						<div class="demo btn" onclick="currentDiv(7);">7</div>
-						<div class="demo btn" onclick="currentDiv(8);">8</div>
-						<div class="demo btn" onclick="currentDiv(9);">9</div>
-						<div class="demo btn" onclick="currentDiv(10);">10</div>
-						<div class="demo btn" onclick="currentDiv(11);">11</div>
-						<div class="demo btn" onclick="currentDiv(12);">12</div>
-					</div>
-				  </div>
-				  -->
-	<!-- Panel oneMonth End -->
-
 
 			</div>
-
+			
 <!-- 搜尋新聞 -->
- 			<div  id="oneMd" style="display: block">
+ 			<div  id="oneMd" style="display: none">
+ <!--
 				<select id="mySelect" class="w3-select selection" name="option" data-role="none">
-				<!-- disabled selected -->
 					<option value="" disabled selected>選擇篩選條件</option>
 					<option value="1">年</option>
 					<option value="2">月</option>
@@ -285,6 +223,7 @@
 				<input type="text" id="myInput2" onkeyup="myFunction()" placeholder="輸入關鍵字" title="Type in a name" style="display: inline-block;" data-role="none">
 				<div style="margin-left:10%;font-size:16px" id="tableCount">新聞總數 : 1857</div>
 				<table id="myTable" class="w3-table w3-bordered w3-margin-top w3-border"></table>
+			-->
 			</div>
 
 <!-- 統計圖表 -->
@@ -302,8 +241,8 @@
 				<div class="subtitle2" style="display: inline-block;margin-left: 40%">每月各州新聞比例</div>
 					<a onclick="document.getElementById('id01').style.display='block';showBarLineChart('1')"><img src="./photo/bars-chart.png" class="myButton2"></a>
 						<div id="id01" class="w3-modal">
-							<div class="w3-modal-content w3-card-4 w3-animate-zoom">
-								<span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn" style="margin:10px 20px 10px 0px">&times;</span>
+							<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="overflow:auto;">
+								<span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn" style="margin:10px 20px 10px 0px">&times;close</span>
 								<div id="BarLine1" class="w3-container BarLine"></div>
 								<div id="BarLine2" class="w3-container BarLine"></div>
 								<div id="BarLine3" class="w3-container BarLine"></div>
@@ -392,19 +331,38 @@
 					　　由圖中可知，歐洲各國的新聞自由指數多落在較低的位置，表示新聞自由度相較而言較大；值得注意的是，根據新聞自由指數定義，指數大約大於40時，表示新聞自由受限制，圖中散落於40以上的點，相對應的國家多位於亞洲與非洲。<br>
 					　　我們尚無法根據新聞自由指數，研判與中華民國外交部節錄各國新聞數的關聯性，這兩者之間的關係是我們期望繼續研究與觀察的方向。<br>
 				</div>
-<!--
-				<div class="subtitle2">連線圖標題</div>
-				<div id="flight" class="worldMap"></div>
-				<div class="text2">
-					<b>新聞來源：</b>一眼看天下─中華民國外交部<br>
-					<b>統計時間：</b>2015/12/16至2016/12/21<br>
-					<b>呈現內容：</b><br>
-					<b>資料分析：</b><br>
-				</div>
--->
-
 			</div>
-	
+			<div id="id02" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+					<span onclick="document.getElementById('id02').style.display='none'" class="w3-closebtn" style="margin:10px 20px 10px 0px;">&times;close</span>
+					<!-- <div id="mySelectParent" style="display: 'none';" > -->
+						<select id="mySelect" class="w3-select selection" name="option" data-role="none">
+							<option value="" disabled selected>選擇篩選條件</option>
+							<option value="1">年</option>
+							<option value="2">月</option>
+							<option value="3">日</option>
+							<option value="4">地區</option>
+							<option value="5">國家</option>
+							<option value="6">標題</option>
+						</select>
+						<input type="text" id="myInput" onkeyup="myFunction()" placeholder="輸入關鍵字" title="Type in a name" style="display: inline-block;" data-role="none">
+						
+						<select id="mySelect2" class="w3-select selection" name="option" data-role="none" style="margin: 40px 0px 12px 40px;">
+							<option value="" disabled selected>選擇篩選條件</option>
+							<option value="1">年</option>
+							<option value="2">月</option>
+							<option value="3">日</option>
+							<option value="4">地區</option>
+							<option value="5">國家</option>
+							<option value="6">標題</option>
+						</select>
+						<input type="text" id="myInput2" onkeyup="myFunction()" placeholder="輸入關鍵字" title="Type in a name" style="display: inline-block;" data-role="none">
+						<div style="margin-left:10%;font-size:16px" id="tableCount">新聞總數 : 1857</div>
+						<table id="myTable" class="w3-table w3-bordered w3-margin-top w3-border"></table>
+					<!-- </div> -->
+					
+				</div>
+			</div>
 		</div>
     </div>
 
@@ -460,6 +418,9 @@
 			document.getElementById(buttonId).style.backgroundColor = "#FFC408";
 			document.getElementById(buttonId).style.boxShadow = "0 4px #666";
 			document.getElementById(buttonId).style.color = "white";
+		}
+		function showSearch(){
+			document.getElementById("showSearch").style.display = "block";
 		}
 		// //slideShow
 		// var slideIndex = 1;
