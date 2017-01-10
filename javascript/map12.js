@@ -686,8 +686,10 @@ var data1 = google.visualization.arrayToDataTable([
        // '#F2F3F4',
 //        #2980b9
 
-       	var options = {height:615};
-        options['colors'] = ['#f0f3f4', '#f7dc6f','#abebc6','#76d7c4','#5dade2','#2980b9'];
+       	var options = {height:615, background: "#43C6AC", /* fallback for old browsers */
+background: -webkit-linear-gradient("to left", "#43C6AC" , "#F8FFAE"); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient("to left", "#43C6AC", "#F8FFAE"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */};
+        //options['colors'] = ['#f0f3f4', '#f7dc6f','#abebc6','#76d7c4','#5dade2','#2980b9'];
         var chart = new google.visualization.GeoChart(document.getElementById('heatMap1'));
         chart.draw(data1, options);
         

@@ -299,7 +299,28 @@
 					　　由三月的新聞來看，內容較多提及難民危機、各國對難民的態度和方式以及恐怖攻擊。由此可知，難民議題是一個全球性的議題，雖然主要的關係國家是美歐和西亞非洲等難民來源地，但是對全球政治、經濟、文化等影響仍是不容小覷的，也因此新聞媒體才會花如此多的篇幅報導。<br>
 					　　由八月的新聞來看，發現新聞的分布較為分散，世界各國都有並不僅僅侷限於美國或中國等世界強國。舉例而言，有關於恐攻的新聞就會提及比利時、法國、德國等國家，爆炸案則提及吉爾吉斯、泰國、土耳其、菲律賓及阿富汗。<br> -->
 				</div>
-				<div class="subtitle2">每月各州新聞比例</div>
+				<div class="subtitle2" style="display: inline-block;margin-left: 40%">每月各州新聞比例</div>
+					<a onclick="document.getElementById('id01').style.display='block';showBarLineChart('1')"><img src="./photo/bars-chart.png" class="myButton2"></a>
+						<div id="id01" class="w3-modal">
+							<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+								<span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn" style="margin:10px 20px 10px 0px">&times;</span>
+								<div id="BarLine1" class="w3-container BarLine"></div>
+								<div id="BarLine2" class="w3-container BarLine"></div>
+								<div id="BarLine3" class="w3-container BarLine"></div>
+								<div id="BarLine4" class="w3-container BarLine"></div>
+								<div id="BarLine5" class="w3-container BarLine"></div>
+								<div id="BarLine6" class="w3-container BarLine"></div>
+								<div id="BarLine7" class="w3-container BarLine"></div>
+								<div id="BarLine8" class="w3-container BarLine"></div>
+								<div id="BarLine9" class="w3-container BarLine"></div>
+								<div id="BarLine10" class="w3-container BarLine"></div>
+								<div id="BarLine11" class="w3-container BarLine"></div>
+								<div id="BarLine12" class="w3-container BarLine"></div>
+								<div style="width:600px; margin:2% 100px 2% 15%; height:30px">
+									<input style="width: 600px" id="sliderBarChart" class="mdl-slider mdl-js-slider" type="range" min="1" max="12" value="0" tabindex="0" oninput="showBarLineChart(this.value)" onchange="showBarLineChart(this.value)">
+								</div>
+							</div>
+						</div>
 				<div id="cumulativeBar" class="worldMap"></div>
 				<div class="text2">
 					<b>新聞來源：</b>一眼看天下─中華民國外交部 <br>
@@ -310,30 +331,8 @@
 					　　由八月的新聞來看，發現新聞的分布較為分散，世界各國都有並不僅僅侷限於美國或中國等世界強國。舉例而言，有關於恐攻的新聞就會提及比利時、法國、德國等國家，爆炸案則提及吉爾吉斯、泰國、土耳其、菲律賓及阿富汗。<br> -->
 				</div>
 
-				<div class="subtitle2" style="display: inline-block;margin-left: 42%">每月各洲新聞總數</div>
+				<div class="subtitle2">每月各洲新聞總數</div>
 				<!-- <div class="w3-container"> -->
-					<a onclick="document.getElementById('id01').style.display='block';showBarLineChart('1')"><img src="./photo/bars-chart.png" class="myButton2"></a>
-					<div id="id01" class="w3-modal">
-						<div class="w3-modal-content w3-card-4 w3-animate-zoom">
-							<span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn" style="margin:10px 20px 10px 0px">&times;</span>
-							<div id="BarLine1" class="w3-container BarLine"></div>
-							<div id="BarLine2" class="w3-container BarLine"></div>
-							<div id="BarLine3" class="w3-container BarLine"></div>
-							<div id="BarLine4" class="w3-container BarLine"></div>
-							<div id="BarLine5" class="w3-container BarLine"></div>
-							<div id="BarLine6" class="w3-container BarLine"></div>
-							<div id="BarLine7" class="w3-container BarLine"></div>
-							<div id="BarLine8" class="w3-container BarLine"></div>
-							<div id="BarLine9" class="w3-container BarLine"></div>
-							<div id="BarLine10" class="w3-container BarLine"></div>
-							<div id="BarLine11" class="w3-container BarLine"></div>
-							<div id="BarLine12" class="w3-container BarLine"></div>
-							<div style="width:600px; margin:2% 100px 2% 15%; height:30px">
-								<input style="width: 600px" id="sliderBarChart" class="mdl-slider mdl-js-slider" type="range" min="1" max="12" value="0" tabindex="0" oninput="showBarLineChart(this.value)" onchange="showBarLineChart(this.value)">
-							</div>
-						</div>
-					</div>
-
 				<div id="sixContinent" class="worldMap"></div>
 				<div class="text2">
 					<b>新聞來源：</b>一眼看天下─中華民國外交部<br>
