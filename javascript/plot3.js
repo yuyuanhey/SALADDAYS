@@ -681,7 +681,9 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+     graph.lineColor = "#0003C5";
     chart.addGraph(graph);
+   
     // Japan graph
     var graph = new AmCharts.AmGraph();
     graph.title = "日本";
@@ -689,6 +691,7 @@ AmCharts.ready(function () {
 	graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#0A0EF4";
     chart.addGraph(graph);
     // Belgium graph
     var graph = new AmCharts.AmGraph();
