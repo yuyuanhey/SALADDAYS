@@ -345,3 +345,18 @@ a:visited{
   /*height: 50px;
   width: 50px*/
 }
+
+.floatButton{
+  z-index:5;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;    
+  padding: 15px 15px;    
+  font-size: 30px;
+  background: #1ABC9C;
+  color: white;
+  cursor: pointer;
+  /*border-radius: 100%;*/
+  /*height: 50px;
+  width: 50px*/
+}
