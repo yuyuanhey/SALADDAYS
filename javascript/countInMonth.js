@@ -85,6 +85,7 @@ var chart;
                 valueAxis.dashLength = 5;
                 valueAxis.title = "國際新聞數量";
                 valueAxis.axisAlpha = 0;
+
                 chart.addValueAxis(valueAxis);
 
                 // GRAPH
@@ -95,6 +96,8 @@ var chart;
                 graph.type = "column";
                 graph.lineAlpha = 0;
                 graph.fillAlphas = 1;
+               valueAxis.minimum = 0;
+
                 chart.addGraph(graph);
 
                 // CURSOR
