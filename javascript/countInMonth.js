@@ -1866,3 +1866,229 @@ AmCharts.ready(function () {
                 // chart.addTitle("六大區域新聞數量折線圖(from 2015.12.16 to 2016.12.21)");
                 // chart.write("chartdiv");
             });
+
+            var cumulativeChartData = [
+                {
+                    "month": "1月",
+                    "europe": 33,
+                    "namerica": 12,
+                    "asia": 62,
+                    "lamerica": 0,
+                    "cross-strait": 16,
+                    "africa": 4
+                },
+                {
+                    "month": "2月",
+                    "europe": 34,
+                    "namerica": 26,
+                    "asia": 39,
+                    "lamerica": 4,
+                    "cross-strait": 19,
+                    "africa": 17
+                },
+                {
+                    "month": "3月",
+                    "europe": 43,
+                    "namerica": 31,
+                    "asia": 44,
+                    "lamerica": 29,
+                    "cross-strait": 8,
+                    "africa": 27
+                },
+                {
+                    "month": "4月",
+                    "europe": 35,
+                    "namerica": 34,
+                    "asia": 32,
+                    "lamerica": 29,
+                    "cross-strait": 4,
+                    "africa": 23
+                },
+                {
+                    "month": "5月",
+                    "europe": 33,
+                    "namerica": 34,
+                    "asia": 42,
+                    "lamerica": 22,
+                    "cross-strait": 5,
+                    "africa": 31
+                },
+                {
+                    "month": "6月",
+                    "europe": 42,
+                    "namerica": 33,
+                    "asia": 35,
+                    "lamerica": 22,
+                    "cross-strait": 6,
+                    "africa": 18
+                },
+                {
+                    "month": "7月",
+                    "europe": 40,
+                    "namerica": 32,
+                    "asia": 36,
+                    "lamerica": 21,
+                    "cross-strait": 7,
+                    "africa": 15
+                },
+                {
+                    "month": "8月",
+                    "europe": 43,
+                    "namerica": 41,
+                    "asia": 48,
+                    "lamerica": 23,
+                    "cross-strait": 3,
+                    "africa": 21
+                },
+                {
+                    "month": "9月",
+                    "europe": 37,
+                    "namerica": 35,
+                    "asia": 38,
+                    "lamerica": 10,
+                    "cross-strait": 3,
+                    "africa": 18
+                },
+                {
+                    "month": "10月",
+                    "europe": 37,
+                    "namerica": 35,
+                    "asia": 38,
+                    "lamerica": 22,
+                    "cross-strait": 6,
+                    "africa": 18
+                },
+                {
+                    "month": "11月",
+                    "europe": 43,
+                    "namerica": 39,
+                    "asia": 44,
+                    "lamerica": 24,
+                    "cross-strait": 2,
+                    "africa": 14
+                },
+                {
+                    "month": "12月",
+                    "europe": 24,
+                    "namerica": 20,
+                    "asia": 29,
+                    "lamerica": 26,
+                    "cross-strait": 1,
+                    "africa": 24
+                }
+            ];
+
+            AmCharts.ready(function () {
+                // SERIAL CHART
+                chart = new AmCharts.AmSerialChart();
+                chart.dataProvider = cumulativeChartData;
+                chart.categoryField = "month";
+
+                // sometimes we need to set margins manually
+                // autoMargins should be set to false in order chart to use custom margin values
+                // chart.autoMargins = false;
+                // chart.marginLeft = 0;
+                // chart.marginRight = 0;
+                // chart.marginTop = 30;
+                // chart.marginBottom = 40;
+
+                // AXES
+                // category
+                var categoryAxis = chart.categoryAxis;
+                categoryAxis.gridAlpha = 0;
+                categoryAxis.axisAlpha = 0;
+                categoryAxis.gridPosition = "start";
+
+                // value
+                var valueAxis = new AmCharts.ValueAxis();
+                valueAxis.stackType = "regular"; // this line makes the chart 100% stacked
+                valueAxis.gridAlpha = 0;
+                valueAxis.axisAlpha = 0;
+                valueAxis.labelsEnabled = false;
+                chart.addValueAxis(valueAxis);
+
+                // GRAPHS
+                // first graph
+                var graph = new AmCharts.AmGraph();
+                graph.title = "歐洲";
+                graph.labelText = "[[value]]<br>([[percents]]%)";
+                graph.balloonText = "[[title]], [[category]]<br><span style='font-size:12px;'><b>[[value]]</b> ([[percents]]%)</span>";
+                graph.valueField = "europe";
+                graph.type = "column";
+                graph.lineAlpha = 0;
+                graph.fillAlphas = 1;
+                graph.lineColor = "#F92F41";
+                chart.addGraph(graph);
+
+                // second graph
+                graph = new AmCharts.AmGraph();
+                graph.title = "北美洲";
+                graph.labelText = "[[value]]<br>([[percents]]%)";
+                graph.balloonText = "[[title]], [[category]]<br><span style='font-size:14px;'><b>[[value]]</b> ([[percents]]%)</span>";
+                graph.valueField = "namerica";
+                graph.type = "column";
+                graph.lineAlpha = 0;
+                graph.fillAlphas = 1;
+                graph.lineColor = "#FC9E40";
+                chart.addGraph(graph);
+
+                // third graph
+                graph = new AmCharts.AmGraph();
+                graph.title = "亞洲";
+                graph.labelText = "[[value]]<br>([[percents]]%)";
+                graph.balloonText = "[[title]], [[category]]<br><span style='font-size:14px;'><b>[[value]]</b> ([[percents]]%)</span>";
+                graph.valueField = "asia";
+                graph.type = "column";
+                graph.lineAlpha = 0;
+                graph.fillAlphas = 1;
+                graph.lineColor = "#FBED1B";
+                chart.addGraph(graph);
+
+                // fourth graph
+                graph = new AmCharts.AmGraph();
+                graph.title = "中南美洲";
+                graph.labelText = "[[value]]<br>([[percents]]%)";
+                graph.balloonText = "[[title]], [[category]]<br><span style='font-size:14px;'><b>[[value]]</b> ([[percents]]%)</span>";
+                graph.valueField = "lamerica";
+                graph.type = "column";
+                graph.lineAlpha = 0;
+                graph.fillAlphas = 1;
+                graph.lineColor = "#5FF94B";
+                chart.addGraph(graph);
+
+                // fifth graph
+                graph = new AmCharts.AmGraph();
+                graph.title = "兩岸三地";
+                graph.labelText = "[[value]]<br>([[percents]]%)";
+                graph.balloonText = "[[title]], [[category]]<br><span style='font-size:14px;'><b>[[value]]</b> ([[percents]]%)</span>";
+                graph.valueField = "cross-strait";
+                graph.type = "column";
+                graph.lineAlpha = 0;
+                graph.fillAlphas = 1;
+                graph.lineColor = "#85C1E9";
+                chart.addGraph(graph);
+
+                // sixth graph
+                graph = new AmCharts.AmGraph();
+                graph.title = "非洲";
+                graph.labelText = "[[value]]<br>([[percents]]%)";
+                graph.balloonText = "[[title]], [[category]]<br><span style='font-size:14px;'><b>[[value]]</b> ([[percents]]%)</span>";
+                graph.valueField = "africa";
+                graph.type = "column";
+                graph.lineAlpha = 0;
+                graph.fillAlphas = 1;
+                graph.lineColor = "#C39BD3";
+                chart.addGraph(graph);
+
+                // LEGEND
+                var legend = new AmCharts.AmLegend();
+                legend.borderAlpha = 0.2;
+                legend.horizontalGap = 5;
+                // legend.autoMargins = false;
+                // legend.marginLeft = 0;
+                // legend.marginRight = 0;
+                chart.addLegend(legend);
+
+                // WRITE
+                chart.write("cumulativeBar");
+            });
