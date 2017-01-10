@@ -1697,7 +1697,7 @@ AmCharts.ready(function () {
                     "month": "五月",
                     "Africa": 31,
                     "Central and South America": 22,
-                    "Europe": 23,
+                    "Europe": 33,
                     "USA and Canada":34,
                     "Asian":42,
                     "Cross-strait":5
