@@ -673,7 +673,10 @@ AmCharts.ready(function () {
     valueAxis.gridCount = 10;
     valueAxis.reversed =false; // this line makes the value axis reversed
     chart.addValueAxis(valueAxis);
+   
     // GRAPHS---------------------------------------------------
+
+
     // United States of America graph
     var graph = new AmCharts.AmGraph();
     graph.title = "美國";
@@ -691,6 +694,7 @@ AmCharts.ready(function () {
 	graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#9500C5";
     
     chart.addGraph(graph);
     // Belgium graph
@@ -700,6 +704,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#65FFBA";
     chart.addGraph(graph);
      //France graph
     var graph = new AmCharts.AmGraph();
@@ -708,6 +713,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#7DEEBC";
     chart.addGraph(graph);
     // United Kingdom graph
     var graph = new AmCharts.AmGraph();
@@ -716,6 +722,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#8EE1D2";
     chart.addGraph(graph);
     // Germany graph
     var graph = new AmCharts.AmGraph();
@@ -725,6 +732,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#A8F552";
     chart.addGraph(graph);
      // Brazil graph
     var graph = new AmCharts.AmGraph();
@@ -734,6 +742,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#FFF064";
     chart.addGraph(graph);
     // China graph
     var graph = new AmCharts.AmGraph();
@@ -743,6 +752,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#FE0C05";
     chart.addGraph(graph);
     // Canada graph
     var graph = new AmCharts.AmGraph();
@@ -752,6 +762,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#0A0EF4";
     chart.addGraph(graph);
     // Syria graph
     var graph = new AmCharts.AmGraph();
@@ -761,6 +772,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#B300C5";
     chart.addGraph(graph);
     // Venezuela graph
     var graph = new AmCharts.AmGraph();
@@ -770,6 +782,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#FFE146";
     chart.addGraph(graph);
     // Russia graph
     var graph = new AmCharts.AmGraph();
@@ -779,6 +792,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#7AF67A";
     chart.addGraph(graph);
     // Turkey graph
     var graph = new AmCharts.AmGraph();
@@ -788,6 +802,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#EE38EB";
     chart.addGraph(graph);
      // Philippines graph
     var graph = new AmCharts.AmGraph();
@@ -797,6 +812,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#EE3838";
     chart.addGraph(graph);
       // North Korea graph
     var graph = new AmCharts.AmGraph();
@@ -806,6 +822,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#EE38CD";
     chart.addGraph(graph);
       //Australia graph
     var graph = new AmCharts.AmGraph();
@@ -815,6 +832,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#AD6EF9";
     chart.addGraph(graph);
       //Colombia graph
     var graph = new AmCharts.AmGraph();
@@ -824,6 +842,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#FFAA28";
     chart.addGraph(graph);
       //Nigeria graph
     var graph = new AmCharts.AmGraph();
@@ -833,6 +852,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#6EF9E2";
     chart.addGraph(graph);
       //Indonesia graph
     var graph = new AmCharts.AmGraph();
@@ -842,6 +862,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#F96E6E";
     chart.addGraph(graph);
      //Iraq graph
     var graph = new AmCharts.AmGraph();
@@ -851,6 +872,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#F96EA9";
     chart.addGraph(graph);
      //Italy graph
     var graph = new AmCharts.AmGraph();
@@ -860,6 +882,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#64DB99";
     chart.addGraph(graph);
    
      //India graph
@@ -870,6 +893,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#EE3880";
     chart.addGraph(graph);
     //Mexico graph
     var graph = new AmCharts.AmGraph();
@@ -879,6 +903,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.lineColor = "#FFCD28";
     chart.addGraph(graph);
     //Austria graph  
     var graph = new AmCharts.AmGraph(); 
@@ -887,7 +912,8 @@ AmCharts.ready(function () {
     graph.hidden = true; // this line makes the graph initially hidden  
     graph.balloonText = "[[title]]: [[value]]"; 
     graph.lineAlpha = 1; 
-    graph.bullet = "round"; 
+    graph.bullet = "round";
+    graph.lineColor = "#4AB34A"; 
     chart.addGraph(graph);
 	//witzerland graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -896,7 +922,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#288C28"; 
 	chart.addGraph(graph);
 	//Cuba graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -905,7 +932,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#FFB900"; 
 	chart.addGraph(graph);
 	//Egypt graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -914,7 +942,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#0CF9D1"; 
 	chart.addGraph(graph);
 	//Myanmar graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -923,7 +952,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#F96EC9"; 
 	chart.addGraph(graph);
 	//Somalia graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -932,7 +962,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#0CF5F9"; 
 	chart.addGraph(graph);
 	//Spain graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -941,7 +972,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#D2FFD2"; 
 	chart.addGraph(graph);
 	//Greece graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -950,7 +982,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#56B37F"; 
 	chart.addGraph(graph);
 	//Libya graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -959,7 +992,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#EE3856"; 
 	chart.addGraph(graph);
 	//South Sudan graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -968,7 +1002,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#0CBCF9"; 
 	chart.addGraph(graph);
 	//Afghanistan graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -977,7 +1012,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#8000C5"; 
 	chart.addGraph(graph);
 	//Netherlands graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -986,7 +1022,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#008080"; 
 	chart.addGraph(graph);
 	//Argentina graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -995,7 +1032,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#FAFAA0"; 
 	chart.addGraph(graph);
 	//Haiti graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -1004,7 +1042,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#FF8200"; 
 	chart.addGraph(graph);
 	//Kenya graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -1013,7 +1052,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#0C86F9"; 
 	chart.addGraph(graph);
 	//Pakistan graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -1022,7 +1062,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#EC6EF9"; 
 	chart.addGraph(graph);
 	//Peru graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -1031,7 +1072,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#FF7F50"; 
 	chart.addGraph(graph);
 	//South Africa graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -1040,7 +1082,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#0CA3F9"; 
 	chart.addGraph(graph);
 	//Thailand graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -1049,7 +1092,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#5400C5"; 
 	chart.addGraph(graph);
 	//Vietnam graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -1058,7 +1102,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#EE38AF"; 
 	chart.addGraph(graph);
 	//Iran graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -1067,7 +1112,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#F96EEA"; 
 	chart.addGraph(graph);
 	//New Zealand graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -1076,7 +1122,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#C96EF9"; 
 	chart.addGraph(graph);
 	//Panama graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -1085,7 +1132,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#D2691E"; 
 	chart.addGraph(graph);
 	//Ukraine graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -1094,7 +1142,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#28B4B4"; 
 	chart.addGraph(graph);
 	//Yemen graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -1103,7 +1152,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#5AB2FB"; 
 	chart.addGraph(graph);
 	//Zimbabwe graph 
 	var graph = new AmCharts.AmGraph(); 
@@ -1112,7 +1162,8 @@ AmCharts.ready(function () {
 	graph.hidden = true; // this line makes the graph initially hidden  
 	graph.balloonText = "[[title]]: [[value]]"; 
 	graph.lineAlpha = 1; 
-	graph.bullet = "round"; 
+	graph.bullet = "round";
+	graph.lineColor = "#0CD5F9"; 
 	chart.addGraph(graph);
 		// GRAPHS---------------------------------------------------
     // CURSOR
