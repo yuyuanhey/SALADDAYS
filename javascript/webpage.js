@@ -853,7 +853,7 @@ AmCharts.ready(function () {
     chart = new AmCharts.AmSerialChart();
     chart.dataProvider = plot3;
     chart.categoryField = "month";
-    chart.startDuration = 0.5;
+    chart.startDuration = 0;
     chart.balloon.color = "#000000";
     // AXES
     // category
@@ -944,7 +944,7 @@ AmCharts.ready(function () {
     var graph = new AmCharts.AmGraph(); 
     graph.title ="古巴";  
     graph.valueField = "Cuba"; 
-    graph.hidden = true; 
+    graph.hidden = false; 
     graph.balloonText = "[[title]]: [[value]]"; 
     graph.lineAlpha = 1; 
     graph.bullet = "round";
@@ -1009,6 +1009,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
+    graph.hidden = true; 
     graph.lineColor = "#65FFBA";
     chart.addGraph(graph);
 //France graph
@@ -1017,6 +1018,7 @@ AmCharts.ready(function () {
     graph.valueField = "France";
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
+    graph.hidden = true; 
     graph.bullet = "round";
     graph.lineColor = "#7DEEBC";
     chart.addGraph(graph);
@@ -1144,11 +1146,11 @@ AmCharts.ready(function () {
     var graph = new AmCharts.AmGraph();
     graph.title = "敘利亞";
     graph.valueField = "Syria";
-    graph.hidden = true; // this line makes the graph initially hidden
+    graph.hidden = false; // this line makes the graph initially hidden
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
-    graph.lineColor = "#B300C5";
+    graph.lineColor = "#EE3880";
     chart.addGraph(graph);
 // Turkey graph
     var graph = new AmCharts.AmGraph();
@@ -1188,7 +1190,7 @@ AmCharts.ready(function () {
     graph.balloonText = "[[title]]: [[value]]";
     graph.lineAlpha = 1;
     graph.bullet = "round";
-    graph.lineColor = "#EE3880";
+    graph.lineColor = "#B300C5";
     chart.addGraph(graph);
 //Libya graph 
     var graph = new AmCharts.AmGraph(); 
@@ -1772,7 +1774,7 @@ AmCharts.ready(function () {
     for(var i = 1; i <= 12; i++){
         chart = new AmCharts.AmSerialChart();
         var data  = "BarLine"+i.toString();
-        var title = "各州每月新聞總數與平均新聞數";
+        var title = "各州每月國際新聞總數與平均新聞數";
         switch(i) {
             case 1:
                 chart.dataProvider = BarLine1;
@@ -3499,7 +3501,7 @@ AmCharts.ready(function () {
     // AXES
     // X
     var xAxis = new AmCharts.ValueAxis();
-    xAxis.title = "新聞數";
+    xAxis.title = "國際新聞數";
     xAxis.position = "bottom";
     xAxis.axisAlpha = 0;
     xAxis.minMaxMultiplayer = 10;
@@ -4105,7 +4107,7 @@ AmCharts.ready(function () {
     if(tr[i].style.display != "none")
       count = count + 1;
   }
-  document.getElementById("tableCount").innerHTML = "新聞總數 : " + (count-1);
+  document.getElementById("tableCount").innerHTML = "國際新聞總數 : " + (count-1);
 }
 
 var jdata = [{
@@ -20875,161 +20877,32 @@ $(table).appendTo("#myTable");
     function drawRegionsMap() {
 var data1 = google.visualization.arrayToDataTable([
           ['Country', 'News'],
-          ['China Mainland',13],
-          ['Taiwan',12],
-          ['Japan',5],
-          ['South Korea',4],
-          ['Iraq',4],
-          ['United Kingdom',3],
-          ['Iran',3],
-          ['Germany',3],
-          ['Australia',3],
-          ['Turkey',3],
-          ['Pakistan',3],
-          ['Philippines',3],
-          ['North Korea',3],
-          ['Russia',2],
-          ['Indonesia',2],
-          ['Syria',2],
-          ['Myanmar',2],
-          ['Saudi-Arabia',2],
-          ['Israel',1],
-          ['United States',1],
-          ['Ukraine',1],
-          ['Poland',1],
-          ['Afghanistan',1],
-          ['Norway',1],
-          ['India',1],
-          ['Vietnam',1],
-          ['Korea',1],
-          ['Kuwait',1],
-          ['Canada',1],
-          ['Spain',1],
-          ['Hong Kong',1]
-        ]);
-        var data2 = google.visualization.arrayToDataTable([
+          ['China Mainland',13],['Taiwan',12],['Japan',5],['South Korea',4],['Iraq',4],['United Kingdom',3],
+          ['Iran',3],['Germany',3],['Australia',3],['Turkey',3],['Pakistan',3],['Philippines',3],['North Korea',3],['Russia',2],
+          ['Indonesia',2],['Syria',2],['Myanmar',2],['Saudi-Arabia',2],['Israel',1],['United States',1],['Ukraine',1],['Poland',1],
+          ['Afghanistan',1],['Norway',1],['India',1],['Vietnam',1],['Korea',1],['Kuwait',1],['Canada',1],['Spain',1],['Hong Kong',1]
+    ]);
+var data2 = google.visualization.arrayToDataTable([
           ['Country', 'News'],
-          ['United States',24],
-          ['Japan',9],
-          ['China Mainland',8],
-          ['Taiwan',8],
-          ['Syria',7],
-          ['Belgium',7],
-          ['Switzerland',6],
-          ['Australia',4],
-          ['South Korea',4],
-          ['France',4],
-          ['Nigeria',4],
-          ['Uganda',3],
-          ['Russia',3],
-          ['Vietnam',3],
-          ['Hong Kong',3],
-          ['Turkey',2],
-          ['Germany',2],
-          ['New Zealand',2],
-          ['Austria',2],
-          ['Greece',2],
-          ['United Kingdom',2],
-          ['Philippines',2],
-          ['Vatican',2],
-          ['Canada',2],
-          ['Spain',2],
-          ['Central African Republic',2],
-          ['Sweden',2],
-          ['Myanmar',2],
-          ['Malaysia',1],
-          ['Indonesia',1],
-          ['Swaziland',1],
-          ['Afghanistan',1],
-          ['Israel',1],
-          ['Netherlands',1],
-          ['Belarus',1],
-          ['Denmark',1],
-          ['Hungary',1],
-          ['Ethiopia',1],
-          ['Iraq',1],
-          ['North Korea',1],
-          ['Brazil',1],
-          ['Norway',1],
-          ['Cameroon',1],
-          ['Pakistan',1],
-          ['Sri Lanka',1],
-          ['Papua New Guinea',1],
-          ['Angola',1],
-          ['Finland',1],
-          ['India',1],
-          ['Portugal',1],
-          ['Iran',1],
-          ['Cadar',1],
-          ['Ukraine',1],
-          ['Saudi-Arabia',1],
-          ['Italy',1],
-          ['Senegal',1],
-          ['Korea',1],
-          ['Somalia',1],
-          ['South Africa',1]
-        ]);
-        var data3 = google.visualization.arrayToDataTable([
-          ['Country', 'News'],
-          ['United States',24],
-          ['Belgium',10],
-          ['Germany',6],
-          ['North Korea',6],
-          ['China Mainland',5],
-          ['Australia',5],
-          ['Brazil',5],
-          ['Japan',5],
-          ['Syria',4],
-          ['Russia',3],
-          ['Netherlands',3],
-          ['Turkey',3],
-          ['Iran',3],
-          ['Austria',3],
-          ['Argentina',3],
-          ['Canada',3],
-          ['Somalia',3],
-          ['Taiwan',3],
-          ['Burundi',3],
-          ['Switzerland',2],
-          ['Indonesia',2],
-          ['Jamaica',2],
-          ['Hong Kong',2],
-          ['South Korea',2],
-          ['Peru',2],
-          ['France',2],
-          ['Zimbabwe',2],
-          ['Slovenia',2],
-          ['United Kingdom',2],
-          ['Myanmar',2],
-          ['Macedonia',2],
-          ['Benin',1],
-          ['Korea',1],
-          ['Cuba',5],
-          ['Egypt',1],
-          ['Chile',1],
-          ['El Salvador',1],
-          ['Colombia',1],
-          ['Ethiopia',1],
-          ['Tunisia',1],
-          ['Fiji',1],
-          ['Vietnam',1],
-          ['New Zealand',1],
-          ['Hungary',1],
-          ['Niger',1],
-          ['Spain',1],
-          ['Nigeria',1],
-          ['Ivory Coast',1],
-          ['Cameroon',1],
-          ['Tanzania',1],
-          ['Pakistan',1],
-          ['Dubai',1],
-          ['Bolivia',1],
-          ['Burkina Faso',1],
-          ['Philippines',1],
-          ['Greece',1],
-          ['Mexico',1],
-          ['Morocco',1]
-        ]);
+          ['United States',24],['Japan',9],['China Mainland',8],['Taiwan',8],['Syria',7],['Belgium',7],
+          ['Switzerland',6],['Australia',4],['South Korea',4],['France',4],['Nigeria',4],['Uganda',3],['Russia',3],['Vietnam',3],
+          ['Hong Kong',3],['Turkey',2],['Germany',2],['New Zealand',2],['Austria',2],['Greece',2],['United Kingdom',2],['Philippines',2],
+          ['Vatican',2],['Canada',2],['Spain',2],['Central African Republic',2],['Sweden',2],['Myanmar',2],['Malaysia',1],
+          ['Indonesia',1],['Swaziland',1],['Afghanistan',1],['Israel',1],['Netherlands',1],['Belarus',1],['Denmark',1],['Hungary',1],
+          ['Ethiopia',1],['Iraq',1],['North Korea',1],['Brazil',1],['Norway',1],['Cameroon',1],['Pakistan',1],['Sri Lanka',1],
+          ['Papua New Guinea',1],['Angola',1],['Finland',1],['India',1],['Portugal',1],['Iran',1],['Cadar',1],['Ukraine',1],['Saudi-Arabia',1],
+          ['Italy',1],['Senegal',1],['Korea',1],['Somalia',1],['South Africa',1]
+    ]);
+var data3 = google.visualization.arrayToDataTable([
+      ['Country', 'News'],
+      ['United States',24],['Belgium',10],['Germany',6],['North Korea',6],['China Mainland',5],['Australia',5],['Brazil',5],
+      ['Japan',5],['Syria',4],['Russia',3],['Netherlands',3],['Turkey',3],['Iran',3],['Austria',3],['Argentina',3],
+      ['Canada',3],['Somalia',3],['Taiwan',3],['Burundi',3],['Switzerland',2],['Indonesia',2],['Jamaica',2],['Hong Kong',2],
+      ['South Korea',2],['Peru',2],['France',2],['Zimbabwe',2],['Slovenia',2],['United Kingdom',2],['Myanmar',2],
+      ['Macedonia',2],['Benin',1],['Korea',1],['Cuba',5],['Egypt',1],['Chile',1],['El Salvador',1],['Colombia',1],['Ethiopia',1],
+      ['Tunisia',1],['Fiji',1],['Vietnam',1],['New Zealand',1],['Hungary',1],['Niger',1],['Spain',1],['Nigeria',1],['Ivory Coast',1],['Cameroon',1],
+      ['Tanzania',1],['Pakistan',1],['Dubai',1],['Bolivia',1],['Burkina Faso',1],['Philippines',1],['Greece',1],['Mexico',1],['Morocco',1]
+    ]);
         var data4 = google.visualization.arrayToDataTable([
           ['Country', 'News'],
           ['United States',25],
@@ -21571,38 +21444,62 @@ var data1 = google.visualization.arrayToDataTable([
 
         var chart = new google.visualization.GeoChart(document.getElementById('heatMap1'));
         chart.draw(data1, options);
+        var chart = new google.visualization.GeoChart(document.getElementById('heatMaptwo1'));
+        chart.draw(data1, options);
         
         var chart = new google.visualization.GeoChart(document.getElementById('heatMap2'));
+        chart.draw(data2, options);
+        var chart = new google.visualization.GeoChart(document.getElementById('heatMaptwo2'));
         chart.draw(data2, options);
         
         var chart = new google.visualization.GeoChart(document.getElementById('heatMap3'));
         chart.draw(data3, options);
+        var chart = new google.visualization.GeoChart(document.getElementById('heatMaptwo3'));
+        chart.draw(data3, options);
         
         var chart = new google.visualization.GeoChart(document.getElementById('heatMap4'));
+        chart.draw(data4, options);
+        var chart = new google.visualization.GeoChart(document.getElementById('heatMaptwo4'));
         chart.draw(data4, options);
         
         var chart = new google.visualization.GeoChart(document.getElementById('heatMap5'));
         chart.draw(data5, options);
+        var chart = new google.visualization.GeoChart(document.getElementById('heatMaptwo5'));
+        chart.draw(data5, options);
         
         var chart = new google.visualization.GeoChart(document.getElementById('heatMap6'));
+        chart.draw(data6, options);
+        var chart = new google.visualization.GeoChart(document.getElementById('heatMaptwo6'));
         chart.draw(data6, options);
         
         var chart = new google.visualization.GeoChart(document.getElementById('heatMap7'));
         chart.draw(data7, options);
+        var chart = new google.visualization.GeoChart(document.getElementById('heatMaptwo7'));
+        chart.draw(data7, options);
         
         var chart = new google.visualization.GeoChart(document.getElementById('heatMap8'));
+        chart.draw(data8, options);
+        var chart = new google.visualization.GeoChart(document.getElementById('heatMaptwo8'));
         chart.draw(data8, options);
         
         var chart = new google.visualization.GeoChart(document.getElementById('heatMap9'));
         chart.draw(data9, options);
+        var chart = new google.visualization.GeoChart(document.getElementById('heatMaptwo9'));
+        chart.draw(data9, options);
         
         var chart = new google.visualization.GeoChart(document.getElementById('heatMap10'));
+        chart.draw(data10, options);
+        var chart = new google.visualization.GeoChart(document.getElementById('heatMaptwo10'));
         chart.draw(data10, options);
 
         var chart = new google.visualization.GeoChart(document.getElementById('heatMap11'));
         chart.draw(data11, options);
+        var chart = new google.visualization.GeoChart(document.getElementById('heatMaptwo11'));
+        chart.draw(data11, options);
 
         var chart = new google.visualization.GeoChart(document.getElementById('heatMap12'));
+        chart.draw(data12, options);
+        var chart = new google.visualization.GeoChart(document.getElementById('heatMaptwo12'));
         chart.draw(data12, options);
 }
 
@@ -21630,6 +21527,11 @@ target1 = document.getElementById('target1').style.display == 'none';
 
         showBlock('threeMd');
         function showBlock(id){ 
+            document.getElementById('oneMd').style.display = "none";
+            document.getElementById('oneM').style.backgroundColor = "#FFE153";
+            document.getElementById('oneM').style.boxShadow = "0 7px #999";
+            document.getElementById('oneM').style.color = "#563d12";
+
             document.getElementById('threeMd').style.display = "none";
             document.getElementById('threeM').style.backgroundColor = "#FFE153";
             document.getElementById('threeM').style.boxShadow = "0 7px #999";
@@ -21645,6 +21547,8 @@ target1 = document.getElementById('target1').style.display == 'none';
             var buttonId;
             if(id == 'threeMd')
                 buttonId = 'threeM';
+            else if(id == 'oneMd')
+                buttonId = 'oneM';
             else
                 buttonId = 'oneY';
             document.getElementById(buttonId).style.backgroundColor = "#FFC408";
@@ -21665,7 +21569,21 @@ target1 = document.getElementById('target1').style.display == 'none';
             document.getElementById(showMap).style.display = "block";
             
         }
+        function showMessage2(value) {
+             var showMap = "heatMaptwo" + value;
+            for(i=0; i<=12; i++){
+                var index = "heatMaptwo" + i.toString();
+                document.getElementById(index).style.display = "none";
+            }
+            if(value == '0')
+                document.getElementById("message2").innerHTML = "　";
+            else
+                document.getElementById("message2").innerHTML = value+"月份分層設色圖　　　";
+            
+            document.getElementById(showMap).style.display = "block";
+        }
         showMessage("0");
+        showMessage2("0");
         showBarLineChart("1");
         function showBarLineChart(value){
           var showBarLine = "BarLine" + value;

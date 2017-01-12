@@ -24,7 +24,8 @@ a:visited{
 }
 .homepage{
   height:400px;
-  animation-duration:10s;
+  animation: mymove 5s infinite;
+  -webkit-animation: mymove 5s infinite;
   margin-top:50px;
   margin-left:37%;
   border-radius: 100%;
@@ -43,11 +44,30 @@ a:visited{
   height:90px;
   margin-top:20px;
   margin-left:47%;
-  animation-duration:10s;
+  animation: mymove 5s infinite;
+  -webkit-animation: mymove 5s infinite;
+  /*animation-duration:5s;
+  animation-delay: 2s;*/
+}
+@keyframes mymove {
+   from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes mymove {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .nav1{
   text-align:center;
-  width:130px;
+  width:150px;
   font-size:18px;
   font-weight: bold;
   color:#563d12;
