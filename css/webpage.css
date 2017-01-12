@@ -37,13 +37,15 @@ a:visited{
 }
 .logoBar{
   width:100%;
-  height:100px;
+  height:120px;
+
 }
 .logo{
   border-radius:100%;
   height:90px;
   margin-top:20px;
   margin-left:47%;
+  /*margin-bottom: :20px;*/
   animation: mymove 5s infinite;
   -webkit-animation: mymove 5s infinite;
   /*animation-duration:5s;
@@ -67,7 +69,7 @@ a:visited{
 }
 .nav1{
   text-align:center;
-  width:150px;
+  width:170px;
   font-size:18px;
   font-weight: bold;
   color:#563d12;
