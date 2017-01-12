@@ -8,50 +8,21 @@
 	<link rel="Shortcut Icon" type="image/x-icon" href="./photo/logo.ico" />
 
 	<!-- CSS -->
-	<!-- <link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css"> -->
 	<link rel="stylesheet" href="./css/jquery.mobile.structure-1.4.5.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="./css/w3school.css">
 	<link rel="stylesheet" href="./css/webpage.css">
-	<link rel="stylesheet" href="./css/webpage-tablet.css">
-	<link rel="stylesheet" href="./css/webpage-smartphone.css">
 
 	<!-- JavaScript -->
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC_vjX25hF65Iu3_vNtOVWE2VQpOVbHI8=initMap"
-  type="text/javascript"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC_vjX25hF65Iu3_vNtOVWE2VQpOVbHI8=initMap" type="text/javascript"></script>
 	<script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
-	<script type="text/javascript" src="./javascript/topojson.min.js"></script>
-	<script type="text/javascript" src="./javascript/d3.min.js"></script>
 	<script type="text/javascript" src="./javascript/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="./javascript/jquery.min.js"></script>
-    <script type="text/javascript" src="./amcharts/amcharts.js"></script>
-    <script type="text/javascript" src="./amcharts/xy.js"></script>
-    <script type="text/javascript" src="./amcharts/serial.js"></script>
-    <script type="text/javascript" src="./amcharts/ammap.js"></script>
-    <script type="text/javascript" src="./amcharts/worldLow.js" "></script>
-    <script type="text/javascript" src="./javascript/webpage.js"></script>
-	<script type="text/javascript" src="./javascript/datamaps.world.min.js"></script>	
-	
-	<style>
-		.mySlides {display:none}
-		.pic{
-			width:100%;
-			margin-bottom:20px;
-			margin-top:35px;
-			border-color: #E0E0E0;
-			border-style:solid;
-			border-width:0.5px;
-		}
-		.btn{
-			width:50px;
-			display:inline-block;
-			border-radius: 50px;
-			background-color: pink;
-			margin-bottom:5px;		
-		}
-	</style>
+    <script type="text/javascript" src="./javascript/amcharts.js"></script>
+    <script type="text/javascript" src="./javascript/xy.js"></script>
+    <script type="text/javascript" src="./javascript/serial.js"></script>
+    <script type="text/javascript" src="./javascript/ammap.js"></script>
+    <script type="text/javascript" src="./javascript/worldLow.js" "></script>
 </head>
 
 <body>
@@ -83,8 +54,6 @@
 	    	    <a href="#" class="navHover" onclick="zoomIn('target3');">活動花絮</a>
 	    	  </div>
 	    	</li>
-	    	<!-- <li class="icon-width SPdelete">&nbsp;</li> -->
-	    	    <!-- 劃出display下的線 -->
 			<li>
 		    	<!-- FB logo -->
 		    	<a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook iconSetting"></i></a>
@@ -166,11 +135,6 @@
 				<img src="./photo/photo5.jpg" class="smallDiv"/>
 				<img src="./photo/photo6.jpg" class="smallDiv"/>
 			</div>
-			<!-- <div class="bigDiv1">
-				<img src="./photo/photo6.jpg" class="smallDiv"/>
-				<img src="./photo/photo1.jpg" class="smallDiv"/>
-				<img src="./photo/photo2.jpg" class="smallDiv"/>
-			</div> -->
 		</div>
 		<!-- 教學影片1 -->
 		<div id="vedio1" style="width:100%; display:none;">
@@ -184,46 +148,15 @@
 			<p class="subtitle">影片二</p>
 			<video controls="controls" class="vedio">
 				<source src="./vedio/vedioTwo.mp4" type="video/mp4">
-				<!-- <source src="https://www.youtube.com/watch?v=1TCgqhpGSEg"> -->
 			</video>
 		</div>
 		<!--新聞地圖-->
 		<div id="floatButton" class="fa floatButton" onclick="document.getElementById('id02').style.display='block'">&#xf002;</div>
 		<div id="map" style="width:100%; display:none;">
 			<div style="width:90%; margin-left:5%;">
-				<div class="myButton" id="oneM" onclick="showBlock('oneMd')" style="display:none">搜尋新聞</div>
 				<div class="myButton" id="threeM" onclick="showBlock('threeMd')">統計圖表</div>
 				<div class="myButton" id="oneY" onclick="showBlock('oneYd')">補充圖表</div>
 
-			</div>
-			
-<!-- 搜尋新聞 -->
- 			<div  id="oneMd" style="display: none">
- <!--
-				<select id="mySelect" class="w3-select selection" name="option" data-role="none">
-					<option value="" disabled selected>選擇篩選條件</option>
-					<option value="1">年</option>
-					<option value="2">月</option>
-					<option value="3">日</option>
-					<option value="4">地區</option>
-					<option value="5">國家</option>
-					<option value="6">標題</option>
-				</select>
-				<input type="text" id="myInput" onkeyup="myFunction()" placeholder="輸入關鍵字" title="Type in a name" style="display: inline-block;" data-role="none">
-				
-				<select id="mySelect2" class="w3-select selection" name="option" data-role="none" style="margin: 40px 0px 12px 40px;">
-					<option value="" disabled selected>選擇篩選條件</option>
-					<option value="1">年</option>
-					<option value="2">月</option>
-					<option value="3">日</option>
-					<option value="4">地區</option>
-					<option value="5">國家</option>
-					<option value="6">標題</option>
-				</select>
-				<input type="text" id="myInput2" onkeyup="myFunction()" placeholder="輸入關鍵字" title="Type in a name" style="display: inline-block;" data-role="none">
-				<div style="margin-left:10%;font-size:16px" id="tableCount">新聞總數 : 1857</div>
-				<table id="myTable" class="w3-table w3-bordered w3-margin-top w3-border"></table>
-			-->
 			</div>
 
 <!-- 統計圖表 -->
@@ -287,18 +220,17 @@
 				<div class="text2">
 					<b>新聞來源：</b>一眼看天下─中華民國外交部<br>
 					<b>統計時間：</b>2015/12/16至2016/12/21<br>
-					<b>呈現內容：</b>於於統計時間內，台灣各個月播報各國家幾則國際新聞。<br>
+					<b>呈現內容：</b>於統計時間內，台灣各個月播報各國家幾則國際新聞。<br>
 					<!-- <b>資料分析：</b><br>　　由圖表可知，統計的新聞多關注美國；與台灣關係密切的中國則是在三月之後，新聞數近乎為零。絕大多數的國家各月新聞數不超過十則，在在顯示新聞的呈現具偏頗性。<br>
  -->
 				</div>
 				<div class="subtitle2">每月新聞分布地圖</div>
 				<div id="message"  class="text"></div>
 				<div style=" margin:1% 2% 1% 23%">
-					<input style="width:600px" id="slider1" class="mdl-slider mdl-js-slider" type="range" min="0" max="12" value="0" tabindex="0" oninput="showMessage(this.value)" onchange="showMessage(this.value)">
+					<input style="width:70%" id="slider1" class="mdl-slider mdl-js-slider" type="range" min="0" max="12" value="0" tabindex="0" oninput="showMessage(this.value)" onchange="showMessage(this.value)">
 				</div>
 				<!-- worldMap -->
 				<div style="height:620px">
-					
 					<div id="heatMap0" class="map text" style=";height:615px;width:90%;background-color:white;font-size:26px;padding-top:50px">滑桿向右，顯示更多</div>
 					<div id="heatMap1" class="map"></div>
 					<div id="heatMap2" class="map"></div>
@@ -365,158 +297,7 @@
 			</div>
 		</div>
     </div>
-
-    <script>
-		target1 = document.getElementById('target1').style.display == 'none';
-		target2 = document.getElementById('target2').style.display == 'none';
-		target3 = document.getElementById('target3').style.display == 'none';
-		vedio1  = document.getElementById('vedio1').style.display  == 'none';
-		vedio2  = document.getElementById('vedio2').style.display  == 'none';
-		map     = document.getElementById('map').style.display     == 'none';
-		if(target1 && target2 && target3 && vedio1 && vedio2 && map){
-		 	document.getElementById('map').style.display = "block";
-		    changeOpacity('map');
-		}		
-		function showTip(id){
-			if(screen.width < "850")
-				console.log("It's a tablet")
-			else document.getElementById(id).style.display = "inline-block";
-		}
-		function hideTip(id){
-			if(screen.width < "850")
-				console.log("850")
-			else document.getElementById(id).style.display = "none";
-		}
-
-
-		showBlock('threeMd');
-		function showBlock(id){	
-			document.getElementById('oneMd').style.display = "none";
-			document.getElementById('oneM').style.backgroundColor = "#FFE153";
-			document.getElementById('oneM').style.boxShadow = "0 7px #999";
-			document.getElementById('oneM').style.color = "#563d12";
-
-			document.getElementById('threeMd').style.display = "none";
-			document.getElementById('threeM').style.backgroundColor = "#FFE153";
-			document.getElementById('threeM').style.boxShadow = "0 7px #999";
-			document.getElementById('threeM').style.color = "#563d12";
-
-			document.getElementById('oneYd').style.display = "none";
-			document.getElementById('oneY').style.backgroundColor = "#FFE153";
-			document.getElementById('oneY').style.boxShadow = "0 7px #999";
-			document.getElementById('oneY').style.color = "#563d12";
-			
-			document.getElementById(id).style.display = "block";
-
-			var buttonId;
-			if(id == 'oneMd')
-				buttonId = 'oneM';
-			else if(id == 'threeMd')
-				buttonId = 'threeM';
-			else
-				buttonId = 'oneY';
-			document.getElementById(buttonId).style.backgroundColor = "#FFC408";
-			document.getElementById(buttonId).style.boxShadow = "0 4px #666";
-			document.getElementById(buttonId).style.color = "white";
-		}
-		function showSearch(){
-			document.getElementById("showSearch").style.display = "block";
-		}
-		// //slideShow
-		// var slideIndex = 1;
-		// showDivs(slideIndex);
-		// function plusDivs(n) {
-		//   showDivs(slideIndex += n);
-		// }
-		// function currentDiv(n) {
-		//   showDivs(slideIndex = n);
-		// }
-		// function showDivs(n) {
-		//   var i;
-		//   var x = document.getElementsByClassName("mySlides");
-		//   var dots = document.getElementsByClassName("demo");
-		//   if (n > x.length) {slideIndex = 1}    
-		//   if (n < 1) {slideIndex = x.length}
-		//   for (i = 0; i < x.length; i++) {
-		//      x[i].style.display = "none";  
-		//   }
-		//   for (i = 0; i < dots.length; i++) {
-		//      dots[i].className = dots[i].className.replace(" w3-red", "");
-		//   }
-		//   x[slideIndex-1].style.display = "block";  
-		//   dots[slideIndex-1].className += " w3-red";
-		// }
-		function showMessage(value){
-			var showMap = "heatMap" + value;
-			for(i=0; i<=12; i++){
-				var index = "heatMap" + i.toString();
-				document.getElementById(index).style.display = "none";
-			}
-			if(value == '0')
-				document.getElementById("message").innerHTML = "　";
-			else
-				document.getElementById("message").innerHTML = value+"月份分層設色圖　　　";
-			
-			document.getElementById(showMap).style.display = "block";
-			
-		}
-		showMessage("0");
-		// document.getElementById("heatMap1").style.display = "block";
-    </script>
 </body>
+<script type="text/javascript" src="./javascript/webpage.js"></script>
 
-
-<script type="text/javascript" src="./javascript/world1.js"></script>
-<script type="text/javascript" src="./javascript/countInMonth.js"></script>
-<script type="text/javascript" src="./javascript/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="./javascript/fancybox.js"></script>
-<script type="text/javascript" src="./javascript/drawTable.js"></script>
-<script type="text/javascript" src="./javascript/xyBubbleWithZoom.js"></script>
-<script type="text/javascript" src="./javascript/BarAndLineChart.js"></script>
-<script type="text/javascript" src="./javascript/plot3.js"></script>
-<script type="text/javascript" src="./javascript/map12.js"></script>
-<script type="text/javascript" src="./javascript/flight.js"></script>
-<link rel="stylesheet" type="text/css" href="./css/fancybox.css" media="screen"></link>
-
-<script>
-$('#my_page').fancybox({ 
-		        'scrolling'     : 'no',
-		        'overlayOpacity': 0.1,
-		        'showCloseButton'   : false,
-		        'content' : '<p>your html here</p>'
-});
-function fancyboximg(w0321, h0321, s0321, t0321) {
-	if(screen.width < "700"){
-		w0321 = w0321 * 0.6;
-		h0321 = h0321 * 0.6;
-	}
-	$.fancybox({
-		fitToView: false,
-		beforeShow: function () {
-			this.width = w0321;
-			this.height = h0321;
-		},
-		href: s0321,
-		title: t0321,
-		type: 'image',
-		padding: 5,
-		openEffect: 'elastic',
-		preload: true
-		});
-};
-showBarLineChart("1");
-function showBarLineChart(value){
-  var showBarLine = "BarLine" + value;
-  for(i=1; i<=12; i++){
-    var index = "BarLine" + i.toString();
-    document.getElementById(index).style.display = "none";
-  }
-  document.getElementById(showBarLine).style.display = "block";
-}
-</script>
-<style>
-	body{
-		background-color: white;
-	}
-</style>
 </html>
