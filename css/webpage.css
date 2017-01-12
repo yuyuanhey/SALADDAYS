@@ -69,10 +69,11 @@ a:visited{
 }
 .nav1{
   text-align:center;
-  width:200px;
+  width:170px;
   font-size:18px;
   font-weight: bold;
   color:#563d12;
+  padding: 0px 0px 0px 0px;
 }
 .icon-width{
   width:0px;
