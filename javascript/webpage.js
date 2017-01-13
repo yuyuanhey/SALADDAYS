@@ -3233,14 +3233,14 @@ var chartData1 = [
     "continent": "North America",
     "color": "#8000ff"
   },
-  /*{
+  {
     "code": "USA",
     "country": "United States of America",
     "count": 330,
     "index": 24.41,
     "continent": "North America",
     "color": "#8000ff"
-  },*/
+  },
   {
     "code": "ARG",
     "country": "Argentina",
