@@ -2,31 +2,44 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Salad Days</title>
-	<script type="text/javascript" src="./javascript/webpage.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="Shortcut Icon" type="image/x-icon" href="./photo/logo.ico" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/jquery.mobile.structure-1.4.5.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/w3school.css">
 	<link rel="stylesheet" href="./css/webpage.css">
+
+	<!-- JavaScript -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC_vjX25hF65Iu3_vNtOVWE2VQpOVbHI8=initMap" type="text/javascript"></script>
+	<script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+	<script type="text/javascript" src="./javascript/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./javascript/amcharts.js"></script>
+    <script type="text/javascript" src="./javascript/xy.js"></script>
+    <script type="text/javascript" src="./javascript/serial.js"></script>
+    <script type="text/javascript" src="./javascript/ammap.js"></script>
+    <script type="text/javascript" src="./javascript/worldLow.js" "></script>
 </head>
 
 <body>
-	<div style="width:100%; height:100px">
-		<a href="page1.html">
-		<img src="./photo/logo.jpg" class="fa w3-spin" style="border-radius:100%;height:90px;margin-top:5px;margin-left:42%;animation-duration:10s;"/>
+	<div class="logoBar">
+		<a href="https://yuyuanhey.github.io/SALADDAYS/page1.html">
+		<img src="./photo/logo.jpg" class="fa w3-spin logo"/>
 		</a>
 	</div>
 	<div style="width:90%; margin-left:5%">
 		<ul class="w3-navbar">
 		<!--新聞地圖  -->
 			<li class="nav1 navHover">
-				<a href="#" onclick="zoomIn('map');">新聞地圖</a>
+				<a href="#" onclick="zoomIn('map');"><i class="fa fa-globe" aria-hidden="true"></i>　新聞地圖</a>
 			</li>
 		<!--教學影片  -->
 			<li class="w3-dropdown-hover nav1">
-	    		<a href="#" class="navHover" onclick="zoomIn('vedio1');">教學影片</a>
+	    		<a href="#" class="navHover" onclick="zoomIn('vedio1');"><i class="fa fa-film" aria-hidden="true"></i>　教學影片</a>
 	    	<div class="w3-dropdown-content w3-white w3-card-4">
 	      		<a href="#" class="navHover" onclick="zoomIn('vedio1');">影片1</a>
 	      		<a href="#" class="navHover" onclick="zoomIn('vedio2');">影片2</a>
@@ -34,16 +47,21 @@
 	  		</li>
 	  	<!--關於我們  -->
 	    	<li class="w3-dropdown-hover nav1">
-	    	  <a href="#" class="navHover" onclick="zoomIn('target1');">關於我們</a>
+	    	  <a href="#" class="navHover" onclick="zoomIn('target1');"><i class="fa fa-question-circle" aria-hidden="true"></i>　關於我們</a>
 	    	  <div class="w3-dropdown-content w3-white w3-card-4">
 	    	    <a href="#" class="navHover" onclick="zoomIn('target1');">成立初衷</a>
 	    	    <a href="#" class="navHover" onclick="zoomIn('target2');">組員名單</a>
 	    	    <a href="#" class="navHover" onclick="zoomIn('target3');">活動花絮</a>
 	    	  </div>
 	    	</li>
-	    	<li style="width:60%;">&nbsp;</li>
-	    	<a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook iconSetting"></i></a>
-	    	<a href="mailto:b04705004@ntu.edu.tw" title="Connect with us!"><i class="fa fa-envelope-o iconSetting"></i></a>
+			<li>
+		    	<!-- FB logo -->
+		    	<a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook iconSetting"></i></a>
+		    </li>
+		    <li>
+		    	<!-- Email logo -->
+		    	<a href="mailto:b04705004@ntu.edu.tw" title="Connect with us!"><i class="fa fa-envelope-o iconSetting"></i></a>
+			</li>
 		</ul>
 	  <!-- 劃出nav下的線 -->
 	  <div class="line"></div>
@@ -53,7 +71,7 @@
 		<!-- 成立初衷 -->
 		<div id="target1" style="width:100%; display:none;">
 			<p class="subtitle">成立初衷</p>
-			<p style="text-align:center;font-size:16px">
+			<p class="text">
 				Salad Days，出自莎士比亞的《安東尼與克麗奧佩托拉》<br>用以形容充滿熱情、理想、純真的年輕時期。<br>
 				時至今日，Salad Days亦可作為人生高峰期的代稱，<br>
 				而這也正是我們對自己的期許。<br>
@@ -67,6 +85,11 @@
 		<!-- 組員名單 -->
 		<div id="target2" style="width:100%; display:none;">
 			<p class="subtitle">組員名單</p>
+			<div class="pictureDiv" id="logoNotShown">
+				<img class="picture" src="./photo/logo.jpg"/>
+				<p class="name">&nbsp;</p>
+				</a>
+			</div>
 			<div class="pictureDiv">
 				<a href="https://www.facebook.com/profile.php?id=100001266835648" title="前往禹媛的FB">
 				<img class="picture" src="./photo/profile-01.png"/>
@@ -79,13 +102,14 @@
 				<p class="name">宜儒</p>
 				</a>
 			</div>
+
 			<div class="pictureDiv">
 				<a href="https://www.facebook.com/profile.php?id=100001716956350&fref=ts" title="前往湘陵的FB">
 				<img class="picture" src="./photo/profile-03.png"/>
 				<p class="name">湘陵</p>
 				</a>
 			</div>
-			<div class="pictureDiv">
+			<div class="pictureDiv"> 
 				<a href="https://www.facebook.com/profile.php?id=100001162914977&fref=ts" title="前往丞瑀的FB">
 				<img class="picture" src="./photo/profile-05.png"/>
 				<p class="name">丞瑀</p>
@@ -99,21 +123,17 @@
 			</div>
 		</div>
 		<!-- 活動花絮 -->
-		<div id="target3" style="width:100%; display:none;">
+		<div id="target3" style="width:100%; display:none;margin-bottom: 50px">
 			<p class="subtitle">活動花絮</p>
 			<div class="bigDiv1">
 				<img src="./photo/photo1.jpg"/ class="box">
-				<img src="./photo/photo1.jpg"/ class="box">
+				<img src="./photo/photo2.jpg"/ class="box">
 			</div>
 			<div class="bigDiv1">
-				<img src="./photo/photo1.jpg" class="smallDiv"/>
-				<img src="./photo/photo1.jpg" class="smallDiv"/>
-				<img src="./photo/photo1.jpg" class="smallDiv"/>
-			</div>
-			<div class="bigDiv1">
-				<img src="./photo/photo1.jpg" class="smallDiv"/>
-				<img src="./photo/photo1.jpg" class="smallDiv"/>
-				<img src="./photo/photo1.jpg" class="smallDiv"/>
+				<img src="./photo/photo3.jpg" class="smallDiv"/>
+				<img src="./photo/photo4.jpg" class="smallDiv"/>
+				<img src="./photo/photo5.jpg" class="smallDiv"/>
+				<img src="./photo/photo6.jpg" class="smallDiv"/>
 			</div>
 		</div>
 		<!-- 教學影片1 -->
@@ -126,42 +146,184 @@
 		<!-- 教學影片2 -->
 		<div id="vedio2" style="width:100%; display:none;">
 			<p class="subtitle">影片二</p>
-			<video controls class="vedio">
+			<video controls="controls" class="vedio">
 				<source src="./vedio/vedioTwo.mp4" type="video/mp4">
 			</video>
 		</div>
 		<!--新聞地圖-->
+		<div id="floatButton" class="fa floatButton" onclick="document.getElementById('id02').style.display='block'">&#xf002;</div>
 		<div id="map" style="width:100%; display:none;">
 			<div style="width:90%; margin-left:5%;">
-				<button class="button">One Month</button>
-				<button class="button">Three Months</button>
-				<button class="button">One Year</button>
-				<div style="display:inline-block;width:40%;"></div>
-				<img src="./photo/bars-chart.png" class="button2" onmouseover="showTip('tip1');" onmouseout="hideTip('tip1');"/>
-				<div class="tipBar"><p class="tip" id="tip1">產生統計圖表</p></div>
+				<div class="myButton" id="oneM" onclick="showBlock('oneMd')"><i class="fa fa-line-chart" aria-hidden="true"></i>　折線圖</div>
+				<div class="myButton" id="threeM" onclick="showBlock('threeMd')"><i class="fa fa-bar-chart" aria-hidden="true"></i>　長條圖</div>
+				<div class="myButton" id="oneY" onclick="showBlock('oneYd')"><i class="fa fa-area-chart" aria-hidden="true"></i>　散布圖</div>
+
 			</div>
-			<div style="width:90%;margin:1% 5% 5% 5%;height:500px;background-color:#FFF4C1;opacity:0.7;"></div>
+<!-- 折線圖 -->
+			<div class="displayBlock" id="oneMd" style="display: block">
+				<div class="subtitle2">各洲每月國際新聞總數</div>
+				<!-- <div class="w3-container"> -->
+				<div id="sixContinent" class="worldMap"></div>
+				<div class="text2">
+					<b>新聞來源：</b>一眼看天下─中華民國外交部<br>
+					<b>統計時間：</b>2015/12/16至2016/12/21<br>
+					<b>呈現內容：</b>於統計時間內，中華民國外交部節錄各個月六大地區的國際新聞數量。<br>
+					<!-- <b>資料分析：</b><br>　　以亞洲(含大洋洲)在各月的新聞數量最多，其次是歐洲(含俄羅斯)、北美洲，再來是中南美洲、非洲，以及兩岸三地。由圖中可看出，歐洲及北美洲的新聞數量在一年中相對穩定；中南美洲的新聞數量在二月之後出現大幅度的飆升；反觀與台灣最相關的、兩岸三地的新聞數量在二月之後出現明顯的下滑。<br>
+					　　根據統計，目前亞洲(含大洋洲)有60個國家、歐洲(含俄羅斯)共計43國、北美洲為美加兩國、中南美洲有33個國家、非洲有54個，兩岸三地為台灣、中國、香港這3個地區。經過計算，各洲的國家平均被報導數量並不均勻。可見新聞數量與該洲的國家數量並不成正比。<br> -->
+
+				</div>
+
+				<div class="subtitle2">各國每月國際新聞總數</div>
+				<div id="plot3" class="worldMap" style="height:700px"></div>
+				<div class="text2">
+					<b>新聞來源：</b>一眼看天下─中華民國外交部<br>
+					<b>統計時間：</b>2015/12/16至2016/12/21<br>
+					<b>呈現內容：</b>於統計時間內，台灣各個月播報各國家幾則國際新聞。<br>
+					<!-- <b>資料分析：</b><br>　　由圖表可知，統計的新聞多關注美國；與台灣關係密切的中國則是在三月之後，新聞數近乎為零。絕大多數的國家各月新聞數不超過十則，在在顯示新聞的呈現具偏頗性。<br>
+ -->
+				</div>
+				<div class="subtitle2">每月國際新聞分布地圖</div>
+				<div id="message"  class="text"></div>
+				<div style=" margin:1% 2% 1% 23%">
+					<input style="width:70%" id="slider1" class="mdl-slider mdl-js-slider" type="range" min="0" max="12" value="0" tabindex="0" oninput="showMessage(this.value)" onchange="showMessage(this.value)">
+				</div>
+				<!-- worldMap -->
+				<div style="height:620px">
+					<div id="heatMap0" class="map text" style=";height:615px;width:90%;background-color:white;font-size:20px;padding-top:50px">滑桿向右，顯示更多</div>
+					<div id="heatMap1" class="map"></div>
+					<div id="heatMap2" class="map"></div>
+					<div id="heatMap3" class="map"></div>
+					<div id="heatMap4" class="map"></div>
+					<div id="heatMap5" class="map"></div>
+					<div id="heatMap6" class="map"></div>
+					<div id="heatMap7" class="map"></div>
+					<div id="heatMap8" class="map"></div>
+					<div id="heatMap9" class="map"></div>
+					<div id="heatMap10" class="map"></div>
+					<div id="heatMap11" class="map"></div>
+					<div id="heatMap12" class="map"></div>
+					
+				</div>
+				
+			</div>
+<!-- 長條圖 -->
+			<div class="displayBlock" id="threeMd" style="display: block">
+				<div class="subtitle2">每月國際新聞總數</div>
+				<div id="countInMonth" class="worldMap"></div>
+				<div class="text2">
+					<b>新聞來源：</b>一眼看天下─中華民國外交部 <br>
+					<b>統計時間：</b>2015/12/16至2016/12/21<br>
+					<b>呈現內容：</b>於統計時間內，中華民國外交部節錄各個月國際新聞的數量。<br>
+				<!-- 	<b>資料分析：</b><br>　　平均每個月的新聞數量多界在120-180則之間，唯三月及八月的新聞數量明顯較多。<br>
+					　　由三月的新聞來看，內容較多提及難民危機、各國對難民的態度和方式以及恐怖攻擊。由此可知，難民議題是一個全球性的議題，雖然主要的關係國家是美歐和西亞非洲等難民來源地，但是對全球政治、經濟、文化等影響仍是不容小覷的，也因此新聞媒體才會花如此多的篇幅報導。<br>
+					　　由八月的新聞來看，發現新聞的分布較為分散，世界各國都有並不僅僅侷限於美國或中國等世界強國。舉例而言，有關於恐攻的新聞就會提及比利時、法國、德國等國家，爆炸案則提及吉爾吉斯、泰國、土耳其、菲律賓及阿富汗。<br> -->
+				</div>
+				<div class="subtitle2" style="display: inline-block;margin-left: 40%">各洲每月國際新聞比例</div>
+					<a onclick="document.getElementById('id01').style.display='block';showBarLineChart('1')"><img src="./photo/bars-chart.png" class="myButton2"></a>
+						<div id="id01" class="w3-modal">
+							<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="overflow:auto;">
+								<span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn" style="margin:10px 20px 10px 0px">&times;close</span>
+								<div id="BarLine1" class="w3-container BarLine"></div>
+								<div id="BarLine2" class="w3-container BarLine"></div>
+								<div id="BarLine3" class="w3-container BarLine"></div>
+								<div id="BarLine4" class="w3-container BarLine"></div>
+								<div id="BarLine5" class="w3-container BarLine"></div>
+								<div id="BarLine6" class="w3-container BarLine"></div>
+								<div id="BarLine7" class="w3-container BarLine"></div>
+								<div id="BarLine8" class="w3-container BarLine"></div>
+								<div id="BarLine9" class="w3-container BarLine"></div>
+								<div id="BarLine10" class="w3-container BarLine"></div>
+								<div id="BarLine11" class="w3-container BarLine"></div>
+								<div id="BarLine12" class="w3-container BarLine"></div>
+								<div style="width:600px; margin:2% 100px 2% 15%; height:30px">
+									<input style="width: 600px" id="sliderBarChart" class="mdl-slider mdl-js-slider" type="range" min="1" max="12" value="0" tabindex="0" oninput="showBarLineChart(this.value)" onchange="showBarLineChart(this.value)">
+								</div>
+							</div>
+						</div>
+				<div id="cumulativeBar" class="worldMap"></div>
+				<div class="text2">
+					<b>新聞來源：</b>一眼看天下─中華民國外交部 <br>
+					<b>統計時間：</b>2015/12/16至2016/12/21<br>
+					<b>呈現內容：</b>於統計時間內，中華民國外交部節錄各個月國際新聞的各州數量與比例。<br>
+				<!-- 	<b>資料分析：</b><br>　　平均每個月的新聞數量多界在120-180則之間，唯三月及八月的新聞數量明顯較多。<br>
+					　　由三月的新聞來看，內容較多提及難民危機、各國對難民的態度和方式以及恐怖攻擊。由此可知，難民議題是一個全球性的議題，雖然主要的關係國家是美歐和西亞非洲等難民來源地，但是對全球政治、經濟、文化等影響仍是不容小覷的，也因此新聞媒體才會花如此多的篇幅報導。<br>
+					　　由八月的新聞來看，發現新聞的分布較為分散，世界各國都有並不僅僅侷限於美國或中國等世界強國。舉例而言，有關於恐攻的新聞就會提及比利時、法國、德國等國家，爆炸案則提及吉爾吉斯、泰國、土耳其、菲律賓及阿富汗。<br> -->
+				</div>
+
+				<div class="subtitle2">每月國際新聞分布地圖</div>
+				<div id="message2"  class="text"></div>
+				<div style=" margin:1% 2% 1% 23%">
+					<input style="width:70%" id="slider1" class="mdl-slider mdl-js-slider" type="range" min="0" max="12" value="0" tabindex="0" oninput="showMessage2(this.value)" onchange="showMessage2(this.value)">
+				</div>
+				<!-- worldMap -->
+				<div style="height:620px">
+					<div id="heatMaptwo0" class="map text" style=";height:615px;width:90%;background-color:white;font-size:20px;padding-top:50px">滑桿向右，顯示更多</div>
+					<div id="heatMaptwo1" class="map" style="display:block"></div>
+					<div id="heatMaptwo2" class="map"></div>
+					<div id="heatMaptwo3" class="map"></div>
+					<div id="heatMaptwo4" class="map"></div>
+					<div id="heatMaptwo5" class="map"></div>
+					<div id="heatMaptwo6" class="map"></div>
+					<div id="heatMaptwo7" class="map"></div>
+					<div id="heatMaptwo8" class="map"></div>
+					<div id="heatMaptwo9" class="map"></div>
+					<div id="heatMaptwo10" class="map"></div>
+					<div id="heatMaptwo11" class="map"></div>
+					<div id="heatMaptwo12" class="map"></div>
+					
+				</div>
+				
+			</div>
+
+<!-- 補充圖表 -->
+			<div class="displayBlock" id="oneYd" style="display: block">
+			<!-- Scatter plot -->
+				<div class="subtitle2">各國新聞自由指數　VS.　國際新聞數</div>
+				<div id="xyBubbles" class="worldMap"></div>
+				<div class="text2">
+					<b>新聞來源：</b>一眼看天下─中華民國外交部<br>
+					<b>統計時間：</b>2015/12/16至2016/12/21<br>
+					<b>參考資料：</b><a href="https://zh.wikipedia.org/wiki/%E6%96%B0%E9%97%BB%E8%87%AA%E7%94%B1%E6%8C%87%E6%95%B0" style="text-decoration:none">維基百科</a><br>
+					<b>呈現內容：</b>各國新聞自由指數與國際新聞數的關聯。<br>
+					<b>資料分析：</b><br>　　「新聞自由指數」乃指無國界記者組織根據各國新聞自由狀況，針對記者和媒體的直接攻擊情況及間接地針對出版自由的各種壓力所做的排名情況，獲得的分數越小代表新聞自由度越大。該指數的調查對象來自世界各地，包括一百多位無國界記者及其夥伴組織成員、相關領域的專家(比如研究員、法學家以及人權活動家)。<br>
+					　　由圖中可知，歐洲各國的新聞自由指數多落在較低的位置，表示新聞自由度相較而言較大；值得注意的是，根據新聞自由指數定義，指數大約大於40時，表示新聞自由受限制，圖中散落於40以上的點，相對應的國家多位於亞洲與非洲。<br>
+					　　我們尚無法根據新聞自由指數，研判與中華民國外交部節錄各國國際新聞數的關聯性，這兩者之間的關係是我們期望繼續研究與觀察的方向。<br>
+				</div>
+			</div>
+			<div id="id02" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+					<span onclick="document.getElementById('id02').style.display='none'" class="w3-closebtn" style="margin:10px 20px 10px 0px;">&times;close</span>
+					<!-- <div id="mySelectParent" style="display: 'none';" > -->
+						<select id="mySelect" class="w3-select selection" name="option" data-role="none">
+							<option value="" disabled selected>選擇篩選條件</option>
+							<option value="1">年</option>
+							<option value="2">月</option>
+							<option value="3">日</option>
+							<option value="4">地區</option>
+							<option value="5">國家</option>
+							<option value="6">標題</option>
+						</select>
+						<input type="text" id="myInput" onkeyup="myFunction()" placeholder="輸入關鍵字" title="Type in a name" style="display: inline-block;" data-role="none">
+						
+						<select id="mySelect2" class="w3-select selection" name="option" data-role="none" style="margin: 40px 0px 12px 40px;">
+							<option value="" disabled selected>選擇篩選條件</option>
+							<option value="1">年</option>
+							<option value="2">月</option>
+							<option value="3">日</option>
+							<option value="4">地區</option>
+							<option value="5">國家</option>
+							<option value="6">標題</option>
+						</select>
+						<input type="text" id="myInput2" onkeyup="myFunction()" placeholder="輸入關鍵字" title="Type in a name" style="display: inline-block;" data-role="none">
+						<div style="margin-left:10%;font-size:16px" id="tableCount">國際新聞總數 : 1857</div>
+						<table id="myTable" class="w3-table w3-bordered w3-margin-top w3-border"></table>
+					<!-- </div> -->
+					
+				</div>
+			</div>
 		</div>
     </div>
-
-    <script>
-		target1 = document.getElementById('target1').style.display == 'none';
-		target2 = document.getElementById('target2').style.display == 'none';
-		target3 = document.getElementById('target3').style.display == 'none';
-		vedio1  = document.getElementById('vedio1').style.display  == 'none';
-		vedio2  = document.getElementById('vedio2').style.display  == 'none';
-		map     = document.getElementById('map').style.display     == 'none';
-		if(target1 && target2 && target3 && vedio1 && vedio2 && map){
-		 	document.getElementById('map').style.display = "block";
-		    changeOpacity('map');
-		}
-		function showTip(id){
-			document.getElementById(id).style.display = "inline-block";
-		}
-		function hideTip(id){
-			document.getElementById(id).style.display = "none";
-		}
-    </script>
 </body>
+<script type="text/javascript" src="./javascript/webpage.js"></script>
 
 </html>

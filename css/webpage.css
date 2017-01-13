@@ -6,17 +6,84 @@ a:visited{
   color:#563d12;
   font-weight: bold;
 }
+.mySlides {display:none}
+.pic{
+  width:100%;
+  margin-bottom:20px;
+  margin-top:35px;
+  border-color: #E0E0E0;
+  border-style:solid;
+  border-width:0.5px;
+}
+.btn{
+  width:50px;
+  display:inline-block;
+  border-radius: 50px;
+  background-color: pink;
+  margin-bottom:5px;    
+}
+.homepage{
+  height:400px;
+  animation: mymove 5s infinite;
+  -webkit-animation: mymove 5s infinite;
+  margin-top:50px;
+  margin-left:37%;
+  border-radius: 100%;
+}
+.homepageText{
+  text-align: center;
+  margin-top:50px;
+  font-size:24px
+}
+.logoBar{
+  width:100%;
+  height:120px;
+
+}
+.logo{
+  border-radius:100%;
+  height:90px;
+  margin-top:20px;
+  margin-left:47%;
+  /*margin-bottom: :20px;*/
+  animation: mymove 5s infinite;
+  -webkit-animation: mymove 5s infinite;
+  /*animation-duration:5s;
+  animation-delay: 2s;*/
+}
+@keyframes mymove {
+   from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes mymove {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .nav1{
   text-align:center;
-  width:10%;
+  width:170px;
   font-size:18px;
+  font-weight: bold;
+  color:#563d12;
+  padding: 0px 0px 0px 0px;
+}
+.icon-width{
+  width:0px;
 }
 .iconSetting{
-  font-size: 20px;
+  font-size: 16px;
   text-align:center;
-  width:3%;
-  border-bottom: 0px;
-  padding-top:10px;
+  width:5%;
+  /*border-bottom: 0px;*/
+  /*padding-top:10px;*/
 }
 .navHover:hover{
   font-weight: bold;
@@ -28,11 +95,28 @@ a:visited{
   background-color: black;
 }
 .subtitle{
-  font-size:20px;
+  font-size:24px;
   text-align: center;
   font-weight: bold;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.subtitle2{
+  font-size:24px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+.text{
+  text-align:center;
+  font-size:16px;
+}
+.text2{
+  text-align:left;
+  font-size:16px;
+  margin: 30px 10% 50px 10%;
+
 }
 .pictureDiv{
   display:inline-block;
@@ -47,6 +131,9 @@ a:visited{
   border-radius: 100%;
   width:200px;
   height:200px;
+}
+#logoNotShown{
+  display: none;
 }
 .name{
   text-align: center;
@@ -93,6 +180,7 @@ a:visited{
 .box{
   display:inline-block;
   width:49.5%;
+  height: 350px;
   margin:0px;
 }
 .bigDiv1{
@@ -107,7 +195,10 @@ a:visited{
   margin-left: 0px;
   margin-right: 0px;
   padding: 0px;
-  width:32.66%;
+  /*width:32.66%;*/
+  width: 24.333%;
+  height: 180px;
+  /*background-color: pink;*/
 }
 .vedio{
   width:60%;
@@ -123,14 +214,15 @@ a:visited{
   75% {opacity:0.75;}
   100%{opacity:1;}
 }
-.button {
+.myButton {
   display: inline-block;
-  padding: 10px 10px;
-  margin-right:5px;
+  padding: 7px 7px;
+  margin-right:-10px;
   margin-top: 20px;
+  margin-left:25px;
   /*margin-bottom: 15px;*/
-  width:15%;
-  font-size: 18px;
+  width:130px;
+  font-size: 16px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -140,25 +232,37 @@ a:visited{
   border-radius: 15px;
   box-shadow: 0 7px #999;
 }
-.button:hover {
+.myButton:hover {
   background-color: #FFDC35;
 }
-.button:active {
+.myButton:active {
   background-color: #FFED97;
   box-shadow: 0 4px #666;
   transform: translateY(4px);
   opacity: 0.8;
 }
-.button2{
+.myButtonLine{
+  display:inline-block;
+  width:40%;
+}
+.myButton2{
   display: inline-block;
-  padding: 10px 10px;
-  margin-right:5px;
-  margin-top:10px;
-  width:80px;
+  /*padding: 10px 10px;*/
+  margin-top: 25px;
+  margin-bottom: -15px;
+  margin-right: 15px;
+  margin-left: 25px;
+  width:45px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
+}
+#threeMP{
+  display:none;
+}
+#oneMP{
+  display:none;
 }
 .tip{
   display:none;
@@ -173,4 +277,125 @@ a:visited{
   width:12%;
   height:18px;
   margin-left: 87%;
+}
+.worldMap{
+  position:relative;
+  height:500px;
+  background-color:white;
+  width:90%;
+  margin-left:5%;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+.wordCloud{
+  height:300px;
+  margin:20px;
+}
+.displayBlock{
+  display:none;
+  width:90%;
+  margin:2% 5% 2% 5%;
+  height:100%;
+  background-color:#FFF8D7;
+  padding:1% 2% 1% 2%;
+}
+#myInput, #myInput2{
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 200px;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #ddd;
+  margin: 40px 0px 12px 10px;
+}
+.thDate{
+  text-align: center;
+  width:80px;
+}
+#myTable{
+  border-collapse: collapse;
+  width:auto;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin: 20px 10px 20px 10px;
+}
+
+#myTable th, #myTable td {
+  text-align: center;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header{
+  background-color: #ccc;
+}
+
+.tableHover:hover{
+  background-color: #FFF8D7;
+}
+.tableHeader{
+  background-color: #E0E0E0;
+}
+#myTable td:hover{
+  background-color: #FFE153;
+}
+.selection{
+  background-position: 10px 10px;
+  /*background-color:#FFE153;*/
+  width: 120px;
+  font-size: 14px;
+  padding: 10px 5px 10px 5px;
+  border: 1px solid #ddd;
+  margin: 40px 0px 12px 5%;
+}
+.BarLine {
+  display:none;
+  height:450px;
+  width:600px;
+  margin: 15px 100px 0px 15%;
+  padding: 20px -10px 0px -10px;
+  /*background-color: pink;*/
+}
+.map{
+  display: none;
+  /*width: 600px;*/
+  /*height: 350px;*/
+  margin: 20px 0px 20px 5%;
+}
+#message{
+  margin-left: 50px;
+  font-size:16px;
+}
+
+#floatButton{
+  z-index:5;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;    
+  padding: 15px 15px;    
+  font-size: 30px;
+  background: #1ABC9C;
+  color: white;
+  cursor: pointer;
+  /*border-radius: 100%;*/
+  /*height: 50px;
+  width: 50px*/
+}
+
+.floatButton{
+  z-index:5;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;    
+  padding: 15px 15px;    
+  font-size: 30px;
+  background: #1ABC9C;
+  color: white;
+  cursor: pointer;
+  /*border-radius: 100%;*/
+  /*height: 50px;
+  width: 50px*/
 }
